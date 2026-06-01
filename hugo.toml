@@ -4,7 +4,8 @@ title = "Techdox"
 enableRobotsTXT = true
 enableEmoji = true
 summaryLength = 28
-paginate = 10
+[pagination]
+  pagerSize = 10
 
 [permalinks]
   posts = "/:slug/"
