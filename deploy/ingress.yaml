@@ -1,0 +1,22 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: techdox
+  namespace: web
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-dns   # your DNS-01 issuer
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts: [techdox.nz]
+      secretName: techdox-tls
+  rules:
+    - host: techdox.nz
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: techdox
+                port: { number: 80 }

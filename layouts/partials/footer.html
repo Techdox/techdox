@@ -1,0 +1,22 @@
+<footer>
+  <div class="foot-grid">
+    <div>
+      <a class="brand" href="{{ "/" | relURL }}"><span class="mono">~/</span><span class="name">techdox</span></a>
+      <p class="foot-tag">DIY tech, self-hosting tutorials, and the occasional bit of banter.</p>
+    </div>
+    <div class="foot-links">
+      <div class="foot-col">
+        <h5>Site</h5>
+        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="{{ "/posts/" | relURL }}">Posts</a>
+        <a href="{{ "/tags/" | relURL }}">Tags</a>
+        {{ with .OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+      </div>
+      <div class="foot-col">
+        <h5>Elsewhere</h5>
+        {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+      </div>
+    </div>
+  </div>
+  <div class="copyright">© {{ now.Year }} {{ .Site.Title }} — built with markdown, served from the lab.</div>
+</footer>

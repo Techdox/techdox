@@ -1,0 +1,47 @@
+baseURL = "https://techdox.nz/"
+languageCode = "en-nz"
+title = "Techdox"
+enableRobotsTXT = true
+enableEmoji = true
+summaryLength = 28
+paginate = 10
+
+[params]
+  description = "Self-hosting tutorials, homelab projects, and Cloudflare Zero Trust guides."
+  author = "Nick Wilkinson"
+  tagline = "Your fun and informative source for IT goodness."
+
+[taxonomies]
+  tag = "tags"
+
+# Top nav — mirrors the current Ghost site
+[menu]
+  [[menu.main]]
+    name = "YouTube"
+    url = "https://youtube.com/techdoxnz"
+    weight = 10
+  [[menu.main]]
+    name = "Docs"
+    url = "https://docs.techdox.nz/"
+    weight = 20
+  [[menu.main]]
+    name = "Merch"
+    url = "https://store.techdox.nz/"
+    weight = 30
+  [[menu.main]]
+    name = "Support"
+    url = "https://bmc.link/techdox"
+    weight = 40
+
+[markup]
+  [markup.highlight]
+    noClasses = true
+    style = "github-dark"
+    tabWidth = 2
+    lineNos = false
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[services]
+  [services.rss]
+    limit = 20

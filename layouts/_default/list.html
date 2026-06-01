@@ -1,0 +1,23 @@
+{{ define "main" }}
+<header class="list-hero">
+  <div class="kicker">$ ls <span class="dim">{{ if .Data.Singular }}{{ .Data.Singular }}/{{ .Title | lower }}{{ else }}{{ .Title | lower }}/{{ end }}</span></div>
+  <h1 class="hero list">{{ .Title }}</h1>
+  {{ if .Data.Singular }}
+  <p class="hero-sub">{{ .Pages.Len }} {{ if eq .Pages.Len 1 }}post{{ else }}posts{{ end }}</p>
+  {{ else }}{{ with .Description }}<p class="hero-sub">{{ . }}</p>{{ end }}{{ end }}
+</header>
+{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+<div class="grid">
+{{ range $paginator.Pages }}
+  {{ partial "post-card.html" . }}
+{{ end }}
+</div>
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pager">
+  {{ if $paginator.HasPrev }}<a class="pager-btn" href="{{ $paginator.Prev.URL }}">&larr; newer</a>{{ else }}<span class="pager-btn disabled">&larr; newer</span>{{ end }}
+  <span class="pager-info">page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  {{ if $paginator.HasNext }}<a class="pager-btn" href="{{ $paginator.Next.URL }}">older &rarr;</a>{{ else }}<span class="pager-btn disabled">older &rarr;</span>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

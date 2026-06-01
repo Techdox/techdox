@@ -1,0 +1,8 @@
+public/
+resources/_gen/
+.hugo_build.lock
+
+# Ghost migration scripts (no longer needed)
+ghost_to_hugo.py
+fetch_images.py
+*.ghost.*.json

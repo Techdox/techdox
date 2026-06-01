@@ -1,0 +1,102 @@
+{{ define "main" }}
+<header class="home-hero">
+  <div class="hero-left">
+    <h1 class="hero">Break things,<br>start small, <em>document</em> everything.</h1>
+    <p class="hero-sub">{{ .Site.Params.tagline }} Tutorials, homelab rebuilds, and the long road to CKA.</p>
+  </div>
+  <div class="hero-right">
+    {{ $recent := first 3 (where .Site.RegularPages "Section" "posts") }}
+    <div class="term-hero">
+      <div class="term-titlebar">
+        <span class="term-dot td-red"></span>
+        <span class="term-dot td-yellow"></span>
+        <span class="term-dot td-green"></span>
+        <span class="term-path">~/techdox — zsh</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">whoami</span></div>
+        <div class="term-line"><span class="t-ok">›</span> <span class="t-str">nick wilkinson</span> <span class="t-muted">—</span> <span class="t-tag">self-hoster</span> <span class="t-muted">·</span> <span class="t-tag">homelab</span></div>
+        <div class="term-line">&nbsp;</div>
+        <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">ls posts/</span> <span class="t-flag">--sort=date</span> <span class="t-flag">--head=3</span></div>
+        {{ range $recent }}
+        <div class="term-line"><span class="t-ok">›</span> <span class="t-muted">{{ .File.BaseFileName | truncate 34 "…" }}</span></div>
+        {{ end }}
+        <div class="term-line">&nbsp;</div>
+        <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">./stats</span></div>
+        <div class="term-line"><span class="t-ok">✓</span> <span class="t-num">{{ len (where .Site.RegularPages "Section" "posts") }}</span> <span class="t-muted">posts</span> <span class="t-bracket">·</span> <span class="t-num">{{ len .Site.Taxonomies.tags }}</span> <span class="t-muted">tags</span></div>
+        <div class="term-line"><span class="t-ok">✓</span> <span class="t-muted">serving from the lab</span></div>
+        <div class="term-line"><span class="t-prompt">❯</span><span class="term-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+{{ $allTags := .Site.Taxonomies.tags.ByCount }}
+{{ if $allTags }}
+<div class="tag-strip">
+  {{ range $allTags }}<a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}<span class="tag-count">{{ .Count }}</span></a>{{ end }}
+</div>
+{{ end }}
+
+{{ $posts := where .Site.RegularPages "Section" "posts" }}
+{{ $featured := index (where $posts "Params.featured" true) 0 }}
+{{ if not $featured }}{{ $featured = index $posts 0 }}{{ end }}
+
+{{ $grid := where $posts "Permalink" "ne" $featured.Permalink }}
+{{ $paginator := .Paginate $grid }}
+
+{{ if eq $paginator.PageNumber 1 }}
+{{ with $featured }}
+<div class="sec-head"><h2>Featured</h2><div class="line"></div></div>
+<a class="featured" href="{{ .RelPermalink }}">
+  <div class="art">
+    <div class="feat-term">
+      <div class="term-titlebar">
+        <span class="term-dot td-red"></span>
+        <span class="term-dot td-yellow"></span>
+        <span class="term-dot td-green"></span>
+        <span class="term-path">~/posts/{{ .File.BaseFileName | truncate 36 "…" }}</span>
+      </div>
+      <div class="term-body">
+        <div class="term-line"><span class="t-prompt">❯</span> cat <span class="t-file">{{ .File.BaseFileName | truncate 24 "…" }}.md</span></div>
+        <div class="term-line t-hr">---</div>
+        <div class="term-line"><span class="t-key">title: </span><span class="t-str">"{{ .Title | truncate 30 "…" }}"</span></div>
+        <div class="term-line"><span class="t-key">date:  </span><span class="t-date">{{ .Date.Format "2006-01-02" }}</span></div>
+        {{ with .Params.tags }}
+        <div class="term-line"><span class="t-key">tags:  </span><span class="t-bracket">[</span>{{ range $i, $t := . }}{{ if $i }}<span class="t-muted">, </span>{{ end }}<span class="t-tag">{{ $t }}</span>{{ end }}<span class="t-bracket">]</span></div>
+        {{ end }}
+        <div class="term-line"><span class="t-key">reads: </span><span class="t-num">{{ .ReadingTime }} min</span></div>
+        <div class="term-line t-hr">---</div>
+        <div class="term-line"><span class="t-prompt">❯</span> ./read <span class="t-flag">--featured</span></div>
+        <div class="term-line"><span class="t-prompt">❯</span><span class="term-cursor"></span></div>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    {{ with .Params.tags }}<span class="tag">{{ index . 0 }}</span>{{ end }}
+    <h3>{{ .Title }}</h3>
+    <p>{{ .Summary | plainify | truncate 170 }}</p>
+    <div class="meta">{{ .Site.Params.author }} <span class="dot"></span> {{ .Date.Format "Jan 2, 2006" }} <span class="dot"></span> {{ .ReadingTime }} min read</div>
+  </div>
+</a>
+{{ end }}
+{{ end }}
+
+<div class="sec-head">
+  <h2>{{ if gt $paginator.PageNumber 1 }}Posts &mdash; page {{ $paginator.PageNumber }}{{ else }}Latest Posts{{ end }}</h2>
+  <div class="line"></div>
+</div>
+<div class="grid">
+{{ range $paginator.Pages }}
+  {{ partial "post-card.html" . }}
+{{ end }}
+</div>
+
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="pager">
+  {{ if $paginator.HasPrev }}<a class="pager-btn" href="{{ $paginator.Prev.URL }}">&larr; newer</a>{{ else }}<span class="pager-btn disabled">&larr; newer</span>{{ end }}
+  <span class="pager-info">page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}</span>
+  {{ if $paginator.HasNext }}<a class="pager-btn" href="{{ $paginator.Next.URL }}">older &rarr;</a>{{ else }}<span class="pager-btn disabled">older &rarr;</span>{{ end }}
+</nav>
+{{ end }}
+{{ end }}

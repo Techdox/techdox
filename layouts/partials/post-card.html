@@ -1,0 +1,20 @@
+<a class="card" href="{{ .RelPermalink }}">
+  <div class="card-term">
+    <div class="card-term-bar">
+      <span class="term-dot td-red"></span>
+      <span class="term-dot td-yellow"></span>
+      <span class="term-dot td-green"></span>
+      <span class="card-term-path">{{ .File.BaseFileName | truncate 30 "…" }}</span>
+    </div>
+    <div class="card-term-body">
+      <div class="card-term-line"><span class="t-prompt">❯</span> cat <span class="t-file">{{ .File.BaseFileName | truncate 22 "…" }}.md</span></div>
+      <div class="card-term-line"><span class="t-key">title: </span><span class="t-str">"{{ .Title | truncate 26 "…" }}"</span></div>
+      {{ with .Params.tags }}<div class="card-term-line"><span class="t-key">tags:  </span><span class="t-bracket">[</span>{{ range $i, $t := . }}{{ if $i }}<span class="t-muted">, </span>{{ end }}<span class="t-tag">{{ $t }}</span>{{ end }}<span class="t-bracket">]</span></div>{{ end }}
+      <div class="card-term-line"><span class="t-key">reads: </span><span class="t-num">{{ .ReadingTime }}min</span></div>
+    </div>
+  </div>
+  {{ with .Params.tags }}<span class="tag">{{ index . 0 }}</span>{{ end }}
+  <h4>{{ .Title }}</h4>
+  <p>{{ .Summary | plainify | htmlUnescape | truncate 120 }}</p>
+  <div class="meta">{{ .Date.Format "Jan 2, 2006" }} <span class="dot"></span> {{ .ReadingTime }} min</div>
+</a>
