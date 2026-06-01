@@ -6,6 +6,9 @@ enableEmoji = true
 summaryLength = 28
 paginate = 10
 
+[permalinks]
+  posts = "/:slug/"
+
 [params]
   description = "Self-hosting tutorials, homelab projects, and Cloudflare Zero Trust guides."
   author = "Nick Wilkinson"
