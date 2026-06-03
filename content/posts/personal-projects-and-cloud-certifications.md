@@ -29,4 +29,6 @@ Creating something as simple as a Linux server, running an Apache web server is 
 
 As you can see above just deploying something simple gives you a great starting place to actually get your hands dirty and play around with the overall management of a cloud environment as during these controlled learning environments you don’t really need to think about this stuff unless it’s the specific learning objective.
 
+{{< racknerd >}}
+
 TLDR; Cloud certifications are great and will help you to learn the necessary fundamentals but real world practice is something you can’t avoid and creating your own personal projects is a great way to get some of that experience.

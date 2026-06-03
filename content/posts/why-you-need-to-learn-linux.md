@@ -53,6 +53,8 @@ So, why is Linux such a big deal, especially in IT and self-hosting? The best wa
 
 Remember, the goal isn't a complete switch but familiarization and comfort with Linux. It's about adding a valuable tool to your tech toolkit, not replacing existing ones. So, start experimenting and see how Linux fits into your tech life.
 
+{{< racknerd >}}
+
 ## **In Conclusion: Embracing the Linux Journey**
 
 In conclusion, diving into Linux offers numerous opportunities in IT and self-hosting. Mastering the command line, Bash scripting, and integrating Linux into daily life each enhances your skills and understanding. Linux is more than an OS; it's a gateway to a deeper understanding of technology.

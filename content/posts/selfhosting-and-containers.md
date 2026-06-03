@@ -22,6 +22,8 @@ Step 1: Define Your Goals First things first, figure out what services you want 
 
 Step 2: Choose Your Infrastructure Next, consider the infrastructure you'll use for self-hosting. Do you have an old computer or Raspberry Pi lying around that you can repurpose? Or perhaps you want to rent a virtual private server (VPS) from a hosting provider? Whatever you choose, ensure it meets the requirements of your desired services, such as the hardware architecture.
 
+{{< racknerd >}}
+
 Step 3: Embrace Containers Containers will become your best friends on this journey. They streamline the deployment and management of your applications, making it a breeze to switch between different services without causing conflicts. Popular container platforms like Docker make this process beginner-friendly and efficient. Most self-hosted applications will have a deployment example for Docker, so it's highly recommended to stick to Docker/Containers where you can.
 
 Step 4: Explore Self-Hosting Platforms You don't have to build everything from scratch. There are fantastic self-hosting platforms available that simplify the process and offer pre-configured applications. Look into platforms like "YunoHost," or "CasaOS". You can also use Portainer.io as your tool for deploying and managing your self-hosted services if the Docker CLI is not your thing.

@@ -174,6 +174,8 @@ Umbrel does a good job of keeping Portainer separate from the underlying contain
 
 ![](/content/images/2023/09/image-15.png)
 
+{{< racknerd >}}
+
 ##   
 Conclusion
 

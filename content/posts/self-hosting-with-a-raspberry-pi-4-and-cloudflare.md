@@ -11,6 +11,8 @@ If you know me personally or have watched my [YouTube channel](www.youtube.com/t
 
 That's why I've decided to start documenting my self-hosting journey in a new blog series, complete with videos covering new services I haven't yet explored. And today, I'll be sharing my current setup with you, starting with how I use a Raspberry Pi 4 in conjunction with Cloudflare to self-host my own services.
 
+{{< racknerd >}}
+
 ## Hardware
 
 ![None](/content/images/2023/03/IMG_2009-Small.png)

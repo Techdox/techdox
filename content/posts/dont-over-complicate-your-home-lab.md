@@ -20,6 +20,8 @@ For example, let’s say you have a VPN. It’s set up, and it’s working perfe
 
 Exploring and learning about new services is one of the joys of self-hosting, but this habit can easily disrupt your environment if you’re not careful. That’s why I’ve made it a point to use a sandbox environment—a “playpen” where I can experiment with new tools. I test them, learn how they work, and after about a week, if I find myself genuinely using and needing the service, only then do I integrate it into my main server or home lab. This approach keeps my home lab stable and as streamlined as a home lab can be, while still allowing me the freedom to learn and explore without breaking anything critical.
 
+{{< racknerd >}}
+
 If you don’t already have a sandbox environment, I highly recommend setting one up. I use Proxmox to run a simple VM for testing, but an old laptop, Raspberry Pi, or similar device works just as well.
 
 Keep it simple, keep it clean, but most importantly, keep learning.

@@ -38,6 +38,8 @@ But wait, there's room for more! I have plans to expand the memory to a whopping
 
 The beauty of having a dedicated home server is the newfound flexibility and growth potential it grants me. I envision sticking with this setup for a good while. As I hinted earlier, my Raspberry Pi's and Zimaboard can now be unleashed for more varied content creation. This entails experimenting with different distributions and services, a prospect that excites me to no end.
 
+{{< racknerd >}}
+
 If you're as intrigued as I am and want to delve deeper, I invite you to check out the video below. It provides a visual tour of my new setup and its capabilities.
 
 Feel free to let me know your thoughts, and if you'd like to see more content like this, don't hesitate to reach out. Happy self-hosting, folks!

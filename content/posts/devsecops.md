@@ -23,4 +23,6 @@ Everything we do, we do we should do it with security in mind from day one, be t
 
 Typing this out, it seems so logical that it doesn’t need to be spoken about but again, I was very surprised how many of us out there has this issue, and it’s time for a mental thinking change.
 
+{{< racknerd >}}
+
 TL: DR DevOps rarely involves security teams during the initial phases of a project where that thinking needs a massive mind shift where they are involved throughout the entire process, just as much as anything else. I see this solving a lot of issues with project deployments.

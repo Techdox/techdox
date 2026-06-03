@@ -14,4 +14,6 @@ Working in this space I'm always checking my learnings with real world examples 
   
 I guess the lab is just teaching you how you can go about editing things on the fly but this is why I am glad I am taking my time as it makes me realise how quickly in a production environment someones Kubernetes deployments could drift if people are making edits via the kubectl edit and then via the manifest which has now drifted.   
   
+{{< racknerd >}}
+
 This is a key reason why I am looking to become experianced in the Kubernetes space so I can become aware of these issues, no doubt in a actual well created setup this would be managed via GitOps which is the source of truth but this now gives reasons and answers to why GitOps etc. The source of truth is always important and with how complicated Kubernetes is this is ever more important and I have only looked at the surface.

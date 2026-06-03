@@ -38,6 +38,8 @@ The key takeaway is to know when it's time to move from tinkering to serious sel
 
 By separating your self-hosting environment from your daily desktop, you'll be able to run services without interruption—unless, of course, you decide to tinker with your home lab and break everything. But at least you'll have a dedicated host that runs 24/7, fulfilling its purpose.
 
+{{< racknerd >}}
+
 ### Final Thoughts
 
 Self-hosting can be incredibly rewarding, but it's important to know when to move from casual tinkering to a more serious, dedicated setup. If you're considering making the switch, I encourage you to start small, perhaps with a Raspberry Pi or a secondhand desktop, and explore the world of Linux. The journey can be challenging, but the benefits of running your services reliably and efficiently are well worth the effort.

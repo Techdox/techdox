@@ -241,6 +241,8 @@ The aim is to use them the same way you would use any powerful automation tool: 
 - Prompt injection becomes much more serious when the agent can act on your system
 - Treat agents like junior automation with shell access, not like a trusted senior engineer
 
+{{< racknerd >}}
+
 ## Are They Safe?
 
 The honest answer is: it depends.

@@ -50,4 +50,6 @@ I did have to reset my MFA on my Bookstack account as it was broken, but this wa
 
 ](https://bookstack.elzim.xyz/uploads/images/gallery/2023-05/EmDimage.png)
 
+{{< racknerd >}}
+
 This was a great way to gain more experience with backing up and restoring containers. I would love to hear your thoughts on what my issue was and how you would have gone about fixing it.

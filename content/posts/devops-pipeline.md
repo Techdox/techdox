@@ -27,6 +27,8 @@ Once the PR is approved, the full pipeline can be deployed, which looks like thi
 
 ![None](/content/images/2023/03/image-17.png)
 
+{{< racknerd >}}
+
 ## Final notes
 
 This is a pretty high level view on how I am deploying Terraform + Infracost with Azure DevOps and I aim to do a walkthrough on the actual pipeline files, but I’m looking to make it a bit more simple first before I do that.

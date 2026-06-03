@@ -48,6 +48,8 @@ The main advantage here is that I can test how my application scales right here.
 
 I can focus on creating my application in Swarm, which will allow me to scale out my application and see what needs work. Since my website setup is not stateless and I do require a MySQL database, I can start working on what needs to be implemented to support scaling – Do I need to look at another solution instead, etc.
 
+{{< racknerd >}}
+
 The key point I'm trying to explain is that rather than jumping straight to Kubernetes from Docker, use Swarm as a tool in your kit to ensure the applications you want to scale out can actually do it and get familiar with the concepts of using an orchestrator.
 
 Sticking with Swarm allows you to focus on the main point: "Can my application scale?"

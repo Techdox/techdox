@@ -58,6 +58,8 @@ Since CasaOS is already installed, the setup process involves plugging the ZimaB
 
 I have made a video on the initial setup and an overview of the ZimaBoard here.
 
+{{< racknerd >}}
+
 ## Final Thoughts
 
 I'm already pretty impressed with the Zimaboard and plan to put it through its paces over the coming weeks and months from testing different OS's and software to see how it goes as a everyday server for self-hosting.

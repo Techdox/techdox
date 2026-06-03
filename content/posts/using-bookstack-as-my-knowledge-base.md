@@ -15,6 +15,8 @@ BookStack is a fantastic service that provides users with an easy way to create 
   
 Whether you're reading for pleasure or working on a research project, BookStack is the perfect tool for anyone looking to keep their reading material organized and accessible. So, if you're tired of losing track of your books and want a better way to keep them all in one place, give BookStack a try today! - ChatGPT
 
+{{< racknerd >}}
+
 ## How I Plan To Use BookStack
 
 I have decided that for every video I do on my YouTube channel, I will create a BookStack page to accommodate it. This means I can have step-by-step instructions with images and more detailed explanations on the commands for my community. I have already started a book that you can read here - [https://bookstack.elzim.xyz/books/self-hosting-docker-commands](https://bookstack.elzim.xyz/books/self-hosting-docker-commands).

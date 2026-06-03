@@ -48,6 +48,8 @@ The key lesson here is that no matter how much you think you know, the learning 
 
 Therefore, it is crucial to embrace continuous learning and solidify your understanding of the fundamentals before venturing off on your own. This approach ensures that you build a strong foundation and avoid blind reliance on superficial knowledge.
 
+{{< racknerd >}}
+
 ## Conclusion
 
 Learning Docker has been an immensely rewarding experience for me. It has enhanced my understanding of application workings and empowered me to deploy them securely and efficiently. To those interested in delving deeper into Docker, I encourage you to explore the wealth of online resources available.

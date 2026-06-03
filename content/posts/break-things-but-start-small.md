@@ -20,4 +20,6 @@ Next, consider the best way to store and manage data in Nextcloud. Do you have e
 
 In this scenario, rather than rushing ahead and committing, step back, break things down, and learn at every step. Get comfortable with deploying and breaking it, learn new methods of deployment, and troubleshoot as needed without committing to it. This way, you feel no pressure about breaking it.
 
+{{< racknerd >}}
+
 Don't commit immediately. Have a realistic goal, break it up, break it, learn, document, and repeat.

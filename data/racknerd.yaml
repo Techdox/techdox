@@ -1,0 +1,52 @@
+aff: "https://my.racknerd.com/aff.php?aff=5792"
+categories:
+  - name: "KVM VPS"
+    plans:
+      - name: "1 GB KVM VPS"
+        price: "$21.99"
+        pid: 952
+        specs: ["1 vCPU Core", "1 GB RAM", "20 GB SSD", "3 TB Bandwidth"]
+      - name: "2 GB KVM VPS"
+        price: "$35.99"
+        pid: 953
+        specs: ["2 vCPU Cores", "2 GB RAM", "35 GB SSD", "5 TB Bandwidth"]
+      - name: "4 GB KVM VPS"
+        price: "$59.99"
+        pid: 954
+        specs: ["3 vCPU Cores", "4 GB RAM", "60 GB SSD", "7 TB Bandwidth"]
+      - name: "6 GB KVM VPS"
+        price: "$89.99"
+        pid: 955
+        specs: ["6 vCPU Cores", "6 GB RAM", "100 GB SSD", "12 TB Bandwidth"]
+      - name: "8 GB KVM VPS"
+        price: "$119.99"
+        pid: 956
+        specs: ["7 vCPU Cores", "8 GB RAM", "150 GB SSD", "20 TB Bandwidth"]
+  - name: "Shared Hosting"
+    plans:
+      - name: "30 GB Shared"
+        price: "$10.49"
+        pid: 933
+        specs: ["30 GB NVMe Storage", "3 TB Transfer", "Host 2 Domains", "cPanel"]
+      - name: "85 GB Shared"
+        price: "$24.99"
+        pid: 934
+        specs: ["85 GB NVMe Storage", "10 TB Transfer", "Host 10 Domains", "cPanel"]
+      - name: "200 GB Shared"
+        price: "$59.00"
+        pid: 935
+        specs: ["200 GB NVMe Storage", "30 TB Transfer", "Unlimited Domains", "cPanel"]
+  - name: "Reseller Hosting"
+    plans:
+      - name: "75 GB Reseller"
+        price: "$34.88"
+        pid: 936
+        specs: ["75 GB NVMe Storage", "2.5 TB Transfer", "3 cPanel Accounts", "cPanel/WHM"]
+      - name: "110 GB Reseller"
+        price: "$64.88"
+        pid: 937
+        specs: ["110 GB NVMe Storage", "5 TB Transfer", "7 cPanel Accounts", "cPanel/WHM"]
+      - name: "180 GB Reseller"
+        price: "$94.88"
+        pid: 938
+        specs: ["180 GB NVMe Storage", "9 TB Transfer", "12 cPanel Accounts", "cPanel/WHM"]

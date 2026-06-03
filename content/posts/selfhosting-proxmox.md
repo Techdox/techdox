@@ -23,6 +23,8 @@ The pre-planning for this migration led me to create my Docker Volume backup and
 
 For those interested in the script, you can find it here: [Docker Backup Script](https://github.com/Techdox/docker_backup).
 
+{{< racknerd >}}
+
 Self-hosting is undoubtedly a hands-on endeavour, and I can understand why some people prefer hosted solutions. However, as someone in the tech field who values continuous learning, self-hosting provides an almost endless loop of opportunities for growth. Just when you think everything is running smoothly, something might break, and then it becomes a new learning experience as you figure out how to fix it. It's a cycle of challenges and rewards.
 
 If you're curious about my experience with installing Proxmox for the first time, you can check out my journey here.

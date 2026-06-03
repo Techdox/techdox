@@ -1,0 +1,51 @@
+{{ define "main" }}
+{{ $rn := site.Data.racknerd }}
+<div class="deals-page">
+
+  <div class="list-hero">
+    <div class="kicker"><span class="dim">~/techdox</span> $ ls deals/</div>
+    <h1 class="hero list">Hosting <em>Deals</em></h1>
+    <p class="hero-sub">Hand-picked plans from RackNerd. Clicking these links supports Techdox at no extra cost to you.</p>
+  </div>
+
+  <div class="term-hero deals-term">
+    <div class="term-titlebar">
+      <span class="term-dot td-red"></span>
+      <span class="term-dot td-yellow"></span>
+      <span class="term-dot td-green"></span>
+      <span class="term-path">~/techdox/deals.sh</span>
+    </div>
+    <div class="term-body">
+      <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">./deals.sh</span> <span class="t-flag">--provider</span> <span class="t-str">racknerd</span></div>
+      <div class="term-line"><span class="t-ok">✓</span> <span class="t-num">{{ len $rn.categories }}</span> <span class="t-muted">categories — affiliate links, costs you nothing extra</span></div>
+      <div class="term-line"><span class="t-prompt">❯</span><span class="term-cursor"></span></div>
+    </div>
+  </div>
+
+  {{ range $rn.categories }}
+  <div class="sec-head">
+    <h2>{{ .name }}</h2>
+    <div class="line"></div>
+  </div>
+  <div class="deal-grid">
+    {{ range .plans }}
+    <a class="deal-card" href="{{ $rn.aff }}&pid={{ .pid }}" target="_blank" rel="noopener sponsored">
+      <div class="deal-header">
+        <span class="deal-name">{{ .name }}</span>
+      </div>
+      <ul class="deal-specs">
+        {{ range .specs }}<li>{{ . }}</li>{{ end }}
+      </ul>
+      <div class="deal-footer">
+        <span class="deal-price">{{ .price }}<span class="deal-per">/yr</span></span>
+        <span class="deal-cta">Order →</span>
+      </div>
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  <p class="deals-disclosure">These are affiliate links. If you purchase through them, I earn a small commission at no extra cost to you.</p>
+
+</div>
+{{ end }}

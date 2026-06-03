@@ -61,6 +61,8 @@ A few takeaways that are really sticking with me:
 - etcd is not optional, abstract, or ignorable. If you don’t understand it, Kubernetes will humble you
 - Homelabs are the best place to break things, as long as you actually stop and learn from the breakage
 
+{{< racknerd >}}
+
 ### **What’s Next**
 
 Next steps for me are:

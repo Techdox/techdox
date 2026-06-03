@@ -36,4 +36,6 @@ Once again, the process was simple and straightforward. After formatting the dri
 
 *Disk overview*
 
+{{< racknerd >}}
+
 Now that the drive was connected and the storage capacity increased, I am ready for the next stage of turning the ZimaBoard into an awesome personal cloud machine. This involves adding the Cloudflare tunnel and installing some essential software. I am excited to get started on this next phase, and I know it will take my personal cloud experience to the next level.

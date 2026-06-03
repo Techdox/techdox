@@ -66,6 +66,8 @@ docker run --rm --volumes-from nextcloud-app-1 -v $(pwd):/backup ubuntu bash -c 
 
 This command extracts and restores the configuration backup, ensuring the proper functioning of your Nextcloud instance. Remember to account for any specific considerations or additional steps required for your Nextcloud configuration restoration.
 
+{{< racknerd >}}
+
 ## Conclusion
 
 Regularly backing up Docker volumes is vital for maintaining the safety and integrity of your Nextcloud data. By following the step-by-step instructions provided in this guide, you can confidently create backups of Nextcloud's Docker volumes and restore them when needed. Safeguard your valuable data and enjoy the peace of mind that comes with having a reliable backup solution.

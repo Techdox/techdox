@@ -47,4 +47,6 @@ The best thing was, I didn’t need to search around on Google if I got stuck, I
 
 ![None](/content/images/2023/03/image-14.png)
 
+{{< racknerd >}}
+
 This is really awesome and has been a great way for me to learn and jump right into the deep end, instead of reading documentation on documentation before doing anything.

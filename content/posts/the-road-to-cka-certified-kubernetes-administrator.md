@@ -22,6 +22,8 @@ I’m also going to shift my entire homelab from Docker to Kubernetes and docume
 
 On top of that, I’ll be writing weekly blog posts to cover what I’ve learned, what I struggled with, and what my goals are for the next week right up until my CKA exam. I don’t have a deadline yet, but having the goal itself is enough to keep me moving.
 
+{{< racknerd >}}
+
 Honestly, I’ve been in a bit of a tech mental block lately. Burnout, uncertainty, and just not feeling that spark. But diving into Kubernetes and aiming to become an “expert” actually excites me. The last time I felt this kind of buzz was when I first got into cloud, and that ended up taking me to some awesome places and connected me with a lot of great people.
 
 So let’s see where this goes. And being part of Portainer honestly feels like the best place to grow these skills. Stay tuned for the journey!

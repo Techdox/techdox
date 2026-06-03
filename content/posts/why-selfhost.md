@@ -14,6 +14,8 @@ Regarding data privacy, there’s always a valid reason to reclaim your personal
 
 My approach to self-hosting and open-source software is balanced by weighing convenience against hassle. I constantly advocate for the merits of open-source, Linux, and self-hosting, yet I find myself integrated into the Apple ecosystem, using a Mac for its reliability and hassle-free experience. This does not undermine the value of self-hosting; rather, it highlights the importance of choosing battles wisely. For instance, while I could technically host my own email server, the potential stress and reliability issues dissuade me. On the other hand, hosting my website or my documentation site (docs.techdox.nz) is straightforward, cost-effective, and easily manageable via Docker on my home server.
 
+{{< racknerd >}}
+
 The underlying question isn't just whether you can self-host something, but whether you should. It's about finding the right balance between self-reliance, learning, and the practicality of maintaining such systems without unnecessary stress.  
   
 [](https://www.buymeacoffee.com/techdox)

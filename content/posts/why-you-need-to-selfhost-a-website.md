@@ -16,6 +16,8 @@ Here's my approach to learning: I dive into a topic, and if I'm working solo, I 
 
 So, you now understand my reasoning for a blog, but why self-host it? Why not just use a provided service instead?
 
+{{< racknerd >}}
+
 This is really up to you, but when you self-host a website, you gain some real-world experience of maintaining a web application. Now, you have users visiting your website, data to protect, and a need to learn how to maintain these applications, back them up, and restore if needed. Self-hosting provides valuable knowledge and room for learning compared to just paying someone for the service.  
   
 I also made a video about this, so check it out below.

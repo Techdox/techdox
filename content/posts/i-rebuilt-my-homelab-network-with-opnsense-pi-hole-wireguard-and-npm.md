@@ -160,6 +160,8 @@ But after spending a few hours with it, the logic starts to make sense.
 
 Firewall rules, interfaces, gateways, DNS, DHCP, VPNs, NAT, it all starts clicking together. And once it does, going back to a consumer router feels very limiting.
 
+{{< racknerd >}}
+
 ## Is It Worth It?
 
 If you’re asking whether you should rebuild your home network like this, the honest answer is: it depends.

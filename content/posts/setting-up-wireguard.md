@@ -18,6 +18,8 @@ One of the main advantages of WireGuard is its lightweight codebase, which makes
 
 Now that we have an understanding of WireGuard, let's delve into setting it up. If you prefer a visual guide, I've also prepared a video demonstrating the process.
 
+{{< racknerd >}}
+
 **Overview of the Tools**
 
 Before we begin, let's take a quick look at the tools we'll be using:

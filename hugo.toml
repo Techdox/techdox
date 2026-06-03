@@ -21,6 +21,10 @@ summaryLength = 28
 # Top nav — mirrors the current Ghost site
 [menu]
   [[menu.main]]
+    name = "Deals"
+    url = "/deals/"
+    weight = 5
+  [[menu.main]]
     name = "YouTube"
     url = "https://youtube.com/techdoxnz"
     weight = 10

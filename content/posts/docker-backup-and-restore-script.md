@@ -224,6 +224,8 @@ The script will perform the following steps:
 3. Restore data from the backup file.
 4. Start the Docker container again.
 
+{{< racknerd >}}
+
 ### Conclusion
 
 You now have a comprehensive guide on how to use these Docker backup and restore scripts. With these scripts, you can easily safeguard your Docker containers and their data on a remote server. Make sure to schedule regular backups to ensure the safety of your valuable data.
