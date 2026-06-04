@@ -4,7 +4,7 @@ date = 2026-06-05T00:00:00+12:00
 tags = ["kubernetes", "selfhosting", "docker"]
 featured = true
 draft = false
-description = "Not every homelab needs a 3-node Kubernetes cluster. KubeSolo gives you a single-node way to learn Kubernetes, run real workloads, and migrate from Docker without building more infrastructure than you need."
+description = "Not every homelab needs a 3-node Kubernetes cluster. KubeSolo gives you a single-node way to learn Kubernetes, run real workloads, and bring Docker Compose services across without building more infrastructure than you need."
 +++
 
 Kubernetes is one of those things that can feel simple in a course and messy the moment you try to run it at home.
@@ -19,9 +19,11 @@ That is where KubeSolo has been useful for me. It gives me a way to run Kubernet
 
 [KubeSolo](https://www.kubesolo.io) is a single-node Kubernetes implementation. The important bit is that it still exposes the Kubernetes API, so you can use normal Kubernetes tools like `kubectl`, manifests, and Helm charts.
 
+KubeSolo now ships with [d2k](https://github.com/portainer/d2k) embedded. That means it can expose the Kubernetes API and a synthetic Docker API endpoint at the same time. You can talk to it like Kubernetes, but you can also point Docker-style tooling at it and have those calls translated into Kubernetes resources.
+
 The difference is that it removes the parts that only really matter when you are running multiple nodes. In a normal Kubernetes cluster, you have components designed around clustering, leader election, shared state, and node-to-node networking. Those pieces matter a lot when you are running a highly available cluster, but they are not always useful when everything is on one box under your desk.
 
-KubeSolo keeps the Kubernetes workflow, but simplifies the underlying setup for a single host.
+KubeSolo keeps the Kubernetes workflow, but simplifies the underlying setup for a single host. With d2k included, it also gives existing Docker users a more familiar path in.
 
 It is also worth mentioning that KubeSolo is maintained by [Portainer](https://portainer.io), where I work. So yes, I am close to it. But the reason I am writing about it is because it fits a real homelab use case: learning and running Kubernetes without needing to build more infrastructure than the workload needs.
 
@@ -36,6 +38,8 @@ The reason to try Kubernetes is usually learning, consistency, or tooling.
 Maybe you want to understand how Kubernetes works before touching it at work. Maybe you want to use Helm charts because a project maintains those better than its Compose examples. Maybe you want to learn deployments, services, ingress, config maps, secrets, and persistent volumes in an environment you actually care about.
 
 That is where a single-node Kubernetes setup makes sense. You are not doing it because Docker is bad. You are doing it because you want to learn Kubernetes concepts on real services without making your homelab harder than it needs to be.
+
+The d2k piece makes that a bit less scary. Instead of immediately rewriting everything into Kubernetes YAML, you can bring existing Docker and Compose files across more gradually. It is not magic, and you still need to understand what is happening underneath, but it avoids some of the pain you hit with older conversion tools like Kompose, where you generate a pile of manifests and then have to clean up whatever does not translate neatly.
 
 {{< racknerd >}}
 
@@ -56,9 +60,13 @@ KubeSolo is similar from an infrastructure point of view, but the way you descri
 - A published port becomes a `Service`
 - A bind mount or named volume becomes a `PersistentVolumeClaim`
 - Environment variables can move into `ConfigMap` and `Secret` objects
-- A Compose stack becomes a set of manifests or a Helm chart
+- A Compose stack can become Kubernetes resources via manifests, Helm, or d2k
 
 That mapping is what makes it useful. You still have the reality of one physical machine, but you start learning Kubernetes primitives instead of only Docker primitives.
+
+With d2k, you can also come at that mapping from the Docker side. Docker volumes become Kubernetes `PersistentVolumeClaims`. Published ports become Kubernetes services. Docker logs and exec calls are backed by the equivalent Kubernetes pod operations. In Swarm mode, stack and service concepts are translated into Kubernetes deployments, services, secrets, config maps, and related resources.
+
+That matters in a homelab because a lot of us already have working Compose files. They might not be perfect, but they are known-good starting points. Being able to bring those across without hand-converting every service on day one lowers the barrier a lot.
 
 For example, if you deploy Nginx with a `LoadBalancer` service, KubeSolo can expose that service on the host IP. In practical homelab terms, that means you can point your browser, reverse proxy, or DNS records at the machine and reach the workload without needing a cloud load balancer.
 
@@ -66,11 +74,13 @@ Storage is similar. KubeSolo includes local persistent volume support, so a work
 
 ## What You Get
 
-For a small homelab node, the useful pieces are:
+For a small homelab node, the useful pieces are pretty practical:
 
 - A normal Kubernetes API to work with
+- A synthetic Docker API through embedded d2k
 - `kubectl` support
 - Helm chart support
+- Docker commands and Compose-file based workloads translated into Kubernetes resources
 - `LoadBalancer` services using the host IP
 - Local persistent volume support
 - CoreDNS and container networking included
@@ -80,9 +90,29 @@ That means it can run on the kind of hardware people actually use at home: mini 
 
 The main thing I like is that it lets me practise Kubernetes against services I already understand. I can take something like Nginx, Portainer, Uptime Kuma, or a small internal app and learn how it behaves as a Kubernetes workload.
 
+## Why Not Just Use k3s?
+
+This is probably the most obvious question.
+
+You absolutely can run a single-node k3s cluster in a homelab. I have used k3s, and it is a solid lightweight Kubernetes distribution. For many people, it will be the right choice.
+
+The difference is design intent.
+
+k3s is lightweight Kubernetes that can run as a single-node cluster, but it is still a Kubernetes distribution designed around clustering. Some of that machinery exists because k3s can grow into a multi-node setup.
+
+KubeSolo starts from the other direction. It assumes one node is the whole deployment and removes the clustering parts rather than leaving them idle. No etcd quorum logic. No multi-node overlay networking requirement. No control plane components waiting for peer nodes that will never exist in your lab.
+
+That does not make k3s bad. It just means they are solving slightly different problems.
+
+If you want a lightweight cluster that can grow into multiple nodes, k3s makes a lot of sense. If you know the workload will always live on one box, and you want the Kubernetes API without carrying clustering baggage, KubeSolo is more targeted at that use case.
+
+For me, the embedded d2k endpoint makes the comparison more interesting. A single-node k3s install gives you Kubernetes. KubeSolo gives you Kubernetes plus a Docker-compatible way to bring existing Compose-file based workloads across.
+
 ## Installing KubeSolo
 
 One thing to note before you start: KubeSolo does not want Docker, Podman, or containerd already running on the same machine. Use a fresh VM or a dedicated host if you are testing it.
+
+That can sound odd now that KubeSolo includes a Docker-style API endpoint, but the distinction matters. You are not running the Docker daemon beside Kubernetes. KubeSolo is exposing a Docker-compatible endpoint and translating those calls into Kubernetes operations.
 
 The install is straightforward:
 
@@ -165,7 +195,7 @@ That small example teaches a few important Kubernetes ideas:
 
 That is the kind of learning I find valuable in a homelab. You are not just following a tutorial. You are seeing how Kubernetes objects fit together on a machine you control.
 
-## Migrating From Docker Without Making a Mess
+## Migrating Without Making a Mess
 
 I would not move everything at once.
 
@@ -182,15 +212,25 @@ For each Docker service, ask:
 
 Those questions map nicely into Kubernetes objects. The image and replicas go into a `Deployment`. The ports go into a `Service`. Configuration goes into a `ConfigMap` or `Secret`. Persistent data goes into a `PersistentVolumeClaim`.
 
+With embedded d2k, you have two sensible ways to approach the migration.
+
+The first is the traditional Kubernetes path: write manifests, install a Helm chart, or use GitOps tooling once you get comfortable.
+
+The second is the Docker-shaped path: use the synthetic Docker API to bring Docker commands and Compose-file based workloads across while KubeSolo runs them as Kubernetes underneath. That is the interesting bit for homelabs, because you can move a known Compose workload across and then learn what it became in Kubernetes terms.
+
 This is also where Kubernetes can force better habits. Instead of one Compose file quietly holding everything, you start thinking more clearly about what is configuration, what is secret, what is storage, and what is networking.
 
 That does not mean Kubernetes is simpler than Docker. It usually is not. But it can make the structure of an application more explicit.
 
+The main caveat is that translation is still translation. Some Docker and Compose features map cleanly to Kubernetes. Others only partially map, or do not map at all. For example, host paths, networking assumptions, health checks, build directives, and service startup ordering are all areas where you still need to understand the difference between Docker and Kubernetes.
+
+That is why I would treat d2k as a migration helper, not as an excuse to avoid learning Kubernetes entirely.
+
 ## Portainer Integration
 
-Since KubeSolo implements the Kubernetes API, Portainer can connect to it as a Kubernetes environment. That is useful if you already manage Docker or Kubernetes hosts through Portainer and want this node visible in the same place.
+Since KubeSolo implements the Kubernetes API, Portainer can connect to it as a Kubernetes environment. With d2k in the mix, Docker-style management also becomes part of the story because the endpoint can translate those Docker API calls into Kubernetes resources.
 
-You can also install the Portainer Edge Agent during setup using an environment variable. For my setup, that makes sense because I already use Portainer elsewhere in the lab. But it is not required to understand or use KubeSolo. You can do everything with `kubectl` if that is how you prefer to learn.
+That is useful if you already manage Docker or Kubernetes hosts through Portainer and want this node visible in the same place. For my setup, that makes sense because I already use Portainer elsewhere in the lab. But it is not required to understand or use KubeSolo. You can do everything with `kubectl` if that is how you prefer to learn.
 
 ## What It Does Not Solve
 
@@ -210,6 +250,7 @@ I would use KubeSolo if:
 
 - You want to learn Kubernetes on real homelab workloads
 - You only have one machine available
+- You want to bring existing Compose files across gradually
 - You want to use Helm charts or Kubernetes manifests
 - You understand that single-node means no high availability
 - You are happy managing backups yourself
@@ -218,7 +259,7 @@ I would probably stick with Docker Compose if:
 
 - Your current setup works and you do not care about learning Kubernetes yet
 - You want the least moving parts possible
-- You do not need Kubernetes-native tooling
+- You do not need the Kubernetes API, Helm, or Kubernetes-native tooling
 - You are running services for other people and uptime matters more than experimenting
 
 That is the balance I keep coming back to in my own homelab. Kubernetes is worth learning, but it is also very easy to overcomplicate things.
