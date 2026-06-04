@@ -1,5 +1,6 @@
 baseURL = "https://techdox.nz/"
 languageCode = "en-nz"
+timeZone = "Pacific/Auckland"
 title = "Techdox"
 enableRobotsTXT = true
 enableEmoji = true
