@@ -1,7 +1,7 @@
 +++
 title = "Selfhosting and Containers"
 date = 2023-07-23T08:56:22+00:00
-tags = ["banter", "selfhosting"]
+tags = ["selfhosting", "docker"]
 featured = false
 draft = false
 description = "\"Unlock digital autonomy with self-hosting and containers 🚀 Embrace freedom, take control, and explore endless possibilities!\""

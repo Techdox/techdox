@@ -1,7 +1,7 @@
 +++
 title = "I Rebuilt My Homelab Network with OPNsense, Pi-hole, WireGuard, and NPM"
 date = 2026-05-28T20:27:32+00:00
-tags = ["banter", "selfhosting", "zimaboard"]
+tags = ["networking", "selfhosting", "zimaboard"]
 featured = true
 draft = false
 description = "I rebuilt my homelab network around OPNsense, Pi-hole, WireGuard, Nginx Proxy Manager, Portainer, Docker, and Kubernetes. Here’s what I’m running, why I chose each piece, and how it all fits together."

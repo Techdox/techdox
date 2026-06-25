@@ -1,7 +1,7 @@
 +++
 title = "Just Break Stuff"
 date = 2023-07-05T05:30:14+00:00
-tags = ["banter"]
+tags = ["selfhosting"]
 featured = true
 draft = false
 description = "Break free from analysis paralysis. Dive in, get hands-on, and embrace failure. Accelerate learning by failing faster and gaining practical experience."

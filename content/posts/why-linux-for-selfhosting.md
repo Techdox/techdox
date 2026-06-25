@@ -1,10 +1,11 @@
 +++
 title = "Why Linux For Selfhosting?"
 date = 2024-08-11T08:41:53+00:00
-tags = ["banter", "linux", "selfhosting"]
+tags = ["linux", "selfhosting"]
 featured = true
+start_here = true
 draft = false
-description = "Transitioning from self-hosting on your daily desktop to dedicated Linux hardware is crucial for stability and efficiency. Your main PC isn't built for 24/7 uptime, but a Linux server is. "
+description = "Why your self-hosted services shouldn't run on your daily machine, and how to set up a dedicated Linux server."
 feature_image = "https://images.unsplash.com/photo-1721332155637-8b339526cf4c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wxfDF8YWxsfDZ8fHx8fHwyfHwxNzIzMzY1MzEwfA&ixlib=rb-4.0.3&q=80&w=2000"
 +++
 

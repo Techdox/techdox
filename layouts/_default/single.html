@@ -66,4 +66,29 @@
   </nav>
 
 </article>
+
+{{ partial "subscribe.html" . }}
+
+{{ $currentPage := . }}
+{{ $currentTags := .Params.tags }}
+{{ if $currentTags }}
+{{ $related := slice }}
+{{ range where .Site.RegularPages "Section" "posts" }}
+  {{ if ne .Permalink $currentPage.Permalink }}
+    {{ if intersect .Params.tags $currentTags }}
+      {{ $related = $related | append . }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+{{ $related = first 3 $related }}
+{{ if $related }}
+<section class="related-posts">
+  <div class="sec-head"><h2>More on {{ with (index $currentTags 0) }}{{ . }}{{ else }}this topic{{ end }}</h2><div class="line"></div></div>
+  <div class="grid">
+    {{ range $related }}{{ partial "post-card.html" . }}{{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}
+
 {{ end }}

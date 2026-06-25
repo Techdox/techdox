@@ -46,6 +46,25 @@
 {{ $paginator := .Paginate $grid }}
 
 {{ if eq $paginator.PageNumber 1 }}
+
+{{ $startHere := sort (where .Site.RegularPages "Params.start_here" true) "Date" "asc" }}
+{{ if $startHere }}
+<div class="sec-head"><h2>Start here</h2><div class="line"></div></div>
+<p class="sh-intro">New to self-hosting? These posts take you from "why bother" to running your own Kubernetes cluster — in the right order.</p>
+<div class="start-here">
+  {{ range $i, $p := $startHere }}
+  <a class="sh-item" href="{{ $p.RelPermalink }}">
+    <span class="sh-num">{{ printf "%02d" (add $i 1) }}</span>
+    <div class="sh-body">
+      <span class="sh-title">{{ $p.Title }}</span>
+      <span class="sh-desc">{{ with $p.Params.description }}{{ . | truncate 90 }}{{ else }}{{ $p.Summary | plainify | truncate 90 }}{{ end }}</span>
+    </div>
+    <span class="sh-arrow">→</span>
+  </a>
+  {{ end }}
+</div>
+{{ end }}
+
 {{ with $featured }}
 <div class="sec-head"><h2>Featured</h2><div class="line"></div></div>
 <a class="featured" href="{{ .RelPermalink }}">
@@ -80,6 +99,7 @@
   </div>
 </a>
 {{ end }}
+
 {{ end }}
 
 <div class="sec-head">
@@ -91,6 +111,16 @@
   {{ partial "post-card.html" . }}
 {{ end }}
 </div>
+
+{{ if eq $paginator.PageNumber 1 }}
+<a class="cta-banner" href="https://youtube.com/techdoxnz" target="_blank" rel="noopener">
+  <div>
+    <span class="cta-label">Watch the builds on YouTube</span>
+    <span class="cta-sub">Tutorials, homelab builds, and the long road to CKA</span>
+  </div>
+  <span class="cta-arrow">→</span>
+</a>
+{{ end }}
 
 {{ if gt $paginator.TotalPages 1 }}
 <nav class="pager">

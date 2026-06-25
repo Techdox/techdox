@@ -1,7 +1,7 @@
 +++
 title = "Sandboxing Your Curiosity: Exploring New Services Without Breaking Your Lab"
 date = 2024-12-02T08:20:39+00:00
-tags = ["banter"]
+tags = ["homelab", "selfhosting"]
 featured = true
 draft = false
 description = "Self-hosting is all about learning and experimenting, but constantly chasing shiny new tools can disrupt your stable setup. Create a sandbox environment to test new services without breaking your home lab—balance curiosity with stability!"

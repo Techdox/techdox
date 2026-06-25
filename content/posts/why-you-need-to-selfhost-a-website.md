@@ -1,7 +1,7 @@
 +++
 title = "Why You Need to Selfhost a Website"
 date = 2023-11-06T20:00:00+00:00
-tags = ["selfhosting", "banter"]
+tags = ["selfhosting"]
 featured = false
 draft = false
 description = "Self-hosting your blog not only shares your tech journey but also offers hands-on experience, ensuring a deeper grasp of knowledge."

@@ -1,7 +1,7 @@
 +++
 title = "The Importance of Not Dismissing Docker Swarm: Ensuring Your Application Can Truly Scale"
 date = 2023-08-07T00:30:00+00:00
-tags = ["banter", "docker"]
+tags = ["docker"]
 featured = false
 draft = false
 description = "Explore Docker Swarm as a practical tool for testing application scalability before diving into Kubernetes complexities."

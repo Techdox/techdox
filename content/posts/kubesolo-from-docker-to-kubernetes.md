@@ -3,6 +3,7 @@ title = "KubeSolo: Moving From Docker to Kubernetes in a Homelab"
 date = 2026-06-05T00:00:00+12:00
 tags = ["kubernetes", "selfhosting", "docker"]
 featured = true
+start_here = true
 draft = false
 description = "Not every homelab needs a 3-node Kubernetes cluster. KubeSolo gives you a single-node way to learn Kubernetes, run real workloads, and bring Docker Compose services across without building more infrastructure than you need."
 +++
@@ -135,6 +136,18 @@ kubectl get nodes
 You should see a single node in a `Ready` state.
 
 At that point, you are not learning a "fake" interface. You are talking to Kubernetes, just on a single-node setup.
+
+## What Actually Tripped Me Up
+
+The install is clean, but a few things will bite you if you go in expecting Docker-level familiarity.
+
+**Existing container runtimes conflict.** I made the mistake of trying KubeSolo on a host that already had Docker running. It did not install cleanly. The install script is not shy about this — it tells you — but I skimmed it. Use a fresh VM. It saves a lot of uninstalling.
+
+**Bind mount paths must exist before you deploy.** If a Compose file has `./config:/etc/app/config`, KubeSolo will not create `./config` for you. The first migration I ran failed silently. The pod stayed in a restart loop and the logs were not immediately obvious about why. Create the host directories, put any expected config files in them, then deploy.
+
+**PVC stuck in `Pending` is not always a storage problem.** The first time I saw a pod sitting in `Pending` for longer than expected, I went looking at the node and the image pull. It was neither. The `PersistentVolumeClaim` was requesting a storage class that did not exist. `kubectl describe pvc <name>` makes this obvious — it tells you exactly what it is waiting for. That command should be your first move when a pod will not start.
+
+**LoadBalancer IP shows `<pending>` for a bit.** This looks broken. It is not. I spent ten minutes checking networking before I realised the IP just had not been assigned yet. Give it thirty seconds and run `kubectl get svc` again. Not a real problem, just a calm down moment.
 
 ## Deploying Your First Workload
 

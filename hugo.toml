@@ -15,6 +15,7 @@ summaryLength = 28
   description = "Self-hosting tutorials, homelab projects, and Cloudflare Zero Trust guides."
   author = "Nick Wilkinson"
   tagline = "Your fun and informative source for IT goodness."
+  buttondown = "techdox"
 
 [taxonomies]
   tag = "tags"

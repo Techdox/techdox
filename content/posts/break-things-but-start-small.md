@@ -1,7 +1,7 @@
 +++
 title = "Break Things But Start Small"
 date = 2024-06-03T10:22:22+00:00
-tags = ["banter", "selfhosting"]
+tags = ["selfhosting"]
 featured = true
 draft = false
 description = "Start small, break things, and learn as you go. In self-hosting, setting achievable goals and documenting your process is crucial. Don't rush; take it step by step"

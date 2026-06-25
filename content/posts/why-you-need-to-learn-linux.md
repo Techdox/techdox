@@ -1,7 +1,7 @@
 +++
 title = "Why You Need To Learn Linux"
 date = 2023-12-24T08:10:16+00:00
-tags = ["banter", "linux"]
+tags = ["linux"]
 featured = true
 draft = false
 description = "Discover why mastering Linux is essential in IT and self-hosting. Learn command line skills, Bash scripting, and integrate Linux in daily life."

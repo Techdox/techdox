@@ -73,6 +73,20 @@ It can make a plan that fits the actual system instead of some imaginary best-pr
 
 That's a good thing, as long as you keep the permissions sane.
 
+## What was actually hard
+
+The honest answer is that the tempting move was to just give Hermes broad access and move on. SSH to everything, full Docker socket, admin kubeconfig. I could have done that in five minutes and called it good.
+
+That's the wrong call, and I knew it. But knowing it doesn't make the right path faster.
+
+The actual work was figuring out what access each part of the job genuinely required. For Proxmox, Hermes needed enough to read the VM layout, create templates, and resize machines — but not root-level access to the whole node. For Docker inspection, it needed to read container configs and running state, but the write path mattered a lot. I didn't want it making changes to running services without a clear reason. For applying Kubernetes manifests, it needed a kubeconfig scoped to the namespaces involved in the migration, not cluster-admin for everything.
+
+Getting that wrong in both directions had real consequences. Too little access and Hermes would get partway through a step and have to stop and ask — which broke the flow and meant I was babysitting. Too much felt uncomfortable in a way I couldn't quite ignore.
+
+The thing I didn't expect: scoping the access properly meant I had to think clearly about what the migration actually involved. Which systems, which permissions, which steps in which order. I probably would have been more vague about it if I'd just done the work myself.
+
+That ended up being unexpectedly useful. Not just for the migration. For understanding my own homelab better.
+
 ## Limited permissions was the whole point
 
 I wanted Hermes to be useful without giving it unlimited reach.

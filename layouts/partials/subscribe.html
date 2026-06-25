@@ -1,0 +1,24 @@
+<div class="post-subscribe">
+  <div class="post-sub-inner">
+    {{ if .Site.Params.buttondown }}
+    <div>
+      <span class="post-sub-title">Enjoyed this? Get the next one.</span>
+      <span class="post-sub-desc">New posts straight to your inbox. No algorithm, no ads.</span>
+    </div>
+    <form class="sub-form"
+      action="https://buttondown.com/api/emails/embed-subscribe/{{ .Site.Params.buttondown }}"
+      method="post"
+      target="popupwindow"
+      onsubmit="window.open('https://buttondown.com/{{ .Site.Params.buttondown }}', 'popupwindow')">
+      <input class="sub-input" type="email" name="email" placeholder="your@email.com" required>
+      <button class="post-sub-btn" type="submit">Subscribe</button>
+    </form>
+    {{ else }}
+    <div>
+      <span class="post-sub-title">Enjoyed this? Get the next one.</span>
+      <span class="post-sub-desc">Subscribe via RSS — no algorithm, no ads, just posts straight to your reader.</span>
+    </div>
+    <a class="post-sub-btn" href="{{ "/index.xml" | relURL }}">Subscribe via RSS</a>
+    {{ end }}
+  </div>
+</div>

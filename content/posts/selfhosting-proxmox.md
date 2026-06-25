@@ -1,7 +1,7 @@
 +++
 title = "Embracing Proxmox: Virtualization Adventures in Self-Hosting"
 date = 2023-09-20T09:28:34+00:00
-tags = ["banter", "selfhosting"]
+tags = ["selfhosting", "proxmox"]
 featured = false
 draft = false
 description = "In my journey from Raspberry Pis to a dedicated Proxmox server, I embraced virtualization. Self-hosting offers endless learning, even when things break—a cycle of challenges and rewards."

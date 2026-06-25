@@ -3,7 +3,9 @@ title = "Self-Hosting With a Raspberry Pi 4 and Cloudflare"
 date = 2023-03-28T07:25:51+00:00
 tags = ["selfhosting", "raspberry-pi", "cloudflare"]
 featured = false
+start_here = true
 draft = false
+description = "How to run self-hosted services from home using a Raspberry Pi 4 and Cloudflare — a practical first step."
 feature_image = "https://images.unsplash.com/photo-1568332339712-fa479d5494fa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fHJhc3BiZXJyeSUyMHBpfGVufDB8fHx8MTY3OTk4NjgxMA&ixlib=rb-4.0.3&q=80&w=2000"
 +++
 

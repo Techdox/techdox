@@ -1,7 +1,7 @@
 +++
 title = "I Tried Running an AI Agent, Are They Safe?"
 date = 2026-06-01T00:00:00+00:00
-tags = ["ai", "security", "banter"]
+tags = ["ai", "security"]
 featured = true
 draft = false
 description = "I tried running an AI agent to see what it could actually do, where it helped, and where the safety concerns started to feel real."
