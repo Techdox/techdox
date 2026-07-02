@@ -2,6 +2,7 @@
 title = "My New Home Server - HP EliteDesk 800 SFF"
 date = 2023-08-29T09:45:53+00:00
 tags = []
+description = "Why I upgraded my homelab from Raspberry Pis and a Zimaboard to a second-hand HP EliteDesk 800 SFF — the specs, the $300 NZD price tag, and what it unlocks."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1484557052118-f32bd25b45b5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDIxfHxzZXJ2ZXJ8ZW58MHx8fHwxNjkzMjk0NDkwfDA&ixlib=rb-4.0.3&q=80&w=2000"

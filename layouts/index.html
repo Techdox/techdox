@@ -19,7 +19,7 @@
         <div class="term-line">&nbsp;</div>
         <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">ls posts/</span> <span class="t-flag">--sort=date</span> <span class="t-flag">--head=3</span></div>
         {{ range $recent }}
-        <div class="term-line"><span class="t-ok">›</span> <span class="t-muted">{{ .File.BaseFileName | truncate 34 "…" }}</span></div>
+        <div class="term-line"><span class="t-ok">›</span> <a href="{{ .RelPermalink }}">{{ .File.BaseFileName | truncate 34 "…" }}</a></div>
         {{ end }}
         <div class="term-line">&nbsp;</div>
         <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">./stats</span></div>
@@ -34,7 +34,8 @@
 {{ $allTags := .Site.Taxonomies.tags.ByCount }}
 {{ if $allTags }}
 <div class="tag-strip">
-  {{ range $allTags }}<a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}<span class="tag-count">{{ .Count }}</span></a>{{ end }}
+  {{ range first 10 $allTags }}<a class="tag" href="{{ .Page.RelPermalink }}">{{ .Page.Title }}<span class="tag-count">{{ .Count }}</span></a>{{ end }}
+  {{ if gt (len $allTags) 10 }}<a class="tag tag-all" href="{{ "/tags/" | relURL }}">all tags →</a>{{ end }}
 </div>
 {{ end }}
 

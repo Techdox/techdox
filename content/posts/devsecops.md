@@ -2,6 +2,7 @@
 title = "DevSecOps"
 date = 2023-03-28T06:29:17+00:00
 tags = []
+description = "Security can't be a surprise at production time. Thoughts from the Cloud Native Summit on shifting from DevOps to DevSecOps and bringing security in from day one."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1667372335962-5fd503a8ae5b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDh8fGRldm9wc3xlbnwwfHx8fDE2Nzk5NzcyNjY&ixlib=rb-4.0.3&q=80&w=2000"

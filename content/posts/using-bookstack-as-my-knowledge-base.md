@@ -2,6 +2,7 @@
 title = "Using BookStack as my Knowledge Base"
 date = 2023-04-30T05:05:51+00:00
 tags = []
+description = "Why I picked self-hosted BookStack as the knowledge base for my YouTube channel and homelab documentation, and how I plan to structure it."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1465433045946-ba6506ce5a59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDd8fGJvb2tzdGFja3xlbnwwfHx8fDE2ODI4MzA2Mjg&ixlib=rb-4.0.3&q=80&w=2000"

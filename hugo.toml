@@ -20,6 +20,15 @@ summaryLength = 28
 [taxonomies]
   tag = "tags"
 
+# "Keep reading" suggestions on posts — matched by shared tags
+[related]
+  threshold = 60
+  includeNewer = true
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+
 # Top nav — mirrors the current Ghost site
 [menu]
   [[menu.main]]

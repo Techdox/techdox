@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ .Site.LanguageCode | default "en" }}" data-theme="dark">
+<html lang="{{ site.Language.LanguageCode | default "en" }}" data-theme="dark">
 <head>{{ partial "head.html" . }}</head>
 <body>
   <div class="wrap">
@@ -12,12 +12,10 @@
     addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10));
     const tb = document.getElementById('theme');
     if (tb) {
-      const saved = localStorage.getItem('tdx-theme');
-      if (saved) document.body.setAttribute('data-theme', saved);
       tb.onclick = () => {
-        const light = document.body.getAttribute('data-theme') === 'light';
-        const next = light ? 'dark' : 'light';
-        document.body.setAttribute('data-theme', next);
+        const root = document.documentElement;
+        const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+        root.setAttribute('data-theme', next);
         localStorage.setItem('tdx-theme', next);
       };
     }

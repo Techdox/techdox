@@ -3,7 +3,7 @@
     <span class="mono">~/</span><span class="name">techdox</span><span class="cursor"></span>
   </a>
   <div class="navlinks">
-    {{ range .Site.Menus.main }}<a class="hide-sm" href="{{ .URL }}">{{ .Name }}</a>{{ end }}
-    <button class="themebtn" id="theme" title="Toggle theme" aria-label="Toggle theme">&#9680;</button>
+    {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
   </div>
+  <button class="themebtn" id="theme" title="Toggle theme" aria-label="Toggle theme">&#9680;</button>
 </nav>

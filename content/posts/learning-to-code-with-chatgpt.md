@@ -2,6 +2,7 @@
 title = "Learning to Code with ChatGPT"
 date = 2023-03-28T06:25:04+00:00
 tags = ["chatgpt", "automation"]
+description = "Building a Django transaction-tracking dashboard with zero Django experience, using ChatGPT as a pair programmer — what it taught me and where it fell short."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1676272748285-2cee8e35db69?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGNoYXRncHR8ZW58MHx8fHwxNjc5OTc3Mjg4&ixlib=rb-4.0.3&q=80&w=2000"

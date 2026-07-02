@@ -2,6 +2,7 @@
 title = "Personal Projects and Cloud Certifications"
 date = 2023-02-01T06:30:00+00:00
 tags = ["certification"]
+description = "Certifications open doors, but hands-on projects teach the real lessons. How to pair cloud certs with personal projects to land a cloud engineering or DevOps role."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1521321205814-9d673c65c167?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDI3fHxpdCUyMHN0dWR5fGVufDB8fHx8MTY3OTk4NTAwNQ&ixlib=rb-4.0.3&q=80&w=2000"

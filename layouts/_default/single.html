@@ -5,29 +5,6 @@
     <a href="{{ "/posts/" | relURL }}">← all posts</a>
   </div>
 
-  <div class="term-hero">
-    <div class="term-titlebar">
-      <span class="term-dot td-red"></span>
-      <span class="term-dot td-yellow"></span>
-      <span class="term-dot td-green"></span>
-      <span class="term-path">~/techdox/posts/{{ .File.BaseFileName }}</span>
-    </div>
-    <div class="term-body">
-      <div class="term-line"><span class="t-prompt">❯</span> cat <span class="t-file">{{ .File.BaseFileName }}.md</span></div>
-      <div class="term-line t-hr">---</div>
-      <div class="term-line"><span class="t-key">title: </span><span class="t-str">"{{ .Title }}"</span></div>
-      <div class="term-line"><span class="t-key">date:  </span><span class="t-date">{{ .Date.Format "2006-01-02" }}</span></div>
-      {{ with .Params.tags }}
-      <div class="term-line"><span class="t-key">tags:  </span><span class="t-bracket">[</span>{{ range $i, $t := . }}{{ if $i }}<span class="t-muted">, </span>{{ end }}<span class="t-tag">{{ $t }}</span>{{ end }}<span class="t-bracket">]</span></div>
-      {{ end }}
-      <div class="term-line"><span class="t-key">reads: </span><span class="t-num">{{ .ReadingTime }} min</span></div>
-      <div class="term-line t-hr">---</div>
-      <div class="term-line"><span class="t-prompt">❯</span> ./render <span class="t-flag">--syntax</span> <span class="t-flag">--minify</span></div>
-      <div class="term-line"><span class="t-ok">✓</span> <span class="t-muted">built in</span> <span class="t-num">{{ .ReadingTime }}{{ .Date.Unix | mod 30 | add 8 }}ms</span></div>
-      <div class="term-line"><span class="t-prompt">❯</span><span class="term-cursor"></span></div>
-    </div>
-  </div>
-
   <div class="post-head">
     {{ with .Params.tags }}<span class="tag">{{ index . 0 }}</span>{{ end }}
     <h1>{{ .Title }}</h1>
@@ -39,6 +16,14 @@
       {{ .ReadingTime }} min read
     </div>
   </div>
+
+  {{ $headings := findRE `<h[23]` .Content }}
+  {{ if and (gt (len $headings) 3) (gt .WordCount 500) }}
+  <details class="toc">
+    <summary><span class="t-prompt">❯</span> on this page <span class="toc-count">{{ len $headings }} sections</span></summary>
+    {{ .TableOfContents }}
+  </details>
+  {{ end }}
 
   <div class="prose">
     {{ .Content }}
@@ -69,26 +54,14 @@
 
 {{ partial "subscribe.html" . }}
 
-{{ $currentPage := . }}
-{{ $currentTags := .Params.tags }}
-{{ if $currentTags }}
-{{ $related := slice }}
-{{ range where .Site.RegularPages "Section" "posts" }}
-  {{ if ne .Permalink $currentPage.Permalink }}
-    {{ if intersect .Params.tags $currentTags }}
-      {{ $related = $related | append . }}
-    {{ end }}
-  {{ end }}
-{{ end }}
-{{ $related = first 3 $related }}
-{{ if $related }}
+{{ $related := first 3 (where (.Site.RegularPages.Related .) "Section" "posts") }}
+{{ with $related }}
 <section class="related-posts">
-  <div class="sec-head"><h2>More on {{ with (index $currentTags 0) }}{{ . }}{{ else }}this topic{{ end }}</h2><div class="line"></div></div>
+  <div class="sec-head"><h2>More on {{ with $.Params.tags }}{{ index . 0 }}{{ else }}this topic{{ end }}</h2><div class="line"></div></div>
   <div class="grid">
-    {{ range $related }}{{ partial "post-card.html" . }}{{ end }}
+    {{ range . }}{{ partial "post-card.html" . }}{{ end }}
   </div>
 </section>
-{{ end }}
 {{ end }}
 
 {{ end }}

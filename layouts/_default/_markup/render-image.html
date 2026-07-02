@@ -1,0 +1,9 @@
+{{- $dest := .Destination -}}
+{{- $alt := .Text -}}
+{{- if eq $alt "None" }}{{ $alt = "" }}{{ end -}}
+{{- $local := printf "static%s" $dest -}}
+{{- $cfg := false -}}
+{{- if and (hasPrefix $dest "/") (fileExists $local) -}}
+  {{- $cfg = imageConfig $local -}}
+{{- end -}}
+<img src="{{ $dest | safeURL }}" alt="{{ $alt }}"{{ with $cfg }} width="{{ .Width }}" height="{{ .Height }}"{{ end }}{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">

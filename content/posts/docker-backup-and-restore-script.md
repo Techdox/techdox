@@ -2,6 +2,7 @@
 title = "Docker Volume Backup and Restore Script"
 date = 2023-09-06T09:02:03+00:00
 tags = []
+description = "A Python script that backs up and restores Docker volumes on a remote server over SSH — full walkthrough of the backup and restore workflow, plus the prerequisites."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1589995186011-a7b485edc4bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMTc3M3wwfDF8c2VhcmNofDR8fGJhY2t1cHxlbnwwfHx8fDE2OTM5OTA4OTl8MA&ixlib=rb-4.0.3&q=80&w=2000"

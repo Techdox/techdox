@@ -2,6 +2,7 @@
 title = "My Azure DevOps Terraform Pipeline"
 date = 2023-02-01T06:33:00+00:00
 tags = []
+description = "How I deploy Terraform through Azure DevOps pipelines: feature branches, validation runs, Infracost cost estimates on every PR, and a gated merge to main."
 featured = false
 draft = false
 feature_image = "https://images.unsplash.com/photo-1631624215749-b10b3dd7bca7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDE0fHxJVCUyMGRldm9wc3xlbnwwfHx8fDE2Nzk5ODUyNDY&ixlib=rb-4.0.3&q=80&w=2000"

@@ -1,0 +1,24 @@
+{{ define "main" }}
+<section class="notfound">
+  <div class="term-hero notfound-term">
+    <div class="term-titlebar">
+      <span class="term-dot td-red"></span>
+      <span class="term-dot td-yellow"></span>
+      <span class="term-dot td-green"></span>
+      <span class="term-path">~/techdox — zsh</span>
+    </div>
+    <div class="term-body">
+      <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">cat</span> <span class="t-muted">this-page.md</span></div>
+      <div class="term-line"><span class="t-err">✗</span> <span class="t-muted">cat: this-page.md: No such file or directory</span> <span class="t-num">(404)</span></div>
+      <div class="term-line">&nbsp;</div>
+      <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">ls posts/</span> <span class="t-flag">--recent</span></div>
+      {{ range first 5 (where .Site.RegularPages "Section" "posts") }}
+      <div class="term-line"><span class="t-ok">›</span> <a href="{{ .RelPermalink }}">{{ .Title | truncate 52 "…" }}</a></div>
+      {{ end }}
+      <div class="term-line">&nbsp;</div>
+      <div class="term-line"><span class="t-prompt">❯</span> <span class="t-file">cd</span> <a href="{{ "/" | relURL }}">~/home</a></div>
+      <div class="term-line"><span class="t-prompt">❯</span><span class="term-cursor"></span></div>
+    </div>
+  </div>
+</section>
+{{ end }}
