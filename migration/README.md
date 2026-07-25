@@ -1,0 +1,117 @@
+# Techdox site migration
+
+This directory is the version-controlled control plane for moving the existing Hugo blog from `techdox.nz` to `blog.techdox.nz` and introducing a separate landing site at `techdox.nz`.
+
+## Five-phase checklist
+
+- [x] Phase 1 — Inventory and rollback preparation
+- [ ] Phase 2 — Establish `blog.techdox.nz`
+- [ ] Phase 3 — Build the new landing page
+- [ ] Phase 4 — Configure and validate redirects
+- [ ] Phase 5 — Controlled production cutover
+
+Phase 1 is read-only against production. Nothing in this directory activates a redirect, changes DNS, attaches a custom domain, or deploys a landing site.
+
+## Architecture
+
+| Host | Intended owner |
+|---|---|
+| `techdox.nz` | New landing Pages project |
+| `blog.techdox.nz` | Existing `Techdox/techdox` Hugo project |
+| `docs.techdox.nz` | Unchanged |
+| `store.techdox.nz` | Unchanged |
+
+The migration uses exact Cloudflare Bulk Redirect entries. It does not use a permanent apex wildcard. The apex homepage, sitemap, robots file, and future landing routes remain available to the landing project.
+
+## Phase 1 results
+
+- Live sitemap URLs: **52**
+- Hugo-generated and currently reachable routes: **141**
+- Root-level articles: **33**
+- Direct historical image assets: **44**
+- RSS/feed routes: **18**
+- Exact redirect entries: **212**
+- Production probes: **141/141 returned HTTP 200**
+- Hard-coded apex references in source: **3**
+- Cloudflare Free-plan Bulk Redirect allowance: **10,000**
+
+The 212 entries include:
+
+- Both slash and no-slash forms for HTML routes.
+- Both HTTP and HTTPS through Cloudflare's scheme-less source matching.
+- Pagination aliases with direct canonical targets.
+- RSS and tag feeds.
+- Direct `/content/images/...` assets.
+- Query-string preservation.
+
+All rules are exact. `include_subdomains`, `subpath_matching`, and `preserve_path_suffix` are disabled.
+
+## Landing-owned and reserved paths
+
+These paths are deliberately absent from the redirect list:
+
+- `/`
+- `/robots.txt`
+- `/sitemap.xml`
+- `/about/`
+- `/contact/`
+- `/projects/`
+
+`/deals/` currently belongs to the blog and is mapped to `blog.techdox.nz/deals/`. A future landing-page deals section can link to that route or use a different landing route.
+
+## Internet Archive inventory
+
+The Wayback CDX index exposed 1,977 unique historical paths, including an older WordPress-era site dating back to 2017.
+
+- 29 are covered by current routes.
+- 117 are dated historical article paths with no current destination.
+- 35 are old date archives.
+- 126 are old indexes or feeds.
+- 1 is a WordPress utility path.
+- 1,669 are other historical paths.
+
+No redirect was generated for a route whose proposed blog destination does not exist. Sending an old URL to a new `404` would not preserve it. The full classification remains in `evidence/wayback-historical-paths.json` for future content-restoration decisions.
+
+The archive also shows historical `www.techdox.nz` use. `www` does not currently have a routing DNS record, so restoring it would be a separate, explicitly approved production change.
+
+## Artifacts
+
+| File | Purpose |
+|---|---|
+| `url-manifest.json` | Canonical machine-readable redirect source |
+| `generated/cloudflare-bulk-redirects-test-302.csv` | Inactive test import |
+| `generated/cloudflare-bulk-redirects-production-301.csv` | Inactive production import |
+| `scripts/inventory_urls.py` | Rebuild source/live/archive inventory |
+| `scripts/generate_redirects.py` | Validate manifest and generate CSV files |
+| `production-baseline.md` | GitHub, Hugo, Pages, DNS, and rules baseline |
+| `rollback.md` | Disabled emergency redirect and rollback procedures |
+| `evidence/live-sitemap.xml` | Production sitemap captured during Phase 1 |
+| `evidence/live-route-probes.json` | Production route probe results |
+| `evidence/source-routes.json` | Hugo routes, assets, canonicals, and source references |
+| `evidence/cloudflare-production.json` | Sanitised Pages/DNS snapshot |
+| `evidence/cloudflare-zone-rulesets.json` | Zone ruleset summary |
+| `evidence/wayback-historical-paths.json` | Historical URL classification |
+
+## Rebuild and verify
+
+A pinned Hugo container was used because Hugo is not installed on the host:
+
+```bash
+docker run --rm \
+  -v /tmp/techdox-build-src:/src \
+  -v /tmp/techdox-hugo-public:/output \
+  -w /src \
+  hugomods/hugo:exts-0.148.2 \
+  hugo --gc --minify --destination /output
+
+python3 migration/scripts/inventory_urls.py \
+  --repo . \
+  --build-dir /tmp/techdox-hugo-public \
+  --wayback /tmp/techdox-wayback.json
+
+python3 migration/scripts/generate_redirects.py \
+  --manifest migration/url-manifest.json \
+  --build-dir /tmp/techdox-hugo-public
+```
+
+The source must be copied into `/tmp/techdox-build-src` first so Hugo can create its build lock and resource cache without modifying the feature-branch checkout.

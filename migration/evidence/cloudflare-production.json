@@ -1,0 +1,258 @@
+{
+  "access_limitations": {
+    "account_bulk_redirect_lists": "Cloudflare Agent API returned 10000 Authentication error",
+    "account_rulesets": "Cloudflare Agent API returned 10000 Authentication error",
+    "dashboard_session": "Not authenticated; no credentials requested or entered",
+    "legacy_page_rules": "Cloudflare Agent API returned 9109 Unauthorized",
+    "wrangler_session": "Wrangler 4.114.0 is not authenticated"
+  },
+  "account": {
+    "id": "[REDACTED IDENTIFIER]",
+    "name": "[REDACTED ACCOUNT NAME]"
+  },
+  "captured_at": "2026-07-25T11:17:11.129278+00:00",
+  "pages": {
+    "domains": [
+      {
+        "created_on": "2026-06-01T11:04:05.446986Z",
+        "id": "[REDACTED IDENTIFIER]",
+        "name": "techdox.nz",
+        "status": "active"
+      }
+    ],
+    "project": {
+      "build_config": {
+        "build_command": "hugo",
+        "destination_dir": "public",
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "created_on": "2026-06-01T11:02:22.555575Z",
+      "deployment_configs": {
+        "preview": {
+          "always_use_latest_compatibility_date": false,
+          "build_image_major_version": 3,
+          "compatibility_date": "2026-06-01",
+          "compatibility_flags": [],
+          "env_vars": null,
+          "fail_open": true,
+          "usage_model": "standard"
+        },
+        "production": {
+          "always_use_latest_compatibility_date": false,
+          "build_image_major_version": 3,
+          "compatibility_date": "2026-06-01",
+          "compatibility_flags": [],
+          "env_vars": null,
+          "fail_open": true,
+          "usage_model": "standard"
+        }
+      },
+      "domains": [
+        "techdox.pages.dev",
+        "techdox.nz"
+      ],
+      "id": "[REDACTED IDENTIFIER]",
+      "name": "techdox",
+      "production_branch": "main",
+      "source": {
+        "config": {
+          "deployments_enabled": true,
+          "owner": "Techdox",
+          "owner_id": "33345295",
+          "path_excludes": [],
+          "path_includes": [
+            "*"
+          ],
+          "pr_comments_enabled": true,
+          "preview_branch_excludes": [],
+          "preview_branch_includes": [
+            "*"
+          ],
+          "preview_deployment_setting": "all",
+          "production_branch": "main",
+          "production_deployments_enabled": true,
+          "repo_id": "646393727",
+          "repo_name": "techdox"
+        },
+        "type": "github"
+      },
+      "subdomain": "techdox.pages.dev"
+    },
+    "statuses": {
+      "domains": 200,
+      "project": 200
+    }
+  },
+  "recent_deployments": {
+    "deployments": [
+      {
+        "aliases": [
+          "https://feat-giscus-comments.techdox.pages.dev"
+        ],
+        "created_on": "2026-07-15T10:09:01.619239Z",
+        "deployment_trigger": {
+          "metadata": {
+            "branch": "feat/giscus-comments",
+            "commit_dirty": false,
+            "commit_hash": "2209e98a12ebb6ec742656417dda1b278f7a22dd",
+            "commit_message": "feat: add Giscus comments"
+          },
+          "type": "github:push"
+        },
+        "environment": "preview",
+        "id": "[REDACTED IDENTIFIER]",
+        "latest_stage": {
+          "ended_on": "2026-07-15T10:09:16.145907Z",
+          "name": "deploy",
+          "started_on": "2026-07-15T10:09:10.62743Z",
+          "status": "success"
+        },
+        "url": "https://87d797d5.techdox.pages.dev"
+      },
+      {
+        "aliases": [
+          "https://techdox.nz"
+        ],
+        "created_on": "2026-07-15T09:11:39.415616Z",
+        "deployment_trigger": {
+          "metadata": {
+            "branch": "main",
+            "commit_dirty": false,
+            "commit_hash": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+            "commit_message": "Merge pull request #1 from Techdox/content/ai-modern-day-calculator\n\ndocs: add AI calculator blog post"
+          },
+          "type": "github:push"
+        },
+        "environment": "production",
+        "id": "[REDACTED IDENTIFIER]",
+        "latest_stage": {
+          "ended_on": "2026-07-15T09:11:57.88567Z",
+          "name": "deploy",
+          "started_on": "2026-07-15T09:11:52.659287Z",
+          "status": "success"
+        },
+        "url": "https://22e38982.techdox.pages.dev"
+      },
+      {
+        "aliases": [
+          "https://content-ai-modern-day-calcul.techdox.pages.dev"
+        ],
+        "created_on": "2026-07-15T09:09:00.06156Z",
+        "deployment_trigger": {
+          "metadata": {
+            "branch": "content/ai-modern-day-calculator",
+            "commit_dirty": false,
+            "commit_hash": "89a628b4bc60b0767a4c8da1115e9d6fae680254",
+            "commit_message": "ci: retrigger Pages deployment"
+          },
+          "type": "github:push"
+        },
+        "environment": "preview",
+        "id": "[REDACTED IDENTIFIER]",
+        "latest_stage": {
+          "ended_on": "2026-07-15T09:09:13.895139Z",
+          "name": "deploy",
+          "started_on": "2026-07-15T09:09:09.549606Z",
+          "status": "success"
+        },
+        "url": "https://5f1a1a95.techdox.pages.dev"
+      },
+      {
+        "aliases": null,
+        "created_on": "2026-07-15T06:59:35.951274Z",
+        "deployment_trigger": {
+          "metadata": {
+            "branch": "content/ai-modern-day-calculator",
+            "commit_dirty": false,
+            "commit_hash": "e5bc8fc1c50010fa6a97660accbfd50cfa31050c",
+            "commit_message": "docs: add AI calculator blog post"
+          },
+          "type": "github:push"
+        },
+        "environment": "preview",
+        "id": "[REDACTED IDENTIFIER]",
+        "latest_stage": {
+          "ended_on": "2026-07-15T07:00:02.223913Z",
+          "name": "deploy",
+          "started_on": "2026-07-15T06:59:52.33556Z",
+          "status": "success"
+        },
+        "url": "https://3def8fbd.techdox.pages.dev"
+      },
+      {
+        "aliases": [
+          "https://head.techdox.pages.dev"
+        ],
+        "created_on": "2026-07-02T04:31:24.559745Z",
+        "deployment_trigger": {
+          "metadata": {
+            "branch": "HEAD",
+            "commit_dirty": false,
+            "commit_hash": "bec8a30638d5102fc079740c191fe405983f062e",
+            "commit_message": "fix: target correct Pages project name"
+          },
+          "type": "ad_hoc"
+        },
+        "environment": "preview",
+        "id": "[REDACTED IDENTIFIER]",
+        "latest_stage": {
+          "ended_on": "2026-07-02T04:31:25.774187Z",
+          "name": "deploy",
+          "started_on": null,
+          "status": "success"
+        },
+        "url": "https://fed15353.techdox.pages.dev"
+      }
+    ],
+    "status": 200
+  },
+  "routing_dns": {
+    "records": [
+      {
+        "comment": null,
+        "content": "techdox.pages.dev",
+        "id": "[REDACTED IDENTIFIER]",
+        "name": "techdox.nz",
+        "proxied": true,
+        "ttl": 1,
+        "type": "CNAME"
+      },
+      {
+        "comment": null,
+        "content": "techdox-docs.pages.dev",
+        "id": "[REDACTED IDENTIFIER]",
+        "name": "docs.techdox.nz",
+        "proxied": true,
+        "ttl": 1,
+        "type": "CNAME"
+      },
+      {
+        "comment": null,
+        "content": "34.117.223.165",
+        "id": "[REDACTED IDENTIFIER]",
+        "name": "store.techdox.nz",
+        "proxied": false,
+        "ttl": 1,
+        "type": "A"
+      }
+    ],
+    "status": 200
+  },
+  "zone": {
+    "id": "[REDACTED IDENTIFIER]",
+    "name": "techdox.nz"
+  },
+  "zone_rulesets": [
+    {
+      "access_error": "Error: Cloudflare API error: undefined: request is not authorized"
+    },
+    {
+      "access_error": "Error: Cloudflare API error: undefined: request is not authorized"
+    },
+    {
+      "access_error": "Error: Cloudflare API error: undefined: request is not authorized"
+    }
+  ]
+}
