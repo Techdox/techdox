@@ -40,6 +40,7 @@ Baseline commit: `5113a615f504351682c2cbf9cd429b3b3232e71e`
 | Preserve path suffix | Disabled on every row |
 | Landing-owned path collisions | None |
 | Missing local blog targets | None |
+| Canonical metadata baseline | Representative article emits `og:url` but no canonical link tag; Phase 2 action recorded |
 | Duplicate sources | None |
 | Secret scan | No token, bearer credential, password, client secret, or private-key pattern found |
 | Identifier scan | Cloudflare account/zone identifiers absent from committed evidence |

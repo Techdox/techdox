@@ -102,7 +102,16 @@ Three hard-coded apex references were found:
 | `HUGO.md` | 3 | `https://techdox.nz` |
 | `README.md` | 20 | `https://techdox.nz` |
 
-The `hugo.toml` value controls canonicals, absolute URLs, sitemap output, and RSS output. It must change only after `blog.techdox.nz` is attached and verified in Phase 2.
+The `hugo.toml` value controls absolute URLs, sitemap output, RSS output, and the existing Open Graph URL. It must change only after `blog.techdox.nz` is attached and verified in Phase 2.
+
+### Canonical metadata baseline
+
+A direct check of the deployed feature-branch article page found:
+
+- `og:url`: `https://techdox.nz/why-selfhost/`
+- `<link rel="canonical">`: absent
+
+Phase 2 must therefore add and verify canonical link tags across articles, indexes, pagination, and taxonomies. Updating `baseURL` alone is not sufficient.
 
 ## Deployment files not used as production evidence
 
