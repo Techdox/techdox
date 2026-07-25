@@ -6,7 +6,8 @@ This document describes rollback procedures only. No rule, list, Pages project, 
 
 - Blog repository: `Techdox/techdox`
 - Baseline branch: `main`
-- Baseline commit: `5113a615f504351682c2cbf9cd429b3b3232e71e`
+- Phase 1 historical commit: `5113a615f504351682c2cbf9cd429b3b3232e71e`
+- Fresh rollback target: capture the current `main` commit and current successful Pages deployment ID immediately before every production deployment or routing change
 - Existing Pages project: `techdox`
 - Existing Pages hostname: `techdox.pages.dev`
 - Existing apex custom domain: `techdox.nz`
@@ -33,17 +34,22 @@ Single Redirects execute before Bulk Redirects, allowing this temporary rule to 
 
 Creating or enabling this rule is a production change and requires explicit approval. Phase 1 only records the proposed configuration.
 
-## Phase 2 rollback: blog hostname and canonical change
+## Phase 2A rollback: blog custom domain
 
-Use if `blog.techdox.nz` or the Hugo `baseURL` deployment fails.
+Use if `blog.techdox.nz` fails DNS, TLS, routing, or content verification. Phase 2A does not deploy source changes.
 
-1. Keep `techdox.nz` attached to the existing `techdox` Pages project.
-2. Roll the Pages production deployment back to baseline commit `5113a615f504351682c2cbf9cd429b3b3232e71e`, or revert the Phase 2 commit on a feature branch and merge after approval.
-3. Confirm canonicals, RSS, and sitemap again use `https://techdox.nz/`.
-4. Remove `blog.techdox.nz` from the Pages project only if the failed custom domain itself is causing an incident.
-5. Verify representative articles, feeds, images, docs, and store.
+1. Keep the existing `techdox.nz` custom domain attached to the `techdox` Pages project.
+2. Identify the exact Pages-managed `blog.techdox.nz` DNS record captured after creation.
+3. Follow Cloudflare Pages' supported removal sequence: delete only that exact `blog.techdox.nz` DNS record if required, then remove only `blog.techdox.nz` from Workers & Pages → `techdox` → Custom domains.
+4. Do not delete, edit, detach, or recreate the apex DNS record or apex Pages custom domain.
+5. Confirm the fresh pre-change `main` commit and successful Pages production deployment ID remain current.
+6. Verify representative apex articles, feeds, images, docs, and store.
 
-Expected effect: the original apex blog continues operating exactly as it did before Phase 2.
+Expected effect: the temporary blog hostname is removed while the original apex blog continues operating from the same production deployment.
+
+## Phase 2B rollback: unmerged source preparation
+
+Phase 2B changes remain on the migration branch until the controlled redirect launch window. Before merge, rollback is simply a branch revert; no production deployment rollback is required. If a later production merge is approved, capture a new rollback baseline immediately before it and document that deployment-specific rollback separately.
 
 ## Phase 4 rollback: redirect testing
 

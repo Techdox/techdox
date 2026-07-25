@@ -5,7 +5,8 @@ This directory is the version-controlled control plane for moving the existing H
 ## Five-phase checklist
 
 - [x] Phase 1 — Inventory and rollback preparation
-- [ ] Phase 2 — Establish `blog.techdox.nz`
+- [ ] Phase 2A — Attach and verify `blog.techdox.nz` with existing Hugo metadata
+- [ ] Phase 2B — Prepare canonical changes in preview and hold the production merge
 - [ ] Phase 3 — Build the new landing page
 - [ ] Phase 4 — Configure and validate redirects
 - [ ] Phase 5 — Controlled production cutover
@@ -90,6 +91,7 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `evidence/source-routes.json` | Hugo routes, assets, canonicals, and source references |
 | `evidence/cloudflare-production.json` | Sanitised Pages/DNS snapshot |
 | `evidence/cloudflare-zone-rulesets.json` | Zone ruleset summary |
+| `evidence/phase-2a-controls.md` | Approved Phase 2A scope, alias interpretation, indexing controls, and rollback sequence |
 | `evidence/wayback-historical-paths.json` | Historical URL classification |
 
 ## Rebuild and verify
