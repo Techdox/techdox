@@ -6,7 +6,7 @@ This directory is the version-controlled control plane for moving the existing H
 
 - [x] Phase 1 — Inventory and rollback preparation
 - [x] Phase 2A — `blog.techdox.nz` attached, verified, and accepted
-- [>] Phase 2B — Canonical changes prepared on the migration branch; production merge held
+- [x] Phase 2B — Canonical changes prepared and preview-verified; production merge held
 - [ ] Phase 3 — Build the new landing page
 - [ ] Phase 4 — Configure and validate redirects
 - [ ] Phase 5 — Controlled production cutover
@@ -99,6 +99,7 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `scripts/generate_redirects.py` | Validate manifest and generate CSV files |
 | `scripts/assert_canonicals.py` | Assert exact canonical and Open Graph URLs, including pagination |
 | `scripts/verify_phase2b_build.py` | Verify the full route, alias, feed, sitemap, and static-asset build |
+| `scripts/verify_phase2b_preview.py` | Verify metadata, routes, aliases, feeds, sitemap, and indexing headers over preview HTTPS |
 | `production-baseline.md` | GitHub, Hugo, Pages, DNS, and rules baseline |
 | `rollback.md` | Disabled emergency redirect and rollback procedures |
 | `evidence/live-sitemap.xml` | Production sitemap captured during Phase 1 |
@@ -117,6 +118,8 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `evidence/phase-2b-canonical-verification.json` | Seven exact canonical cases and complete generated-HTML scan |
 | `evidence/phase-2b-build-verification.json` | Route, alias, feed, sitemap, origin, and static-asset results |
 | `evidence/phase-2b-prepush-production-state.json` | Read-only production state captured before the branch push |
+| `evidence/phase-2b-preview-verification.json` | Live HTTPS checks against the exact Phase 2B preview deployment |
+| `evidence/phase-2b-postpush-state.json` | Preview build record and read-only production comparison after the branch push |
 | `evidence/wayback-historical-paths.json` | Historical URL classification |
 
 ## Rebuild and verify

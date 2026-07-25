@@ -1,6 +1,6 @@
 # Phase 2B report
 
-Status: **local verification passed; branch preview pending**
+Status: **branch preparation and preview verification passed; production merge held**
 
 Prepared on 2026-07-26 from branch parent `06adbf59706c7edad20954e8d1f9ffbad7d752f2`.
 
@@ -91,7 +91,7 @@ Every generated page-one alias now points to its equivalent blog-host page-one U
 |---|---|
 | `/page/1/` | `https://blog.techdox.nz/` |
 | `/posts/page/1/` | `https://blog.techdox.nz/posts/` |
-| `/tags/page/1/` | `https://blog.techdox.nz/tags/` |
+| `/tags/ai/page/1/` | `https://blog.techdox.nz/tags/ai/` |
 | `/tags/selfhosting/page/1/` | `https://blog.techdox.nz/tags/selfhosting/` |
 
 Broader evidence is in `evidence/phase-2b-build-verification.json`. The exact Hugo output is in `evidence/phase-2b-hugo-build.txt`.
@@ -116,16 +116,56 @@ Exact state and response hashes are in `evidence/phase-2b-prepush-production-sta
 
 ## Branch preview gate
 
-Pending after the Phase 2B commit is pushed. Required preview checks:
+Cloudflare Pages deployed the exact Phase 2B implementation commit successfully:
 
-- deployment branch and commit match;
-- Pages build succeeds with Hugo Extended `0.147.7`;
-- the seven exact canonical and `og:url` assertions pass over HTTPS;
-- page-one aliases target the equivalent blog-host routes;
-- representative article, pagination, tag, feed, image, sitemap, robots, and not-found routes behave correctly;
-- Pages preview retains its search-engine indexing protection;
-- migration evidence files are not web-served;
-- the production deployment, production commit, custom domains, and `main` remain unchanged.
+| Item | Value |
+|---|---|
+| Commit | `5ff3988afe18dea236ab3fd6621fa243827ec4be` |
+| Deployment | `34883c84-d725-4ae2-aa4e-a7f7daa80161` |
+| Environment | preview |
+| Immutable URL | `https://34883c84.techdox.pages.dev` |
+| Branch alias | `https://migration-landing-blog-split.techdox.pages.dev` |
+| Status | success |
+| Cloudflare build Hugo | Extended `0.147.7` |
+
+The Pages build log contains:
+
+```text
+Executing user command: hugo
+hugo v0.147.7-189453612e4bedc4f27495a7b1145321c8d89807+extended linux/amd64 BuildDate=2025-05-31T12:41:12Z VendorInfo=gohugoio
+```
+
+Live HTTPS verification passed:
+
+| Check | Result |
+|---|---:|
+| Representative routes | 14/14 |
+| Exact canonical and `og:url` cases | 7/7 |
+| Representative page-one aliases | 4/4 |
+| Representative feeds | 2/2 |
+| Sitemap URLs on the blog host | 52/52 |
+| Preview `X-Robots-Tag` | `noindex` |
+| Migration evidence URL | `404` |
+| Unknown route | `404` |
+
+No tested content route performed an HTTP hostname redirect. Generated page-one aliases use their expected HTML meta refresh and canonical target on `blog.techdox.nz`.
+
+Exact preview evidence is in `evidence/phase-2b-preview-verification.json`.
+
+## Post-push production state
+
+The read-only post-push comparison passed:
+
+- GitHub `main` remains `5113a615f504351682c2cbf9cd429b3b3232e71e`.
+- Successful production deployment remains `22e38982-96e2-43cb-bb0c-021af5e06981`.
+- Production deployment commit remains `5113a615f504351682c2cbf9cd429b3b3232e71e`.
+- Production environment variables remain empty.
+- `techdox.nz` and `blog.techdox.nz` remain active and validated.
+- Apex homepage, article, and feed response hashes match the pre-push state.
+- Docs and store response hashes match the pre-push state.
+- Live `blog.techdox.nz` still has apex `og:url` and no explicit canonical link, confirming that the Phase 2B branch was not deployed to production.
+
+Exact state is in `evidence/phase-2b-postpush-state.json`.
 
 ## Merge gate
 

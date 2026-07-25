@@ -1,0 +1,162 @@
+{
+  "blog_production_metadata": {
+    "canonicals": [],
+    "og_urls": [
+      "https://techdox.nz/"
+    ]
+  },
+  "captured_at": "2026-07-25T22:57:10.607705Z",
+  "cloudflare": {
+    "domains": [
+      {
+        "id": "d9fc2d29-fe83-4cc3-b04d-6962f49cbf82",
+        "name": "blog.techdox.nz",
+        "status": "active",
+        "validation_status": "active",
+        "verification_status": "active"
+      },
+      {
+        "id": "dbb8dbf2-ff88-4ae1-aa84-fed5a5ff5001",
+        "name": "techdox.nz",
+        "status": "active",
+        "validation_status": "active",
+        "verification_status": "active"
+      }
+    ],
+    "phase_2b_preview_build_log": {
+      "hugo_matches": [
+        "Executing user command: hugo",
+        "hugo v0.147.7-189453612e4bedc4f27495a7b1145321c8d89807+extended linux/amd64 BuildDate=2025-05-31T12:41:12Z VendorInfo=gohugoio"
+      ],
+      "total_lines": 51
+    },
+    "phase_2b_preview_deployment": {
+      "aliases": [
+        "https://migration-landing-blog-split.techdox.pages.dev"
+      ],
+      "branch": "migration/landing-blog-split",
+      "commit_hash": "5ff3988afe18dea236ab3fd6621fa243827ec4be",
+      "created_on": "2026-07-25T22:52:17.729665Z",
+      "environment": "preview",
+      "id": "34883c84-d725-4ae2-aa4e-a7f7daa80161",
+      "latest_stage": {
+        "ended_on": "2026-07-25T22:52:33.578919Z",
+        "name": "deploy",
+        "status": "success"
+      },
+      "url": "https://34883c84.techdox.pages.dev"
+    },
+    "project": {
+      "name": "techdox",
+      "preview_env_var_names": [],
+      "production_branch": "main",
+      "production_env_var_names": []
+    },
+    "successful_production_deployment": {
+      "aliases": [
+        "https://blog.techdox.nz",
+        "https://techdox.nz"
+      ],
+      "branch": "main",
+      "commit_hash": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+      "created_on": "2026-07-15T09:11:39.415616Z",
+      "environment": "production",
+      "id": "22e38982-96e2-43cb-bb0c-021af5e06981",
+      "latest_stage": {
+        "ended_on": "2026-07-15T09:11:57.88567Z",
+        "name": "deploy",
+        "status": "success"
+      },
+      "url": "https://22e38982.techdox.pages.dev"
+    }
+  },
+  "git": {
+    "branch": "migration/landing-blog-split",
+    "branch_commit": "5ff3988afe18dea236ab3fd6621fa243827ec4be",
+    "main": "5113a615f504351682c2cbf9cd429b3b3232e71e"
+  },
+  "live": {
+    "apex_article": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+      "status": 200,
+      "url": "https://techdox.nz/why-selfhost/"
+    },
+    "apex_feed": {
+      "headers": {
+        "content-type": "application/xml",
+        "server": "cloudflare"
+      },
+      "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "status": 200,
+      "url": "https://techdox.nz/index.xml"
+    },
+    "apex_home": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+      "status": 200,
+      "url": "https://techdox.nz/"
+    },
+    "blog_home": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+      "status": 200,
+      "url": "https://blog.techdox.nz/"
+    },
+    "docs": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "2282cc4ac7f6b12b04ef85e1a660591624022999c67af832cfb1c7c51de0e55a",
+      "status": 200,
+      "url": "https://docs.techdox.nz/"
+    },
+    "store": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "sha256": "89103d7211a01348af3d34521babe9ce3aae3d52d0f0cbd4954b9523df1c932f",
+      "status": 200,
+      "url": "https://store.techdox.nz/"
+    }
+  },
+  "prepush_hash_comparison": {
+    "apex_article": {
+      "post_sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+      "pre_sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+      "unchanged": true
+    },
+    "apex_feed": {
+      "post_sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "pre_sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "unchanged": true
+    },
+    "apex_home": {
+      "post_sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+      "pre_sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+      "unchanged": true
+    },
+    "docs": {
+      "post_sha256": "2282cc4ac7f6b12b04ef85e1a660591624022999c67af832cfb1c7c51de0e55a",
+      "pre_sha256": "2282cc4ac7f6b12b04ef85e1a660591624022999c67af832cfb1c7c51de0e55a",
+      "unchanged": true
+    },
+    "store": {
+      "post_sha256": "89103d7211a01348af3d34521babe9ce3aae3d52d0f0cbd4954b9523df1c932f",
+      "pre_sha256": "89103d7211a01348af3d34521babe9ce3aae3d52d0f0cbd4954b9523df1c932f",
+      "unchanged": true
+    }
+  },
+  "production_unchanged": true,
+  "purpose": "Phase 2B post-push production and preview state"
+}
