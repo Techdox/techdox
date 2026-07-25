@@ -1,0 +1,11 @@
+{{- $paginator := false -}}
+{{- if .IsHome -}}
+  {{- $posts := where .Site.RegularPages "Section" "posts" -}}
+  {{- $featured := index (where $posts "Params.featured" true) 0 -}}
+  {{- if not $featured -}}{{- $featured = index $posts 0 -}}{{- end -}}
+  {{- $grid := where $posts "Permalink" "ne" $featured.Permalink -}}
+  {{- $paginator = .Paginate $grid -}}
+{{- else if or (eq .Kind "section") (eq .Kind "term") -}}
+  {{- $paginator = .Paginate (.Pages.ByDate.Reverse) -}}
+{{- end -}}
+{{- return $paginator -}}

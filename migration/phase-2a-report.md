@@ -1,8 +1,8 @@
 # Phase 2A report
 
-Status: **verification passed; acceptance pending**
+Status: **accepted**
 
-Executed and verified on 2026-07-25. Phase 2B has not been prepared or started.
+Executed and verified on 2026-07-25. Phase 2B branch-only preparation was authorised on 2026-07-26.
 
 ## Scope result
 
@@ -215,4 +215,4 @@ Do not modify, delete, detach, or recreate the apex DNS record or custom domain.
 - [x] Docs and store unchanged
 - [x] Phase 2B not started
 
-**Phase 2A verification passed. Awaiting acceptance before any later phase.**
+**Phase 2A verification passed and was accepted before Phase 2B branch preparation began.**

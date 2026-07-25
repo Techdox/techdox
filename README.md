@@ -10,14 +10,14 @@ about Docker, Linux, Kubernetes, and Cloudflare Zero Trust.
 $ cat status.md
 →  Road to CKA — building kubeadm clusters in Proxmox
 →  Self-hosting behind Cloudflare Zero Trust
-→  Running 29+ blog posts at techdox.nz
+→  Running 29+ blog posts at blog.techdox.nz
 
 $ ls ~/links/
 ```
 
 | | |
 |---|---|
-| 🌐 | [techdox.nz](https://techdox.nz) |
+| 🌐 | [blog.techdox.nz](https://blog.techdox.nz) |
 | 📺 | [youtube.com/techdoxnz](https://youtube.com/techdoxnz) |
 | 📖 | [docs.techdox.nz](https://docs.techdox.nz) |
 | 🛒 | [store.techdox.nz](https://store.techdox.nz) |

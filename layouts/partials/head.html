@@ -6,6 +6,12 @@
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="theme-color" content="#0b0d11">
 
+{{ $canonical := .Permalink }}
+{{ with partial "paginator.html" . }}
+  {{ $canonical = .URL | absURL }}
+{{ end }}
+<link rel="canonical" href="{{ $canonical }}">
+
 {{/* Open Graph — LinkedIn, Twitter, iMessage previews */}}
 {{ $ogTitle := cond .IsHome .Site.Title .Title }}
 {{ $ogDesc  := cond (ne .Description "") .Description .Site.Params.description }}
@@ -19,7 +25,7 @@
 {{ end }}
 <meta property="og:site_name"   content="{{ .Site.Title }}">
 <meta property="og:type"        content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:url"         content="{{ .Permalink }}">
+<meta property="og:url"         content="{{ $canonical }}">
 <meta property="og:title"       content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDesc }}">
 <meta property="og:image"       content="{{ $ogImage }}">
@@ -33,12 +39,12 @@
   "headline": {{ .Title }},
   "description": {{ $ogDesc }},
   "image": {{ $ogImage }},
-  "url": {{ .Permalink }},
+  "url": {{ $canonical }},
   "datePublished": {{ .Date.Format "2006-01-02T15:04:05Z07:00" }},
   "dateModified": {{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }},
   "author": { "@type": "Person", "name": {{ .Site.Params.author }}, "url": {{ .Site.BaseURL }} },
   "publisher": { "@type": "Organization", "name": {{ .Site.Title }} },
-  "mainEntityOfPage": {{ .Permalink }}
+  "mainEntityOfPage": {{ $canonical }}
 }
 </script>
 {{ end }}

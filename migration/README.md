@@ -5,13 +5,13 @@ This directory is the version-controlled control plane for moving the existing H
 ## Migration checklist
 
 - [x] Phase 1 — Inventory and rollback preparation
-- [>] Phase 2A — `blog.techdox.nz` attached and verified; acceptance pending
-- [ ] Phase 2B — Prepare canonical changes in preview and hold the production merge
+- [x] Phase 2A — `blog.techdox.nz` attached, verified, and accepted
+- [>] Phase 2B — Canonical changes prepared on the migration branch; production merge held
 - [ ] Phase 3 — Build the new landing page
 - [ ] Phase 4 — Configure and validate redirects
 - [ ] Phase 5 — Controlled production cutover
 
-Phase 1 was read-only against production. Phase 2A attached `blog.techdox.nz` without deploying source or enabling redirects; see `phase-2a-report.md`. No landing site has been deployed.
+Phase 1 was read-only against production. Phase 2A attached `blog.techdox.nz` without deploying source or enabling redirects; see `phase-2a-report.md`. Phase 2B changes only the migration branch and its preview. No landing site has been deployed.
 
 ## Architecture
 
@@ -46,6 +46,19 @@ The 212 entries include:
 - Query-string preservation.
 
 All rules are exact. `include_subdomains`, `subpath_matching`, and `preserve_path_suffix` are disabled.
+
+## Phase 2B branch preparation
+
+The migration branch now prepares the blog hostname metadata without changing production:
+
+- `baseURL` is `https://blog.techdox.nz/` on `migration/landing-blog-split` only.
+- Every generated HTML document has one canonical URL on `blog.techdox.nz`.
+- `og:url` uses the same URL as the canonical link.
+- Homepage, posts, and tag page-two canonicals retain `/page/2/`.
+- The paginator collection is shared by the head and body templates so metadata cannot create a second or different paginator.
+- Hugo Extended `0.147.7` is used for local evidence to match the successful Pages build.
+
+The branch must not be merged until the temporary redirect test list and coordinated launch window are approved. No Pages environment variable or production `HUGO_VERSION` pin is part of Phase 2B.
 
 ## Landing-owned and reserved paths
 
@@ -84,6 +97,8 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `generated/cloudflare-bulk-redirects-production-301.csv` | Inactive production import |
 | `scripts/inventory_urls.py` | Rebuild source/live/archive inventory |
 | `scripts/generate_redirects.py` | Validate manifest and generate CSV files |
+| `scripts/assert_canonicals.py` | Assert exact canonical and Open Graph URLs, including pagination |
+| `scripts/verify_phase2b_build.py` | Verify the full route, alias, feed, sitemap, and static-asset build |
 | `production-baseline.md` | GitHub, Hugo, Pages, DNS, and rules baseline |
 | `rollback.md` | Disabled emergency redirect and rollback procedures |
 | `evidence/live-sitemap.xml` | Production sitemap captured during Phase 1 |
@@ -96,19 +111,35 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `evidence/phase-2a-prechange-baseline.json` | Fresh rollback baseline captured immediately before attachment |
 | `evidence/phase-2a-route-verification.json` | Full dual-host route, hash, metadata, and alias results |
 | `evidence/phase-2a-postchange-state.json` | Final Pages, DNS, TLS, deployment, and staging-deadline evidence |
+| `phase-2b-report.md` | Human-readable Phase 2B branch preparation and preview report |
+| `evidence/phase-2b-controls.md` | Phase 2B scope, production guardrails, and rollback gate |
+| `evidence/phase-2b-hugo-build.txt` | Exact matching-version local Hugo build output |
+| `evidence/phase-2b-canonical-verification.json` | Seven exact canonical cases and complete generated-HTML scan |
+| `evidence/phase-2b-build-verification.json` | Route, alias, feed, sitemap, origin, and static-asset results |
+| `evidence/phase-2b-prepush-production-state.json` | Read-only production state captured before the branch push |
 | `evidence/wayback-historical-paths.json` | Historical URL classification |
 
 ## Rebuild and verify
 
-A pinned Hugo container was used because Hugo is not installed on the host:
+A pinned Hugo container is used because Hugo is not installed on the host. Phase 1 evidence used Extended `0.148.2`; Phase 2B uses Extended `0.147.7` to match Cloudflare Pages:
 
 ```bash
 docker run --rm \
   -v /tmp/techdox-build-src:/src \
   -v /tmp/techdox-hugo-public:/output \
   -w /src \
-  hugomods/hugo:exts-0.148.2 \
+  hugomods/hugo:exts-0.147.7 \
   hugo --gc --minify --destination /output
+
+python3 migration/scripts/assert_canonicals.py \
+  --build-dir /tmp/techdox-hugo-public \
+  --output migration/evidence/phase-2b-canonical-verification.json
+
+python3 migration/scripts/verify_phase2b_build.py \
+  --repo . \
+  --build-dir /tmp/techdox-hugo-public \
+  --route-evidence migration/evidence/source-routes.json \
+  --output migration/evidence/phase-2b-build-verification.json
 
 python3 migration/scripts/inventory_urls.py \
   --repo . \

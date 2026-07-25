@@ -43,8 +43,7 @@
 {{ $featured := index (where $posts "Params.featured" true) 0 }}
 {{ if not $featured }}{{ $featured = index $posts 0 }}{{ end }}
 
-{{ $grid := where $posts "Permalink" "ne" $featured.Permalink }}
-{{ $paginator := .Paginate $grid }}
+{{ $paginator := partial "paginator.html" . }}
 
 {{ if eq $paginator.PageNumber 1 }}
 

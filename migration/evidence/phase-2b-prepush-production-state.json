@@ -1,0 +1,100 @@
+{
+  "captured_at": "2026-07-25T22:50:42.361156Z",
+  "cloudflare": {
+    "domains": [
+      {
+        "id": "d9fc2d29-fe83-4cc3-b04d-6962f49cbf82",
+        "name": "blog.techdox.nz",
+        "status": "active",
+        "validation_status": "active",
+        "verification_status": "active"
+      },
+      {
+        "id": "dbb8dbf2-ff88-4ae1-aa84-fed5a5ff5001",
+        "name": "techdox.nz",
+        "status": "active",
+        "validation_status": "active",
+        "verification_status": "active"
+      }
+    ],
+    "project": {
+      "created_on": "2026-06-01T11:02:22.555575Z",
+      "name": "techdox",
+      "preview_env_var_names": [],
+      "production_branch": "main",
+      "production_env_var_names": []
+    },
+    "successful_production_deployment": {
+      "branch": "main",
+      "commit_hash": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+      "created_on": "2026-07-15T09:11:39.415616Z",
+      "environment": "production",
+      "id": "22e38982-96e2-43cb-bb0c-021af5e06981",
+      "latest_stage": {
+        "ended_on": "2026-07-15T09:11:57.88567Z",
+        "name": "deploy",
+        "status": "success"
+      },
+      "source": {
+        "config": {
+          "owner": "Techdox",
+          "production_branch": "main",
+          "repo_name": "techdox"
+        },
+        "type": "github"
+      }
+    }
+  },
+  "git": {
+    "branch": "migration/landing-blog-split",
+    "branch_parent": "06adbf59706c7edad20954e8d1f9ffbad7d752f2",
+    "main": "5113a615f504351682c2cbf9cd429b3b3232e71e"
+  },
+  "live": {
+    "apex_article": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+      "status": 200,
+      "url": "https://techdox.nz/why-selfhost/"
+    },
+    "apex_feed": {
+      "headers": {
+        "content-type": "application/xml",
+        "server": "cloudflare"
+      },
+      "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "status": 200,
+      "url": "https://techdox.nz/index.xml"
+    },
+    "apex_home": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+      "status": 200,
+      "url": "https://techdox.nz/"
+    },
+    "docs": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8",
+        "server": "cloudflare"
+      },
+      "sha256": "2282cc4ac7f6b12b04ef85e1a660591624022999c67af832cfb1c7c51de0e55a",
+      "status": 200,
+      "url": "https://docs.techdox.nz/"
+    },
+    "store": {
+      "headers": {
+        "content-type": "text/html; charset=utf-8"
+      },
+      "sha256": "89103d7211a01348af3d34521babe9ce3aae3d52d0f0cbd4954b9523df1c932f",
+      "status": 200,
+      "url": "https://store.techdox.nz/"
+    }
+  },
+  "purpose": "Phase 2B pre-push read-only production state"
+}

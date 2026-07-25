@@ -1,0 +1,15 @@
+Start building sites …
+hugo v0.147.7-189453612e4bedc4f27495a7b1145321c8d89807+extended linux/amd64 BuildDate=2025-05-31T12:41:12Z VendorInfo=hugomods
+
+
+                  │ EN
+──────────────────┼────
+ Pages            │ 73
+ Paginator pages  │  7
+ Non-page files   │  0
+ Static files     │ 50
+ Processed images │  0
+ Aliases          │ 17
+ Cleaned          │  0
+
+Total in 41 ms

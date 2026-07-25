@@ -1,4 +1,4 @@
-baseURL = "https://techdox.nz/"
+baseURL = "https://blog.techdox.nz/"
 languageCode = "en-nz"
 timeZone = "Pacific/Auckland"
 title = "Techdox"

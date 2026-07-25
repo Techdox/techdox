@@ -1,6 +1,6 @@
-# Techdox — Hugo
+# Techdox blog — Hugo
 
-The terminal-styled, markdown-based rebuild of [techdox.nz](https://techdox.nz). No CMS, no database — just markdown in git, built to static HTML.
+The terminal-styled, markdown-based blog at [blog.techdox.nz](https://blog.techdox.nz). No CMS, no database. Just markdown in git, built to static HTML.
 
 ## Stack
 
@@ -16,6 +16,18 @@ hugo server -D          # -D includes drafts; live-reloads on save
 ```
 
 `hugo` (no args) does a production build into `public/`. That's what the Dockerfile runs.
+
+To match the Hugo Extended `0.147.7` release used by the successful Cloudflare Pages build:
+
+```bash
+docker run --rm --user "$(id -u):$(id -g)" \
+  -v "$PWD:/src" \
+  -w /src \
+  hugomods/hugo:exts-0.147.7 \
+  hugo --gc --minify
+```
+
+The canonical hostname comes from `baseURL` in `hugo.toml`. `layouts/partials/head.html` emits one explicit canonical URL and matching `og:url`. Paginated home, posts, and tag pages retain their own page-number URL rather than collapsing onto page one.
 
 ## Write a post
 
