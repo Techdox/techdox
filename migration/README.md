@@ -2,16 +2,16 @@
 
 This directory is the version-controlled control plane for moving the existing Hugo blog from `techdox.nz` to `blog.techdox.nz` and introducing a separate landing site at `techdox.nz`.
 
-## Five-phase checklist
+## Migration checklist
 
 - [x] Phase 1 — Inventory and rollback preparation
-- [ ] Phase 2A — Attach and verify `blog.techdox.nz` with existing Hugo metadata
+- [>] Phase 2A — `blog.techdox.nz` attached and verified; acceptance pending
 - [ ] Phase 2B — Prepare canonical changes in preview and hold the production merge
 - [ ] Phase 3 — Build the new landing page
 - [ ] Phase 4 — Configure and validate redirects
 - [ ] Phase 5 — Controlled production cutover
 
-Phase 1 is read-only against production. Nothing in this directory activates a redirect, changes DNS, attaches a custom domain, or deploys a landing site.
+Phase 1 was read-only against production. Phase 2A attached `blog.techdox.nz` without deploying source or enabling redirects; see `phase-2a-report.md`. No landing site has been deployed.
 
 ## Architecture
 
@@ -32,7 +32,7 @@ The migration uses exact Cloudflare Bulk Redirect entries. It does not use a per
 - Direct historical image assets: **44**
 - RSS/feed routes: **18**
 - Exact redirect entries: **212**
-- Production probes: **141/141 returned HTTP 200**
+- Production probes: **141/141 successful after expected Pages normalisation**
 - Hard-coded apex references in source: **3**
 - Cloudflare Free-plan Bulk Redirect allowance: **10,000**
 
@@ -91,7 +91,11 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `evidence/source-routes.json` | Hugo routes, assets, canonicals, and source references |
 | `evidence/cloudflare-production.json` | Sanitised Pages/DNS snapshot |
 | `evidence/cloudflare-zone-rulesets.json` | Zone ruleset summary |
+| `phase-2a-report.md` | Human-readable Phase 2A execution and acceptance report |
 | `evidence/phase-2a-controls.md` | Approved Phase 2A scope, alias interpretation, indexing controls, and rollback sequence |
+| `evidence/phase-2a-prechange-baseline.json` | Fresh rollback baseline captured immediately before attachment |
+| `evidence/phase-2a-route-verification.json` | Full dual-host route, hash, metadata, and alias results |
+| `evidence/phase-2a-postchange-state.json` | Final Pages, DNS, TLS, deployment, and staging-deadline evidence |
 | `evidence/wayback-historical-paths.json` | Historical URL classification |
 
 ## Rebuild and verify

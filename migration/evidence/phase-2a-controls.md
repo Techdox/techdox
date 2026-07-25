@@ -8,8 +8,8 @@ Phase 2A may only:
 
 - Capture a fresh pre-change production baseline.
 - Attach `blog.techdox.nz` to the existing `techdox` project through the Cloudflare Pages Custom Domains workflow.
-- Allow Pages to create and manage the required `blog.techdox.nz` DNS record and TLS certificate.
-- Verify the resulting hostname.
+- Establish the exact required `blog.techdox.nz` CNAME only after the Pages custom-domain object exists; never substitute a DNS-only attachment.
+- Verify Pages hostname validation, DNS, TLS, and the resulting hostname.
 
 Phase 2A must not:
 
@@ -96,3 +96,16 @@ The completed Phase 2A report must include:
 - Apex unchanged verification.
 - Duplicate-host activation time and seven-day review deadline.
 - Confirmation that the hostname remains unlinked and its sitemap was not submitted.
+
+## Observed Phase 2A values
+
+- Fresh baseline: `evidence/phase-2a-prechange-baseline.json`
+- Custom domain created: `2026-07-25T11:53:47.285907Z`
+- Pages active: `2026-07-25T12:09:34.586452Z`
+- Seven-day review deadline: `2026-08-01T11:53:47.285907Z`
+- Route verification: 141/141 passed
+- Generated aliases: 17/17 contained equivalent apex meta-refresh and canonical targets
+- Rendered absolute links to `blog.techdox.nz`: zero
+- Sitemap submission: not performed
+- Final state: `evidence/phase-2a-postchange-state.json`
+- Human report: `phase-2a-report.md`

@@ -1,5 +1,7 @@
 # Production baseline
 
+> This file is the historical Phase 1 snapshot. The fresh baseline captured immediately before Phase 2A and the verified post-change state are in `evidence/phase-2a-prechange-baseline.json`, `evidence/phase-2a-postchange-state.json`, and `phase-2a-report.md`.
+
 Captured read-only on 2026-07-25.
 
 ## Repository

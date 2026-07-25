@@ -1,0 +1,157 @@
+{
+  "apex_tls": "subject=CN=techdox.nz\nissuer=C=US, O=Google Trust Services, CN=WE1\nnotBefore=Jun  1 10:06:07 2026 GMT\nnotAfter=Aug 30 11:05:54 2026 GMT\nX509v3 Subject Alternative Name: \n    DNS:techdox.nz",
+  "assertions": {
+    "apex_custom_domain_active": true,
+    "blog_custom_domain_absent": true,
+    "blog_routing_dns_absent": true,
+    "production_commit_matches_main": true
+  },
+  "captured_at": "2026-07-25T11:53:24.326020Z",
+  "cloudflare": {
+    "dns": {
+      "blog.techdox.nz": [],
+      "docs.techdox.nz": [
+        {
+          "comment": null,
+          "content": "techdox-docs.pages.dev",
+          "id": "3c7fc8a93cee23c58b22d1ec5509e327",
+          "name": "docs.techdox.nz",
+          "proxied": true,
+          "ttl": 1,
+          "type": "CNAME"
+        }
+      ],
+      "store.techdox.nz": [
+        {
+          "comment": null,
+          "content": "34.117.223.165",
+          "id": "da66379ac18bdbeb1d312d5c84dfa2cf",
+          "name": "store.techdox.nz",
+          "proxied": false,
+          "ttl": 1,
+          "type": "A"
+        }
+      ],
+      "techdox.nz": [
+        {
+          "comment": null,
+          "content": "techdox.pages.dev",
+          "id": "76f487b7c0c5328eea18d27d98bff7ad",
+          "name": "techdox.nz",
+          "proxied": true,
+          "ttl": 1,
+          "type": "CNAME"
+        }
+      ]
+    },
+    "domains": [
+      {
+        "created_on": "2026-06-01T11:04:05.446986Z",
+        "id": "dbb8dbf2-ff88-4ae1-aa84-fed5a5ff5001",
+        "name": "techdox.nz",
+        "status": "active"
+      }
+    ],
+    "domains_status": 200,
+    "production_deployment": {
+      "aliases": [
+        "https://techdox.nz"
+      ],
+      "branch": "main",
+      "commit_hash": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+      "created_on": "2026-07-15T09:11:39.415616Z",
+      "id": "22e38982-96e2-43cb-bb0c-021af5e06981",
+      "latest_stage": {
+        "ended_on": "2026-07-15T09:11:57.88567Z",
+        "name": "deploy",
+        "started_on": "2026-07-15T09:11:52.659287Z",
+        "status": "success"
+      },
+      "url": "https://22e38982.techdox.pages.dev"
+    },
+    "production_hugo_log_lines": [
+      "Executing user command: hugo",
+      "hugo v0.147.7-189453612e4bedc4f27495a7b1145321c8d89807+extended linux/amd64 BuildDate=2025-05-31T12:41:12Z VendorInfo=gohugoio"
+    ],
+    "project": {
+      "build_config": {
+        "build_command": "hugo",
+        "destination_dir": "public",
+        "root_dir": "",
+        "web_analytics_tag": null,
+        "web_analytics_token": null
+      },
+      "deployment_configs": {
+        "preview": {
+          "always_use_latest_compatibility_date": false,
+          "build_image_major_version": 3,
+          "compatibility_date": "2026-06-01",
+          "compatibility_flags": [],
+          "env_vars": null,
+          "fail_open": true,
+          "usage_model": "standard"
+        },
+        "production": {
+          "always_use_latest_compatibility_date": false,
+          "build_image_major_version": 3,
+          "compatibility_date": "2026-06-01",
+          "compatibility_flags": [],
+          "env_vars": null,
+          "fail_open": true,
+          "usage_model": "standard"
+        }
+      },
+      "name": "techdox",
+      "production_branch": "main",
+      "subdomain": "techdox.pages.dev"
+    },
+    "project_status": 200
+  },
+  "git": {
+    "main_commit": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+    "migration_branch_commit": "071fb7d1ba565a39059cea45f3b9763ad4d321f6"
+  },
+  "http": {
+    "https://docs.techdox.nz/": {
+      "bytes": 52955,
+      "final_url": "https://docs.techdox.nz/",
+      "redirects": 0,
+      "sha256": "2282cc4ac7f6b12b04ef85e1a660591624022999c67af832cfb1c7c51de0e55a",
+      "ssl_verify": 0,
+      "status": 200
+    },
+    "https://store.techdox.nz/": {
+      "bytes": 28983,
+      "final_url": "https://store.techdox.nz/",
+      "redirects": 0,
+      "sha256": "89103d7211a01348af3d34521babe9ce3aae3d52d0f0cbd4954b9523df1c932f",
+      "ssl_verify": 0,
+      "status": 200
+    },
+    "https://techdox.nz/": {
+      "bytes": 25137,
+      "final_url": "https://techdox.nz/",
+      "redirects": 0,
+      "sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+      "ssl_verify": 0,
+      "status": 200
+    },
+    "https://techdox.nz/index.xml": {
+      "bytes": 15135,
+      "final_url": "https://techdox.nz/index.xml",
+      "redirects": 0,
+      "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "ssl_verify": 0,
+      "status": 200
+    },
+    "https://techdox.nz/why-selfhost/": {
+      "bytes": 15277,
+      "final_url": "https://techdox.nz/why-selfhost/",
+      "redirects": 0,
+      "sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+      "ssl_verify": 0,
+      "status": 200
+    }
+  },
+  "scope": "immediately before Phase 2A Pages custom-domain attachment"
+}
