@@ -7,11 +7,18 @@ This directory is the version-controlled control plane for moving the existing H
 - [x] Phase 1 — Inventory and rollback preparation
 - [x] Phase 2A — `blog.techdox.nz` attached, verified, and accepted
 - [x] Phase 2B — Canonical changes prepared and preview-verified; production merge held
-- [ ] Phase 3 — Build the new landing page
-- [ ] Phase 4 — Configure and validate redirects
-- [ ] Phase 5 — Controlled production cutover
+- [x] Phase 3 — Build and verify the isolated landing preview
+- [x] Phase 4 — Configure, exercise, and disable temporary redirects
+- [x] Phase 5A — Production cutover preflight
+- [ ] Phase 5B — Controlled production cutover
 
-Phase 1 was read-only against production. Phase 2A attached `blog.techdox.nz` without deploying source or enabling redirects; see `phase-2a-report.md`. Phase 2B changes only the migration branch and its preview. No landing site has been deployed.
+Phase 1 was read-only against production. Phase 2A attached `blog.techdox.nz`
+without deploying source or enabling redirects; see `phase-2a-report.md`.
+Phase 2B changes only the migration branch and its preview. Phase 3 produced a
+verified landing preview in the separate `Techdox/techdox-landing` repository.
+Phase 4 proved all exact redirects using a temporary 302 rule and returned that
+rule to disabled. Phase 5A preflight is documented but must not be treated as
+cutover approval.
 
 ## Architecture
 
@@ -120,6 +127,13 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `evidence/phase-2b-prepush-production-state.json` | Read-only production state captured before the branch push |
 | `evidence/phase-2b-preview-verification.json` | Live HTTPS checks against the exact Phase 2B preview deployment |
 | `evidence/phase-2b-postpush-state.json` | Preview build record and read-only production comparison after the branch push |
+| `phase-4-report.md` | Temporary 302 redirect activation, full validation, and post-disable report |
+| `evidence/phase-4-live-validation.json` | All HTTPS and HTTP exact-mapping results from the temporary rule |
+| `evidence/phase-4-post-disable.json` | Full legacy-route verification after the temporary rule was disabled |
+| `phase-5a-report.md` | Production cutover readiness report and explicit Phase 5B hold |
+| `evidence/phase-5a-production-baseline.json` | Fresh production hashes, route shape, and rollback baseline |
+| `evidence/phase-5a-controls.json` | Pull request, Pages, redirect-list, and no-production-change controls |
+| `evidence/phase-5a-blog-preview-verification.json` | Live verification of the exact blog release candidate preview |
 | `evidence/wayback-historical-paths.json` | Historical URL classification |
 
 ## Rebuild and verify

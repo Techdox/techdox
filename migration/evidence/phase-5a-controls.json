@@ -1,0 +1,90 @@
+{
+  "captured_at": "2026-07-26T08:58:53Z",
+  "gate": "PASS",
+  "github": {
+    "blog": {
+      "repository": "Techdox/techdox",
+      "pull_request": 3,
+      "url": "https://github.com/Techdox/techdox/pull/3",
+      "state": "OPEN",
+      "draft": true,
+      "mergeable": true,
+      "head_branch": "migration/landing-blog-split",
+      "head_commit": "b6d68bf9b7d131933d940a2b79452396ed014f2b",
+      "base_branch": "main",
+      "base_commit": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+      "latest_cloudflare_pages_check": "SUCCESS"
+    },
+    "landing": {
+      "repository": "Techdox/techdox-landing",
+      "pull_request": 1,
+      "url": "https://github.com/Techdox/techdox-landing/pull/1",
+      "state": "OPEN",
+      "draft": true,
+      "mergeable": true,
+      "head_branch": "phase-3/landing-preview",
+      "head_commit": "46c44e82452684ebf71643816725042cd9897ca5",
+      "base_branch": "main",
+      "base_commit": "1ed8e6d0763853f87aa599d7373f7486e10d1864"
+    }
+  },
+  "pages": {
+    "blog_project": {
+      "name": "techdox",
+      "production_deployment_id": "22e38982-96e2-43cb-bb0c-021af5e06981",
+      "production_commit": "5113a615f504351682c2cbf9cd429b3b3232e71e",
+      "production_branch": "main",
+      "custom_domains": [
+        "blog.techdox.nz",
+        "techdox.nz"
+      ],
+      "custom_domains_active": true,
+      "production_environment_variables": 0
+    },
+    "landing_project": {
+      "name": "techdox-landing",
+      "deployment_mode": "Direct Upload",
+      "production_deployment": null,
+      "custom_domains": [],
+      "immutable_preview": "https://f411c56e.techdox-landing.pages.dev",
+      "immutable_preview_deployment_id": "f411c56e-0c2e-4e6c-9d35-466482670637",
+      "immutable_preview_commit": "46c44e82452684ebf71643816725042cd9897ca5"
+    }
+  },
+  "redirects": {
+    "temporary_list": {
+      "name": "techdox_apex_blog_phase4_302",
+      "items": 212,
+      "rule": "Techdox apex blog migration — temporary 302 validation",
+      "rule_enabled": false
+    },
+    "production_list": {
+      "name": "techdox_apex_blog_production_301",
+      "description": "Techdox apex blog migration — permanent 301 redirects",
+      "items": 212,
+      "status": "Inactive",
+      "associated_rule": null,
+      "csv": "migration/generated/cloudflare-bulk-redirects-production-301.csv",
+      "csv_sha256": "fe74ba713ae2bb25e8db45e4db62faf64df961641fed4b4c1c4f9e5fa893caa9"
+    }
+  },
+  "verification": {
+    "landing_build_checks": "85/85",
+    "landing_assets": 11,
+    "landing_preview_byte_identical_assets": "10/10",
+    "landing_accessibility_violations": 0,
+    "landing_external_links": "14/14",
+    "blog_exact_canonical_checks": "7/7",
+    "blog_route_checks": "14/14",
+    "blog_alias_checks": "4/4",
+    "blog_sitemap_urls": "52/52",
+    "blog_preview_noindex": true
+  },
+  "production_changes_during_phase_5a": {
+    "pull_requests_merged": 0,
+    "production_deployments_created": 0,
+    "custom_domains_moved": 0,
+    "dns_changes": 0,
+    "live_redirect_rules_enabled": 0
+  }
+}
