@@ -1,0 +1,236 @@
+{
+  "aliases": {
+    "checks": [
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/"
+        ],
+        "expected": "https://blog.techdox.nz/",
+        "file": "page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/posts/"
+        ],
+        "expected": "https://blog.techdox.nz/posts/",
+        "file": "posts/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/posts/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/ai/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/ai/",
+        "file": "tags/ai/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/ai/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/automation/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/automation/",
+        "file": "tags/automation/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/automation/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/certification/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/certification/",
+        "file": "tags/certification/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/certification/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/chatgpt/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/chatgpt/",
+        "file": "tags/chatgpt/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/chatgpt/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/cloudflare/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/cloudflare/",
+        "file": "tags/cloudflare/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/cloudflare/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/docker/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/docker/",
+        "file": "tags/docker/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/docker/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/homelab/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/homelab/",
+        "file": "tags/homelab/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/homelab/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/kubernetes/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/kubernetes/",
+        "file": "tags/kubernetes/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/kubernetes/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/linux/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/linux/",
+        "file": "tags/linux/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/linux/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/networking/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/networking/",
+        "file": "tags/networking/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/networking/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/proxmox/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/proxmox/",
+        "file": "tags/proxmox/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/proxmox/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/raspberry-pi/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/raspberry-pi/",
+        "file": "tags/raspberry-pi/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/raspberry-pi/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/security/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/security/",
+        "file": "tags/security/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/security/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/selfhosting/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/selfhosting/",
+        "file": "tags/selfhosting/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/selfhosting/"
+        ]
+      },
+      {
+        "canonicals": [
+          "https://blog.techdox.nz/tags/zimaboard/"
+        ],
+        "expected": "https://blog.techdox.nz/tags/zimaboard/",
+        "file": "tags/zimaboard/page/1/index.html",
+        "passed": true,
+        "refreshes": [
+          "https://blog.techdox.nz/tags/zimaboard/"
+        ]
+      }
+    ],
+    "failed": [],
+    "passed": true,
+    "total": 17
+  },
+  "errors": [],
+  "expected_origin": "https://blog.techdox.nz/",
+  "feeds": {
+    "missing": [],
+    "passed": true,
+    "total": 18
+  },
+  "generated_at": "2026-07-25T22:49:28.036834Z",
+  "passed": true,
+  "rendered_origins": {
+    "apex_references": [],
+    "blog_reference_count": 686
+  },
+  "route_inventory": {
+    "categories": {
+      "blog-article": 33,
+      "blog-deals": 1,
+      "blog-index": 5,
+      "blog-pagination": 4,
+      "blog-taxonomy": 32,
+      "direct-image-asset": 44,
+      "landing-owned": 2,
+      "landing-root": 1,
+      "not-found-document": 1,
+      "rss-feed": 18
+    },
+    "missing": [],
+    "passed": true,
+    "total": 141
+  },
+  "sitemap": {
+    "all_blog_host": true,
+    "url_count": 52
+  },
+  "source_branch": "migration/landing-blog-split",
+  "static_assets": {
+    "failed": [],
+    "passed": true,
+    "total": 50
+  }
+}

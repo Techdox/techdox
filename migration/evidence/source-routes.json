@@ -1,0 +1,1077 @@
+{
+  "generated_at": "2026-07-25T11:29:26.981886+00:00",
+  "generated_summary": {
+    "blog-article": 33,
+    "blog-deals": 1,
+    "blog-index": 5,
+    "blog-pagination": 4,
+    "blog-taxonomy": 32,
+    "direct-image-asset": 44,
+    "landing-owned": 2,
+    "landing-root": 1,
+    "not-found-document": 1,
+    "rss-feed": 18
+  },
+  "hardcoded_apex_references": [
+    {
+      "file": "HUGO.md",
+      "line": 3,
+      "url": "https://techdox.nz"
+    },
+    {
+      "file": "README.md",
+      "line": 20,
+      "url": "https://techdox.nz"
+    },
+    {
+      "file": "hugo.toml",
+      "line": 1,
+      "url": "https://techdox.nz/"
+    }
+  ],
+  "hugo_build_dir": "/tmp/techdox-hugo-public-20260725c",
+  "live_sitemap": {
+    "content_type": "application/xml",
+    "final_url": "https://techdox.nz/sitemap.xml",
+    "status": 200,
+    "url": "https://techdox.nz/sitemap.xml",
+    "url_count": 52
+  },
+  "referenced_same_host_assets": [
+    "/content/images/2023/03/IMG_2009-Small.png",
+    "/content/images/2023/03/Zima-Board_1.8.1.jpg",
+    "/content/images/2023/03/image-10.png",
+    "/content/images/2023/03/image-11.png",
+    "/content/images/2023/03/image-12.png",
+    "/content/images/2023/03/image-13.png",
+    "/content/images/2023/03/image-14.png",
+    "/content/images/2023/03/image-15.png",
+    "/content/images/2023/03/image-16.png",
+    "/content/images/2023/03/image-17.png",
+    "/content/images/2023/03/image-20.png",
+    "/content/images/2023/03/image-21.png",
+    "/content/images/2023/03/image-9.png",
+    "/content/images/2023/04/connector_1.1.3.jpg",
+    "/content/images/2023/04/disk_1.4.1.jpg",
+    "/content/images/2023/04/sata_1.1.2.jpg",
+    "/content/images/2023/04/storage_1.4.2.jpg",
+    "/content/images/2023/04/zima_1.1.1.jpg",
+    "/content/images/2023/05/image-2.png",
+    "/content/images/2023/06/image-1.png",
+    "/content/images/2023/06/image-2.png",
+    "/content/images/2023/06/image-3.png",
+    "/content/images/2023/06/image.png",
+    "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+    "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+    "/content/images/2023/09/image-1.png",
+    "/content/images/2023/09/image-10.png",
+    "/content/images/2023/09/image-11.png",
+    "/content/images/2023/09/image-12.png",
+    "/content/images/2023/09/image-13.png",
+    "/content/images/2023/09/image-14.png",
+    "/content/images/2023/09/image-15.png",
+    "/content/images/2023/09/image-4.png",
+    "/content/images/2023/09/image-5.png",
+    "/content/images/2023/09/image-6.png",
+    "/content/images/2023/09/image-7.png",
+    "/content/images/2023/09/image-8.png",
+    "/content/images/2023/09/image-9.png",
+    "/content/images/2023/09/image.png",
+    "/content/images/2023/09/os-circle.webp",
+    "/content/images/2024/08/image-1.png",
+    "/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+    "/content/images/2026/05/blog.png",
+    "/og-default.png"
+  ],
+  "routes": [
+    {
+      "canonical_path": "/",
+      "category": "landing-root",
+      "generated_file": "index.html",
+      "in_live_sitemap": true,
+      "path": "/"
+    },
+    {
+      "canonical_path": "/404.html",
+      "category": "not-found-document",
+      "generated_file": "404.html",
+      "in_live_sitemap": false,
+      "path": "/404.html"
+    },
+    {
+      "canonical_path": "/ai-is-the-modern-day-calculator/",
+      "category": "blog-article",
+      "generated_file": "ai-is-the-modern-day-calculator/index.html",
+      "in_live_sitemap": true,
+      "path": "/ai-is-the-modern-day-calculator/"
+    },
+    {
+      "canonical_path": "/break-things-but-start-small/",
+      "category": "blog-article",
+      "generated_file": "break-things-but-start-small/index.html",
+      "in_live_sitemap": true,
+      "path": "/break-things-but-start-small/"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/IMG_2009-Small.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/IMG_2009-Small.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/IMG_2009-Small.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/Zima-Board_1.8.1.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/Zima-Board_1.8.1.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/Zima-Board_1.8.1.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-10.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-10.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-10.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-11.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-11.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-11.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-12.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-12.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-12.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-13.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-13.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-13.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-14.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-14.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-14.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-15.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-15.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-15.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-16.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-16.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-16.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-17.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-17.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-17.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-20.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-20.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-20.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-21.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-21.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-21.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/03/image-9.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/03/image-9.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/03/image-9.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/04/connector_1.1.3.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/04/connector_1.1.3.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/04/connector_1.1.3.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/04/disk_1.4.1.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/04/disk_1.4.1.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/04/disk_1.4.1.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/04/sata_1.1.2.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/04/sata_1.1.2.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/04/sata_1.1.2.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/04/storage_1.4.2.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/04/storage_1.4.2.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/04/storage_1.4.2.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/04/zima_1.1.1.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/04/zima_1.1.1.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/04/zima_1.1.1.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/05/image-2.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/05/image-2.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/05/image-2.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/06/image-1.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/06/image-1.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/06/image-1.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/06/image-2.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/06/image-2.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/06/image-2.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/06/image-3.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/06/image-3.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/06/image-3.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/06/image.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/06/image.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/06/image.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-1.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-1.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-1.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-10.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-10.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-10.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-11.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-11.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-11.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-12.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-12.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-12.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-13.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-13.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-13.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-14.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-14.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-14.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-15.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-15.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-15.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-4.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-4.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-4.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-5.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-5.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-5.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-6.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-6.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-6.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-7.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-7.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-7.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-8.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-8.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-8.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image-9.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image-9.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image-9.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/image.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/image.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/image.png"
+    },
+    {
+      "canonical_path": "/content/images/2023/09/os-circle.webp",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2023/09/os-circle.webp",
+      "in_live_sitemap": false,
+      "path": "/content/images/2023/09/os-circle.webp"
+    },
+    {
+      "canonical_path": "/content/images/2024/08/image-1.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2024/08/image-1.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2024/08/image-1.png"
+    },
+    {
+      "canonical_path": "/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2025/12/lfs258-kubernetes-fundamentals.png"
+    },
+    {
+      "canonical_path": "/content/images/2026/05/blog.png",
+      "category": "direct-image-asset",
+      "generated_file": "content/images/2026/05/blog.png",
+      "in_live_sitemap": false,
+      "path": "/content/images/2026/05/blog.png"
+    },
+    {
+      "canonical_path": "/deals/",
+      "category": "blog-deals",
+      "generated_file": "deals/index.html",
+      "in_live_sitemap": true,
+      "path": "/deals/"
+    },
+    {
+      "canonical_path": "/devsecops/",
+      "category": "blog-article",
+      "generated_file": "devsecops/index.html",
+      "in_live_sitemap": true,
+      "path": "/devsecops/"
+    },
+    {
+      "canonical_path": "/docker-and-the-power-of-continuous-learning/",
+      "category": "blog-article",
+      "generated_file": "docker-and-the-power-of-continuous-learning/index.html",
+      "in_live_sitemap": true,
+      "path": "/docker-and-the-power-of-continuous-learning/"
+    },
+    {
+      "canonical_path": "/docker-volume-backup-and-restore-script/",
+      "category": "blog-article",
+      "generated_file": "docker-volume-backup-and-restore-script/index.html",
+      "in_live_sitemap": true,
+      "path": "/docker-volume-backup-and-restore-script/"
+    },
+    {
+      "canonical_path": "/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+      "category": "blog-article",
+      "generated_file": "embracing-proxmox-virtualization-adventures-in-self-hosting/index.html",
+      "in_live_sitemap": true,
+      "path": "/embracing-proxmox-virtualization-adventures-in-self-hosting/"
+    },
+    {
+      "canonical_path": "/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+      "category": "blog-article",
+      "generated_file": "how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/index.html",
+      "in_live_sitemap": true,
+      "path": "/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/"
+    },
+    {
+      "canonical_path": "/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+      "category": "blog-article",
+      "generated_file": "i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/index.html",
+      "in_live_sitemap": true,
+      "path": "/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/"
+    },
+    {
+      "canonical_path": "/i-tried-running-an-ai-agent-are-they-safe/",
+      "category": "blog-article",
+      "generated_file": "i-tried-running-an-ai-agent-are-they-safe/index.html",
+      "in_live_sitemap": true,
+      "path": "/i-tried-running-an-ai-agent-are-they-safe/"
+    },
+    {
+      "canonical_path": "/index.xml",
+      "category": "rss-feed",
+      "generated_file": "index.xml",
+      "in_live_sitemap": false,
+      "path": "/index.xml"
+    },
+    {
+      "canonical_path": "/just-break-stuff/",
+      "category": "blog-article",
+      "generated_file": "just-break-stuff/index.html",
+      "in_live_sitemap": true,
+      "path": "/just-break-stuff/"
+    },
+    {
+      "canonical_path": "/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+      "category": "blog-article",
+      "generated_file": "kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/index.html",
+      "in_live_sitemap": true,
+      "path": "/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/"
+    },
+    {
+      "canonical_path": "/learning-to-code-with-chatgpt/",
+      "category": "blog-article",
+      "generated_file": "learning-to-code-with-chatgpt/index.html",
+      "in_live_sitemap": true,
+      "path": "/learning-to-code-with-chatgpt/"
+    },
+    {
+      "canonical_path": "/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+      "category": "blog-article",
+      "generated_file": "lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/index.html",
+      "in_live_sitemap": true,
+      "path": "/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/"
+    },
+    {
+      "canonical_path": "/my-azure-devops-terraform-pipeline/",
+      "category": "blog-article",
+      "generated_file": "my-azure-devops-terraform-pipeline/index.html",
+      "in_live_sitemap": true,
+      "path": "/my-azure-devops-terraform-pipeline/"
+    },
+    {
+      "canonical_path": "/my-homelab-ai-setup-useful-access-limited-permissions/",
+      "category": "blog-article",
+      "generated_file": "my-homelab-ai-setup-useful-access-limited-permissions/index.html",
+      "in_live_sitemap": true,
+      "path": "/my-homelab-ai-setup-useful-access-limited-permissions/"
+    },
+    {
+      "canonical_path": "/my-new-home-server-hp-elitedesk-800-sff/",
+      "category": "blog-article",
+      "generated_file": "my-new-home-server-hp-elitedesk-800-sff/index.html",
+      "in_live_sitemap": true,
+      "path": "/my-new-home-server-hp-elitedesk-800-sff/"
+    },
+    {
+      "canonical_path": "/og-default.png",
+      "category": "direct-image-asset",
+      "generated_file": "og-default.png",
+      "in_live_sitemap": false,
+      "path": "/og-default.png"
+    },
+    {
+      "canonical_path": "/",
+      "category": "blog-pagination",
+      "generated_file": "page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/page/1/"
+    },
+    {
+      "canonical_path": "/page/2/",
+      "category": "blog-pagination",
+      "generated_file": "page/2/index.html",
+      "in_live_sitemap": false,
+      "path": "/page/2/"
+    },
+    {
+      "canonical_path": "/page/3/",
+      "category": "blog-pagination",
+      "generated_file": "page/3/index.html",
+      "in_live_sitemap": false,
+      "path": "/page/3/"
+    },
+    {
+      "canonical_path": "/page/4/",
+      "category": "blog-pagination",
+      "generated_file": "page/4/index.html",
+      "in_live_sitemap": false,
+      "path": "/page/4/"
+    },
+    {
+      "canonical_path": "/personal-projects-and-cloud-certifications/",
+      "category": "blog-article",
+      "generated_file": "personal-projects-and-cloud-certifications/index.html",
+      "in_live_sitemap": true,
+      "path": "/personal-projects-and-cloud-certifications/"
+    },
+    {
+      "canonical_path": "/posts/",
+      "category": "blog-index",
+      "generated_file": "posts/index.html",
+      "in_live_sitemap": true,
+      "path": "/posts/"
+    },
+    {
+      "canonical_path": "/posts/index.xml",
+      "category": "rss-feed",
+      "generated_file": "posts/index.xml",
+      "in_live_sitemap": false,
+      "path": "/posts/index.xml"
+    },
+    {
+      "canonical_path": "/posts/",
+      "category": "blog-index",
+      "generated_file": "posts/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/posts/page/1/"
+    },
+    {
+      "canonical_path": "/posts/page/2/",
+      "category": "blog-index",
+      "generated_file": "posts/page/2/index.html",
+      "in_live_sitemap": false,
+      "path": "/posts/page/2/"
+    },
+    {
+      "canonical_path": "/posts/page/3/",
+      "category": "blog-index",
+      "generated_file": "posts/page/3/index.html",
+      "in_live_sitemap": false,
+      "path": "/posts/page/3/"
+    },
+    {
+      "canonical_path": "/posts/page/4/",
+      "category": "blog-index",
+      "generated_file": "posts/page/4/index.html",
+      "in_live_sitemap": false,
+      "path": "/posts/page/4/"
+    },
+    {
+      "canonical_path": "/question-everything-road-to-cka/",
+      "category": "blog-article",
+      "generated_file": "question-everything-road-to-cka/index.html",
+      "in_live_sitemap": true,
+      "path": "/question-everything-road-to-cka/"
+    },
+    {
+      "canonical_path": "/robots.txt",
+      "category": "landing-owned",
+      "generated_file": "robots.txt",
+      "in_live_sitemap": false,
+      "path": "/robots.txt"
+    },
+    {
+      "canonical_path": "/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+      "category": "blog-article",
+      "generated_file": "sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/index.html",
+      "in_live_sitemap": true,
+      "path": "/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/"
+    },
+    {
+      "canonical_path": "/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+      "category": "blog-article",
+      "generated_file": "securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/index.html",
+      "in_live_sitemap": true,
+      "path": "/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/"
+    },
+    {
+      "canonical_path": "/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+      "category": "blog-article",
+      "generated_file": "self-hosting-with-a-raspberry-pi-4-and-cloudflare/index.html",
+      "in_live_sitemap": true,
+      "path": "/self-hosting-with-a-raspberry-pi-4-and-cloudflare/"
+    },
+    {
+      "canonical_path": "/selfhosting-and-containers/",
+      "category": "blog-article",
+      "generated_file": "selfhosting-and-containers/index.html",
+      "in_live_sitemap": true,
+      "path": "/selfhosting-and-containers/"
+    },
+    {
+      "canonical_path": "/setting-up-wireguard/",
+      "category": "blog-article",
+      "generated_file": "setting-up-wireguard/index.html",
+      "in_live_sitemap": true,
+      "path": "/setting-up-wireguard/"
+    },
+    {
+      "canonical_path": "/sitemap.xml",
+      "category": "landing-owned",
+      "generated_file": "sitemap.xml",
+      "in_live_sitemap": false,
+      "path": "/sitemap.xml"
+    },
+    {
+      "canonical_path": "/tags/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/"
+    },
+    {
+      "canonical_path": "/tags/ai/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/ai/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/ai/"
+    },
+    {
+      "canonical_path": "/tags/ai/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/ai/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/ai/index.xml"
+    },
+    {
+      "canonical_path": "/tags/ai/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/ai/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/ai/page/1/"
+    },
+    {
+      "canonical_path": "/tags/automation/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/automation/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/automation/"
+    },
+    {
+      "canonical_path": "/tags/automation/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/automation/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/automation/index.xml"
+    },
+    {
+      "canonical_path": "/tags/automation/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/automation/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/automation/page/1/"
+    },
+    {
+      "canonical_path": "/tags/certification/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/certification/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/certification/"
+    },
+    {
+      "canonical_path": "/tags/certification/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/certification/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/certification/index.xml"
+    },
+    {
+      "canonical_path": "/tags/certification/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/certification/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/certification/page/1/"
+    },
+    {
+      "canonical_path": "/tags/chatgpt/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/chatgpt/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/chatgpt/"
+    },
+    {
+      "canonical_path": "/tags/chatgpt/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/chatgpt/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/chatgpt/index.xml"
+    },
+    {
+      "canonical_path": "/tags/chatgpt/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/chatgpt/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/chatgpt/page/1/"
+    },
+    {
+      "canonical_path": "/tags/cloudflare/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/cloudflare/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/cloudflare/"
+    },
+    {
+      "canonical_path": "/tags/cloudflare/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/cloudflare/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/cloudflare/index.xml"
+    },
+    {
+      "canonical_path": "/tags/cloudflare/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/cloudflare/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/cloudflare/page/1/"
+    },
+    {
+      "canonical_path": "/tags/docker/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/docker/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/docker/"
+    },
+    {
+      "canonical_path": "/tags/docker/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/docker/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/docker/index.xml"
+    },
+    {
+      "canonical_path": "/tags/docker/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/docker/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/docker/page/1/"
+    },
+    {
+      "canonical_path": "/tags/homelab/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/homelab/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/homelab/"
+    },
+    {
+      "canonical_path": "/tags/homelab/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/homelab/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/homelab/index.xml"
+    },
+    {
+      "canonical_path": "/tags/homelab/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/homelab/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/homelab/page/1/"
+    },
+    {
+      "canonical_path": "/tags/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/index.xml"
+    },
+    {
+      "canonical_path": "/tags/kubernetes/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/kubernetes/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/kubernetes/"
+    },
+    {
+      "canonical_path": "/tags/kubernetes/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/kubernetes/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/kubernetes/index.xml"
+    },
+    {
+      "canonical_path": "/tags/kubernetes/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/kubernetes/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/kubernetes/page/1/"
+    },
+    {
+      "canonical_path": "/tags/linux/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/linux/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/linux/"
+    },
+    {
+      "canonical_path": "/tags/linux/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/linux/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/linux/index.xml"
+    },
+    {
+      "canonical_path": "/tags/linux/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/linux/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/linux/page/1/"
+    },
+    {
+      "canonical_path": "/tags/networking/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/networking/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/networking/"
+    },
+    {
+      "canonical_path": "/tags/networking/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/networking/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/networking/index.xml"
+    },
+    {
+      "canonical_path": "/tags/networking/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/networking/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/networking/page/1/"
+    },
+    {
+      "canonical_path": "/tags/proxmox/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/proxmox/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/proxmox/"
+    },
+    {
+      "canonical_path": "/tags/proxmox/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/proxmox/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/proxmox/index.xml"
+    },
+    {
+      "canonical_path": "/tags/proxmox/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/proxmox/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/proxmox/page/1/"
+    },
+    {
+      "canonical_path": "/tags/raspberry-pi/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/raspberry-pi/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/raspberry-pi/"
+    },
+    {
+      "canonical_path": "/tags/raspberry-pi/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/raspberry-pi/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/raspberry-pi/index.xml"
+    },
+    {
+      "canonical_path": "/tags/raspberry-pi/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/raspberry-pi/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/raspberry-pi/page/1/"
+    },
+    {
+      "canonical_path": "/tags/security/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/security/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/security/"
+    },
+    {
+      "canonical_path": "/tags/security/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/security/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/security/index.xml"
+    },
+    {
+      "canonical_path": "/tags/security/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/security/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/security/page/1/"
+    },
+    {
+      "canonical_path": "/tags/selfhosting/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/selfhosting/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/selfhosting/"
+    },
+    {
+      "canonical_path": "/tags/selfhosting/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/selfhosting/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/selfhosting/index.xml"
+    },
+    {
+      "canonical_path": "/tags/selfhosting/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/selfhosting/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/selfhosting/page/1/"
+    },
+    {
+      "canonical_path": "/tags/selfhosting/page/2/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/selfhosting/page/2/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/selfhosting/page/2/"
+    },
+    {
+      "canonical_path": "/tags/zimaboard/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/zimaboard/index.html",
+      "in_live_sitemap": true,
+      "path": "/tags/zimaboard/"
+    },
+    {
+      "canonical_path": "/tags/zimaboard/index.xml",
+      "category": "rss-feed",
+      "generated_file": "tags/zimaboard/index.xml",
+      "in_live_sitemap": false,
+      "path": "/tags/zimaboard/index.xml"
+    },
+    {
+      "canonical_path": "/tags/zimaboard/",
+      "category": "blog-taxonomy",
+      "generated_file": "tags/zimaboard/page/1/index.html",
+      "in_live_sitemap": false,
+      "path": "/tags/zimaboard/page/1/"
+    },
+    {
+      "canonical_path": "/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+      "category": "blog-article",
+      "generated_file": "the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/index.html",
+      "in_live_sitemap": true,
+      "path": "/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/"
+    },
+    {
+      "canonical_path": "/the-road-to-cka-certified-kubernetes-administrator/",
+      "category": "blog-article",
+      "generated_file": "the-road-to-cka-certified-kubernetes-administrator/index.html",
+      "in_live_sitemap": true,
+      "path": "/the-road-to-cka-certified-kubernetes-administrator/"
+    },
+    {
+      "canonical_path": "/things-kubernetes-forced-me-to-learn-this-week/",
+      "category": "blog-article",
+      "generated_file": "things-kubernetes-forced-me-to-learn-this-week/index.html",
+      "in_live_sitemap": true,
+      "path": "/things-kubernetes-forced-me-to-learn-this-week/"
+    },
+    {
+      "canonical_path": "/umbrel-a-selfhosted-dashboard/",
+      "category": "blog-article",
+      "generated_file": "umbrel-a-selfhosted-dashboard/index.html",
+      "in_live_sitemap": true,
+      "path": "/umbrel-a-selfhosted-dashboard/"
+    },
+    {
+      "canonical_path": "/using-bookstack-as-my-knowledge-base/",
+      "category": "blog-article",
+      "generated_file": "using-bookstack-as-my-knowledge-base/index.html",
+      "in_live_sitemap": true,
+      "path": "/using-bookstack-as-my-knowledge-base/"
+    },
+    {
+      "canonical_path": "/why-linux-for-selfhosting/",
+      "category": "blog-article",
+      "generated_file": "why-linux-for-selfhosting/index.html",
+      "in_live_sitemap": true,
+      "path": "/why-linux-for-selfhosting/"
+    },
+    {
+      "canonical_path": "/why-selfhost/",
+      "category": "blog-article",
+      "generated_file": "why-selfhost/index.html",
+      "in_live_sitemap": true,
+      "path": "/why-selfhost/"
+    },
+    {
+      "canonical_path": "/why-you-need-to-learn-linux/",
+      "category": "blog-article",
+      "generated_file": "why-you-need-to-learn-linux/index.html",
+      "in_live_sitemap": true,
+      "path": "/why-you-need-to-learn-linux/"
+    },
+    {
+      "canonical_path": "/why-you-need-to-selfhost-a-website/",
+      "category": "blog-article",
+      "generated_file": "why-you-need-to-selfhost-a-website/index.html",
+      "in_live_sitemap": true,
+      "path": "/why-you-need-to-selfhost-a-website/"
+    },
+    {
+      "canonical_path": "/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+      "category": "blog-article",
+      "generated_file": "zimaboard-the-ultimate-single-board-computer-for-diy-projects/index.html",
+      "in_live_sitemap": true,
+      "path": "/zimaboard-the-ultimate-single-board-computer-for-diy-projects/"
+    }
+  ],
+  "source_branch": "migration/landing-blog-split",
+  "source_commit": "5113a615f504351682c2cbf9cd429b3b3232e71e"
+}

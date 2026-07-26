@@ -1,0 +1,4535 @@
+{
+  "absolute_host_checks": {
+    "/index.xml": {
+      "apex_host_occurrences": 42,
+      "blog_host_occurrences": 0,
+      "same_body_as_apex": true,
+      "status": 200
+    },
+    "/sitemap.xml": {
+      "apex_host_occurrences": 52,
+      "blog_host_occurrences": 0,
+      "same_body_as_apex": true,
+      "status": 200
+    },
+    "/tags/selfhosting/index.xml": {
+      "apex_host_occurrences": 34,
+      "blog_host_occurrences": 0,
+      "same_body_as_apex": true,
+      "status": 200
+    }
+  },
+  "category_summary": {
+    "blog-article": {
+      "count": 33,
+      "passed": 33
+    },
+    "blog-deals": {
+      "count": 1,
+      "passed": 1
+    },
+    "blog-index": {
+      "count": 5,
+      "passed": 5
+    },
+    "blog-pagination": {
+      "count": 4,
+      "passed": 4
+    },
+    "blog-taxonomy": {
+      "count": 32,
+      "passed": 32
+    },
+    "direct-image-asset": {
+      "count": 44,
+      "passed": 44
+    },
+    "landing-owned": {
+      "count": 2,
+      "passed": 2
+    },
+    "landing-root": {
+      "count": 1,
+      "passed": 1
+    },
+    "not-found-document": {
+      "count": 1,
+      "passed": 1
+    },
+    "rss-feed": {
+      "count": 18,
+      "passed": 18
+    }
+  },
+  "failed_count": 0,
+  "failures": [],
+  "http_root_headers": {
+    "error": "",
+    "exit": 0,
+    "headers": "HTTP/1.1 301 Moved Permanently\nDate: Sat, 25 Jul 2026 12:09:55 GMT\nContent-Type: text/html; charset=UTF-8\nTransfer-Encoding: chunked\nConnection: keep-alive\nNel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\nLocation: https://blog.techdox.nz/\nReport-To: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=8av5GaqE1b1Htfu%2BClUR5DUxEDK1z3tdsqQToOVQ5%2FL35QIj7sJOQS3N9JHAS7Z%2FxSjb2fR6hDB%2FWo1dpqjlc4E%2Bzrrzt3In%2FMTdbPoffDYipOJmc2pLiS%2FAKFDlG3v0j%2FM%3D\"}]}\nServer: cloudflare\ncf-cache-status: DYNAMIC\nCF-RAY: a20b0efa3fafd996-AKL\nalt-svc: h3=\":443\"; ma=86400\n\n"
+  },
+  "https_root_headers": {
+    "error": "",
+    "exit": 0,
+    "headers": "HTTP/2 200 \ndate: Sat, 25 Jul 2026 12:09:55 GMT\ncontent-type: text/html; charset=utf-8\nx-content-type-options: nosniff\nreport-to: {\"group\":\"cf-nel\",\"max_age\":604800,\"endpoints\":[{\"url\":\"https://a.nel.cloudflare.com/report/v4?s=S7eRg2WkcKBg1%2B6fLJ7n23UACuHs7owiFgn21nq1%2B6BzfLMb7yfo%2FZ7y5EwHGNQjVkd8Y3GakOhmmE7CzrpZ6PIOMgm%2BTafhklCYlmGWRmnP5t3lde3mJjud2i%2FDbUALR9U%3D\"}]}\nnel: {\"report_to\":\"cf-nel\",\"success_fraction\":0.0,\"max_age\":604800}\naccess-control-allow-origin: *\ncache-control: public, max-age=0, must-revalidate\nreferrer-policy: strict-origin-when-cross-origin\nserver: cloudflare\ncf-cache-status: DYNAMIC\ncf-ray: a20b0ef9dca3d9aa-AKL\nalt-svc: h3=\":443\"; ma=86400\n\n"
+  },
+  "metadata": {
+    "/": {
+      "canonical_links": [],
+      "meta_robots": [],
+      "og_urls": [
+        "https://techdox.nz/"
+      ]
+    },
+    "/why-selfhost/": {
+      "canonical_links": [],
+      "meta_robots": [],
+      "og_urls": [
+        "https://techdox.nz/why-selfhost/"
+      ]
+    }
+  },
+  "not_found_document_observation": {
+    "initial_location": {
+      "blog.techdox.nz": "/404",
+      "techdox.nz": "/404"
+    },
+    "normalization": {
+      "blog.techdox.nz": {
+        "body_bytes": 5845,
+        "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+        "final_url": "https://blog.techdox.nz/404",
+        "redirects": 1,
+        "status": 200
+      },
+      "techdox.nz": {
+        "body_bytes": 5845,
+        "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+        "final_url": "https://techdox.nz/404",
+        "redirects": 1,
+        "status": 200
+      }
+    },
+    "unknown_route": {
+      "blog.techdox.nz": {
+        "body_bytes": 5845,
+        "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+        "final_url": "https://blog.techdox.nz/definitely-not-a-real-route-phase2a",
+        "redirects": 0,
+        "status": 404
+      },
+      "techdox.nz": {
+        "body_bytes": 5845,
+        "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+        "final_url": "https://techdox.nz/definitely-not-a-real-route-phase2a",
+        "redirects": 0,
+        "status": 404
+      }
+    }
+  },
+  "page_one_alias_count": 17,
+  "page_one_aliases": [
+    {
+      "canonical_links": [
+        "https://techdox.nz/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/"
+      ],
+      "observed_expected_target": true,
+      "path": "/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/posts/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/posts/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/posts/"
+      ],
+      "observed_expected_target": true,
+      "path": "/posts/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/ai/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/ai/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/ai/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/ai/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/automation/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/automation/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/automation/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/automation/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/certification/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/certification/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/certification/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/certification/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/chatgpt/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/chatgpt/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/chatgpt/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/chatgpt/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/cloudflare/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/cloudflare/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/cloudflare/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/cloudflare/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/docker/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/docker/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/docker/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/docker/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/homelab/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/homelab/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/homelab/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/homelab/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/kubernetes/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/kubernetes/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/kubernetes/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/kubernetes/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/linux/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/linux/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/linux/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/linux/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/networking/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/networking/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/networking/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/networking/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/proxmox/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/proxmox/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/proxmox/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/proxmox/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/raspberry-pi/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/raspberry-pi/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/raspberry-pi/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/raspberry-pi/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/security/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/security/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/security/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/security/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/selfhosting/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/selfhosting/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/selfhosting/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/selfhosting/page/1/",
+      "status": 200
+    },
+    {
+      "canonical_links": [
+        "https://techdox.nz/tags/zimaboard/"
+      ],
+      "expected_equivalent_apex": "https://techdox.nz/tags/zimaboard/",
+      "meta_refresh": [
+        "0; url=https://techdox.nz/tags/zimaboard/"
+      ],
+      "observed_expected_target": true,
+      "path": "/tags/zimaboard/page/1/",
+      "status": 200
+    }
+  ],
+  "passed_count": 141,
+  "public_cloudflare_ip_used": "104.26.7.118",
+  "rendered_blog_absolute_link_count": 0,
+  "route_count": 141,
+  "routes": [
+    {
+      "apex": {
+        "bytes": 25137,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/",
+        "host": "techdox.nz",
+        "path": "/",
+        "redirects": 0,
+        "sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 25137,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/",
+        "host": "blog.techdox.nz",
+        "path": "/",
+        "redirects": 0,
+        "sha256": "479d9e7d5c6af430c115c7b75e65a4de72ada4fa7fab393810d19fe2bd1110dc",
+        "status": 200
+      },
+      "canonical_path": "/",
+      "category": "landing-root",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 0,
+        "content_type": null,
+        "final_url": "https://techdox.nz/404.html",
+        "host": "techdox.nz",
+        "path": "/404.html",
+        "redirects": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 308
+      },
+      "blog": {
+        "bytes": 0,
+        "content_type": null,
+        "final_url": "https://blog.techdox.nz/404.html",
+        "host": "blog.techdox.nz",
+        "path": "/404.html",
+        "redirects": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "status": 308
+      },
+      "canonical_path": "/404.html",
+      "category": "not-found-document",
+      "not_found_document_observation": {
+        "initial_location": {
+          "blog.techdox.nz": "/404",
+          "techdox.nz": "/404"
+        },
+        "normalization": {
+          "blog.techdox.nz": {
+            "body_bytes": 5845,
+            "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+            "final_url": "https://blog.techdox.nz/404",
+            "redirects": 1,
+            "status": 200
+          },
+          "techdox.nz": {
+            "body_bytes": 5845,
+            "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+            "final_url": "https://techdox.nz/404",
+            "redirects": 1,
+            "status": 200
+          }
+        },
+        "unknown_route": {
+          "blog.techdox.nz": {
+            "body_bytes": 5845,
+            "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+            "final_url": "https://blog.techdox.nz/definitely-not-a-real-route-phase2a",
+            "redirects": 0,
+            "status": 404
+          },
+          "techdox.nz": {
+            "body_bytes": 5845,
+            "body_sha256": "612b3c12f7af6504e835433b88e3db51009f93e28380a99e92225da148fa08c3",
+            "final_url": "https://techdox.nz/definitely-not-a-real-route-phase2a",
+            "redirects": 0,
+            "status": 404
+          }
+        }
+      },
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/404.html",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 22422,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/ai-is-the-modern-day-calculator/",
+        "host": "techdox.nz",
+        "path": "/ai-is-the-modern-day-calculator/",
+        "redirects": 0,
+        "sha256": "39046730286bf0e84e51df2fbbb88b325c043ec1027021df3d47e23c74396dfe",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 22422,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/ai-is-the-modern-day-calculator/",
+        "host": "blog.techdox.nz",
+        "path": "/ai-is-the-modern-day-calculator/",
+        "redirects": 0,
+        "sha256": "39046730286bf0e84e51df2fbbb88b325c043ec1027021df3d47e23c74396dfe",
+        "status": 200
+      },
+      "canonical_path": "/ai-is-the-modern-day-calculator/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/ai-is-the-modern-day-calculator/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14112,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/break-things-but-start-small/",
+        "host": "techdox.nz",
+        "path": "/break-things-but-start-small/",
+        "redirects": 0,
+        "sha256": "088c45046a434e214b60791e26bbd8062c4984e2d3afb60a49e1df0c2de73e81",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14112,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/break-things-but-start-small/",
+        "host": "blog.techdox.nz",
+        "path": "/break-things-but-start-small/",
+        "redirects": 0,
+        "sha256": "088c45046a434e214b60791e26bbd8062c4984e2d3afb60a49e1df0c2de73e81",
+        "status": 200
+      },
+      "canonical_path": "/break-things-but-start-small/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/break-things-but-start-small/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 132884,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/IMG_2009-Small.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/IMG_2009-Small.png",
+        "redirects": 0,
+        "sha256": "ba2960f76f7e651c6a47359f55711b91908d8fd62a340380aad5f06fcbf4da8d",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 132884,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/IMG_2009-Small.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/IMG_2009-Small.png",
+        "redirects": 0,
+        "sha256": "ba2960f76f7e651c6a47359f55711b91908d8fd62a340380aad5f06fcbf4da8d",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/IMG_2009-Small.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/IMG_2009-Small.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 160199,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/03/Zima-Board_1.8.1.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/Zima-Board_1.8.1.jpg",
+        "redirects": 0,
+        "sha256": "fc792739a0b7ebbfbf4c4b9a72b2124085ce7ac89f73c43db68012612b5379b2",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 160199,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/Zima-Board_1.8.1.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/Zima-Board_1.8.1.jpg",
+        "redirects": 0,
+        "sha256": "fc792739a0b7ebbfbf4c4b9a72b2124085ce7ac89f73c43db68012612b5379b2",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/Zima-Board_1.8.1.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/Zima-Board_1.8.1.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 102994,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-10.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-10.png",
+        "redirects": 0,
+        "sha256": "4a24d100c0ec2fdbd9c63425bddb8ddcd799ff16f4e0c9b9d04ebb5c23dc5b80",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 102994,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-10.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-10.png",
+        "redirects": 0,
+        "sha256": "4a24d100c0ec2fdbd9c63425bddb8ddcd799ff16f4e0c9b9d04ebb5c23dc5b80",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-10.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-10.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 33132,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-11.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-11.png",
+        "redirects": 0,
+        "sha256": "f849d3c9403e397030735f357aa1c74e745f9bb416598cd89fcf0d562eb82a83",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 33132,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-11.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-11.png",
+        "redirects": 0,
+        "sha256": "f849d3c9403e397030735f357aa1c74e745f9bb416598cd89fcf0d562eb82a83",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-11.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-11.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 208915,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-12.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-12.png",
+        "redirects": 0,
+        "sha256": "a262a8fa141386994a41e2e30e036e90c4e762449a8a2450e4b7d72e6f18598f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 208915,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-12.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-12.png",
+        "redirects": 0,
+        "sha256": "a262a8fa141386994a41e2e30e036e90c4e762449a8a2450e4b7d72e6f18598f",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-12.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-12.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 60149,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-13.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-13.png",
+        "redirects": 0,
+        "sha256": "fc7351a87dc89774c6b263585f813c4a656271d217be3641cbc0fde9848670d9",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 60149,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-13.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-13.png",
+        "redirects": 0,
+        "sha256": "fc7351a87dc89774c6b263585f813c4a656271d217be3641cbc0fde9848670d9",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-13.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-13.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 107620,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-14.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-14.png",
+        "redirects": 0,
+        "sha256": "7ae59b28addaa0c58dcf944be2eddfcf5b06c62e129881d89a5255b7bb2a0535",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 107620,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-14.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-14.png",
+        "redirects": 0,
+        "sha256": "7ae59b28addaa0c58dcf944be2eddfcf5b06c62e129881d89a5255b7bb2a0535",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-14.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-14.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 60596,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-15.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-15.png",
+        "redirects": 0,
+        "sha256": "e838e0d6837406dff1b66a94bf5e6a9e1139033d3c46c35d5d5491f5dad6625b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 60596,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-15.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-15.png",
+        "redirects": 0,
+        "sha256": "e838e0d6837406dff1b66a94bf5e6a9e1139033d3c46c35d5d5491f5dad6625b",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-15.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-15.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 162544,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-16.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-16.png",
+        "redirects": 0,
+        "sha256": "14d86c485e8bd8aee517779db45870728de03985a771cf852be3fb6ce656e03f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 162544,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-16.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-16.png",
+        "redirects": 0,
+        "sha256": "14d86c485e8bd8aee517779db45870728de03985a771cf852be3fb6ce656e03f",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-16.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-16.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 22164,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-17.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-17.png",
+        "redirects": 0,
+        "sha256": "129268e3ac65d47902315989eb1aafed8e64339773015cebcf9a3a01057cb256",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 22164,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-17.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-17.png",
+        "redirects": 0,
+        "sha256": "129268e3ac65d47902315989eb1aafed8e64339773015cebcf9a3a01057cb256",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-17.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-17.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1380082,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-20.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-20.png",
+        "redirects": 0,
+        "sha256": "d7aa3f8dc4d30ea2cdc1bfac54e76da5d82db7e3922db5a16a75e6284d659a99",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1380082,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-20.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-20.png",
+        "redirects": 0,
+        "sha256": "d7aa3f8dc4d30ea2cdc1bfac54e76da5d82db7e3922db5a16a75e6284d659a99",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-20.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-20.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 254506,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-21.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-21.png",
+        "redirects": 0,
+        "sha256": "93a499ef750710a457289355f30542e831a2433ffcb5eb241dff7c26bc91241f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 254506,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-21.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-21.png",
+        "redirects": 0,
+        "sha256": "93a499ef750710a457289355f30542e831a2433ffcb5eb241dff7c26bc91241f",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-21.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-21.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 93749,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/03/image-9.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/03/image-9.png",
+        "redirects": 0,
+        "sha256": "ebe4efd0c48fa4ed599086e98a4d9384d4327b4a402ce73094bb95faa6fe1eda",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 93749,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/03/image-9.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/03/image-9.png",
+        "redirects": 0,
+        "sha256": "ebe4efd0c48fa4ed599086e98a4d9384d4327b4a402ce73094bb95faa6fe1eda",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/03/image-9.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/03/image-9.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 193247,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/04/connector_1.1.3.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/04/connector_1.1.3.jpg",
+        "redirects": 0,
+        "sha256": "984cec392b28ec68f095a0b1231919a354642adfc97a8b3927782df8e1b0bd1f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 193247,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/04/connector_1.1.3.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/04/connector_1.1.3.jpg",
+        "redirects": 0,
+        "sha256": "984cec392b28ec68f095a0b1231919a354642adfc97a8b3927782df8e1b0bd1f",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/04/connector_1.1.3.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/04/connector_1.1.3.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 129891,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/04/disk_1.4.1.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/04/disk_1.4.1.jpg",
+        "redirects": 0,
+        "sha256": "2ff941164a6f63fd3476e9afe9bb3d402a5c631fa700774a52f22a9ce4572d7d",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 129891,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/04/disk_1.4.1.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/04/disk_1.4.1.jpg",
+        "redirects": 0,
+        "sha256": "2ff941164a6f63fd3476e9afe9bb3d402a5c631fa700774a52f22a9ce4572d7d",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/04/disk_1.4.1.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/04/disk_1.4.1.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 108545,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/04/sata_1.1.2.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/04/sata_1.1.2.jpg",
+        "redirects": 0,
+        "sha256": "09fd9cc6f3179fbe0a80b2ce5617cd80bd3abe01da874043c3f8948ab15ef492",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 108545,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/04/sata_1.1.2.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/04/sata_1.1.2.jpg",
+        "redirects": 0,
+        "sha256": "09fd9cc6f3179fbe0a80b2ce5617cd80bd3abe01da874043c3f8948ab15ef492",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/04/sata_1.1.2.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/04/sata_1.1.2.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 99608,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/04/storage_1.4.2.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/04/storage_1.4.2.jpg",
+        "redirects": 0,
+        "sha256": "5f63438f87fa8b550a2000032b204883a0abd8595c4902c2dc4703faecc3e29e",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 99608,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/04/storage_1.4.2.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/04/storage_1.4.2.jpg",
+        "redirects": 0,
+        "sha256": "5f63438f87fa8b550a2000032b204883a0abd8595c4902c2dc4703faecc3e29e",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/04/storage_1.4.2.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/04/storage_1.4.2.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 296640,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/04/zima_1.1.1.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/04/zima_1.1.1.jpg",
+        "redirects": 0,
+        "sha256": "c3694d403b206d9e848e76b12e0b9f086e22e10a98bc0ed8784f35ba6353ae81",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 296640,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/04/zima_1.1.1.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/04/zima_1.1.1.jpg",
+        "redirects": 0,
+        "sha256": "c3694d403b206d9e848e76b12e0b9f086e22e10a98bc0ed8784f35ba6353ae81",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/04/zima_1.1.1.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/04/zima_1.1.1.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 80402,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/05/image-2.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/05/image-2.png",
+        "redirects": 0,
+        "sha256": "e8fb88ab642703ba872d9a90852a07de0d77e889a0443dd926804e2d61b20695",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 80402,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/05/image-2.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/05/image-2.png",
+        "redirects": 0,
+        "sha256": "e8fb88ab642703ba872d9a90852a07de0d77e889a0443dd926804e2d61b20695",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/05/image-2.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/05/image-2.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 553960,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/06/image-1.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/06/image-1.png",
+        "redirects": 0,
+        "sha256": "f30e8bcfd7f87b5d83b124882e900c3a8a8e241316f06621c4eb5ea0f5fd15ce",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 553960,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/06/image-1.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/06/image-1.png",
+        "redirects": 0,
+        "sha256": "f30e8bcfd7f87b5d83b124882e900c3a8a8e241316f06621c4eb5ea0f5fd15ce",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/06/image-1.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/06/image-1.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 274374,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/06/image-2.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/06/image-2.png",
+        "redirects": 0,
+        "sha256": "011aedc5be7576855f1e17e2973f3fa91c219492d231f1e013f503dc274fb047",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 274374,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/06/image-2.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/06/image-2.png",
+        "redirects": 0,
+        "sha256": "011aedc5be7576855f1e17e2973f3fa91c219492d231f1e013f503dc274fb047",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/06/image-2.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/06/image-2.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 448558,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/06/image-3.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/06/image-3.png",
+        "redirects": 0,
+        "sha256": "6739a63840acc6cac32953173ea5abfce1d94a5c2ca417081eb876a57c58571e",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 448558,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/06/image-3.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/06/image-3.png",
+        "redirects": 0,
+        "sha256": "6739a63840acc6cac32953173ea5abfce1d94a5c2ca417081eb876a57c58571e",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/06/image-3.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/06/image-3.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 579080,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/06/image.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/06/image.png",
+        "redirects": 0,
+        "sha256": "51806729e1013a67d3c22b0a39d48ffa3119d8cf5154598123c5af1f5464130f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 579080,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/06/image.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/06/image.png",
+        "redirects": 0,
+        "sha256": "51806729e1013a67d3c22b0a39d48ffa3119d8cf5154598123c5af1f5464130f",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/06/image.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/06/image.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 109968,
+        "content_type": "image/jpeg",
+        "final_url": "https://techdox.nz/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+        "redirects": 0,
+        "sha256": "441e0b6df8c9018d9077af33be33d12ee561984caab2bc0ab941a66c4a108027",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 109968,
+        "content_type": "image/jpeg",
+        "final_url": "https://blog.techdox.nz/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+        "redirects": 0,
+        "sha256": "441e0b6df8c9018d9077af33be33d12ee561984caab2bc0ab941a66c4a108027",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/08/Distracted-Boyfriend-copy-1.jpg",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 940965,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+        "redirects": 0,
+        "sha256": "dce724ecec4bea19f650c6031ff1ba16712e0e11bc7e3715b90586cace0e6594",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 940965,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+        "redirects": 0,
+        "sha256": "dce724ecec4bea19f650c6031ff1ba16712e0e11bc7e3715b90586cace0e6594",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/Screenshot-2023-09-27-at-6.51.50-PM.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1448515,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-1.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-1.png",
+        "redirects": 0,
+        "sha256": "f984cca7a04e6a947748b457e45e80b58c44b0da744aab9c67a13b89a81e17e2",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1448515,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-1.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-1.png",
+        "redirects": 0,
+        "sha256": "f984cca7a04e6a947748b457e45e80b58c44b0da744aab9c67a13b89a81e17e2",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-1.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-1.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2502190,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-10.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-10.png",
+        "redirects": 0,
+        "sha256": "c31aff7e89732f094cdfb8a6942892c2d37b1da27186f8c69ca6f3ae604fc697",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2502190,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-10.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-10.png",
+        "redirects": 0,
+        "sha256": "c31aff7e89732f094cdfb8a6942892c2d37b1da27186f8c69ca6f3ae604fc697",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-10.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-10.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1664598,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-11.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-11.png",
+        "redirects": 0,
+        "sha256": "5bfde9482d65e3011e14072daea4c926863f2787f86cfff0912f09ed5a548c14",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1664598,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-11.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-11.png",
+        "redirects": 0,
+        "sha256": "5bfde9482d65e3011e14072daea4c926863f2787f86cfff0912f09ed5a548c14",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-11.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-11.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1506828,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-12.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-12.png",
+        "redirects": 0,
+        "sha256": "a8748867af96dc80c41e67378df4d76e16b9b6b38a0e7d1e0a8b343b727a571a",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1506828,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-12.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-12.png",
+        "redirects": 0,
+        "sha256": "a8748867af96dc80c41e67378df4d76e16b9b6b38a0e7d1e0a8b343b727a571a",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-12.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-12.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 341160,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-13.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-13.png",
+        "redirects": 0,
+        "sha256": "64bbf369b8adf6dbc85b7992f5c39c1ca62065f5696c2120eddc2c08479ca063",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 341160,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-13.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-13.png",
+        "redirects": 0,
+        "sha256": "64bbf369b8adf6dbc85b7992f5c39c1ca62065f5696c2120eddc2c08479ca063",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-13.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-13.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 41327,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-14.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-14.png",
+        "redirects": 0,
+        "sha256": "e173ef108ef67d09a1ea19c9052d17b11013cc5831c881d06b1c6103bfbb137a",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 41327,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-14.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-14.png",
+        "redirects": 0,
+        "sha256": "e173ef108ef67d09a1ea19c9052d17b11013cc5831c881d06b1c6103bfbb137a",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-14.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-14.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 300148,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-15.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-15.png",
+        "redirects": 0,
+        "sha256": "8dcbe3dfaa6de7e63910b0a377e75de870a4245ea6d82dfefd8a61a13a652afe",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 300148,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-15.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-15.png",
+        "redirects": 0,
+        "sha256": "8dcbe3dfaa6de7e63910b0a377e75de870a4245ea6d82dfefd8a61a13a652afe",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-15.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-15.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2472888,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-4.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-4.png",
+        "redirects": 0,
+        "sha256": "134faa62baf1422340ec26253056d93a4fe534be0466cdf1619f894f1af2a572",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2472888,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-4.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-4.png",
+        "redirects": 0,
+        "sha256": "134faa62baf1422340ec26253056d93a4fe534be0466cdf1619f894f1af2a572",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-4.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-4.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2386249,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-5.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-5.png",
+        "redirects": 0,
+        "sha256": "e0653b693024f33a1b5f65c44923ff389daf8c70c64b99895f3628d728d742e5",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2386249,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-5.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-5.png",
+        "redirects": 0,
+        "sha256": "e0653b693024f33a1b5f65c44923ff389daf8c70c64b99895f3628d728d742e5",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-5.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-5.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2556522,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-6.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-6.png",
+        "redirects": 0,
+        "sha256": "498e881ee1512c934b6b39aabdae28631b7873d9f121094a01e3a5a971af0523",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2556522,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-6.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-6.png",
+        "redirects": 0,
+        "sha256": "498e881ee1512c934b6b39aabdae28631b7873d9f121094a01e3a5a971af0523",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-6.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-6.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1709728,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-7.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-7.png",
+        "redirects": 0,
+        "sha256": "02b3b70d3d4297c4e0497400ecee1f51a2948a39637ad3d3cc7c6686ce9b7c53",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1709728,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-7.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-7.png",
+        "redirects": 0,
+        "sha256": "02b3b70d3d4297c4e0497400ecee1f51a2948a39637ad3d3cc7c6686ce9b7c53",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-7.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-7.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1445121,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-8.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-8.png",
+        "redirects": 0,
+        "sha256": "ef23aa259159547059187f7241a02089689b2ac704b79d9928c8fd8939baecd7",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1445121,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-8.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-8.png",
+        "redirects": 0,
+        "sha256": "ef23aa259159547059187f7241a02089689b2ac704b79d9928c8fd8939baecd7",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-8.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-8.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 180144,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image-9.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image-9.png",
+        "redirects": 0,
+        "sha256": "49adb1e1d9671834ef4c92e0bb5a9a6ba773bb7794fcbcf6a45d8e76d1c75542",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 180144,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image-9.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image-9.png",
+        "redirects": 0,
+        "sha256": "49adb1e1d9671834ef4c92e0bb5a9a6ba773bb7794fcbcf6a45d8e76d1c75542",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image-9.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image-9.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1684450,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2023/09/image.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/image.png",
+        "redirects": 0,
+        "sha256": "cec791edd86b393e745d99c5e08554d6345dc39471c64246ca995afef5fa9826",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1684450,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/image.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/image.png",
+        "redirects": 0,
+        "sha256": "cec791edd86b393e745d99c5e08554d6345dc39471c64246ca995afef5fa9826",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/image.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/image.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 212026,
+        "content_type": "image/webp",
+        "final_url": "https://techdox.nz/content/images/2023/09/os-circle.webp",
+        "host": "techdox.nz",
+        "path": "/content/images/2023/09/os-circle.webp",
+        "redirects": 0,
+        "sha256": "40a210ff2285ea33eb8bfe3d3d994c9b3c8daa0874a26619414581029b35c894",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 212026,
+        "content_type": "image/webp",
+        "final_url": "https://blog.techdox.nz/content/images/2023/09/os-circle.webp",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2023/09/os-circle.webp",
+        "redirects": 0,
+        "sha256": "40a210ff2285ea33eb8bfe3d3d994c9b3c8daa0874a26619414581029b35c894",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2023/09/os-circle.webp",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2023/09/os-circle.webp",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 430040,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2024/08/image-1.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2024/08/image-1.png",
+        "redirects": 0,
+        "sha256": "27182d5a608bda74d0723513c3583ae8a8a7e7806e9be8377a0bdd76b4fb27a6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 430040,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2024/08/image-1.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2024/08/image-1.png",
+        "redirects": 0,
+        "sha256": "27182d5a608bda74d0723513c3583ae8a8a7e7806e9be8377a0bdd76b4fb27a6",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2024/08/image-1.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2024/08/image-1.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 283222,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+        "redirects": 0,
+        "sha256": "bbcac5a107ce6f809a8e8553b3ec15940fbccb90c0e6440430ae241494e480fd",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 283222,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+        "redirects": 0,
+        "sha256": "bbcac5a107ce6f809a8e8553b3ec15940fbccb90c0e6440430ae241494e480fd",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2025/12/lfs258-kubernetes-fundamentals.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1726800,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/content/images/2026/05/blog.png",
+        "host": "techdox.nz",
+        "path": "/content/images/2026/05/blog.png",
+        "redirects": 0,
+        "sha256": "5c7f2496547c96e6a289bd77b87d23e8b94cf43bedc604ebf12c7421696a7f2f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1726800,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/content/images/2026/05/blog.png",
+        "host": "blog.techdox.nz",
+        "path": "/content/images/2026/05/blog.png",
+        "redirects": 0,
+        "sha256": "5c7f2496547c96e6a289bd77b87d23e8b94cf43bedc604ebf12c7421696a7f2f",
+        "status": 200
+      },
+      "canonical_path": "/content/images/2026/05/blog.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/content/images/2026/05/blog.png",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 12073,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/deals/",
+        "host": "techdox.nz",
+        "path": "/deals/",
+        "redirects": 0,
+        "sha256": "9644b096f0e996103ac5777bfb2c483baab074c0b32550499de109d7a61c51c2",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 12073,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/deals/",
+        "host": "blog.techdox.nz",
+        "path": "/deals/",
+        "redirects": 0,
+        "sha256": "9644b096f0e996103ac5777bfb2c483baab074c0b32550499de109d7a61c51c2",
+        "status": 200
+      },
+      "canonical_path": "/deals/",
+      "category": "blog-deals",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/deals/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 10312,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/devsecops/",
+        "host": "techdox.nz",
+        "path": "/devsecops/",
+        "redirects": 0,
+        "sha256": "ff25d4b0df976429b8c75d968c0c2292e8d1e20524ecc803d8e3692a10fdfc6e",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 10312,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/devsecops/",
+        "host": "blog.techdox.nz",
+        "path": "/devsecops/",
+        "redirects": 0,
+        "sha256": "ff25d4b0df976429b8c75d968c0c2292e8d1e20524ecc803d8e3692a10fdfc6e",
+        "status": 200
+      },
+      "canonical_path": "/devsecops/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/devsecops/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 16373,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/docker-and-the-power-of-continuous-learning/",
+        "host": "techdox.nz",
+        "path": "/docker-and-the-power-of-continuous-learning/",
+        "redirects": 0,
+        "sha256": "cc30f628cd11251ce66728d383cd3e5ea0948de5ca2e2509c2bf81008417ad70",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 16373,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/docker-and-the-power-of-continuous-learning/",
+        "host": "blog.techdox.nz",
+        "path": "/docker-and-the-power-of-continuous-learning/",
+        "redirects": 0,
+        "sha256": "cc30f628cd11251ce66728d383cd3e5ea0948de5ca2e2509c2bf81008417ad70",
+        "status": 200
+      },
+      "canonical_path": "/docker-and-the-power-of-continuous-learning/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/docker-and-the-power-of-continuous-learning/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17904,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/docker-volume-backup-and-restore-script/",
+        "host": "techdox.nz",
+        "path": "/docker-volume-backup-and-restore-script/",
+        "redirects": 0,
+        "sha256": "a8a66655c6f905ff0a34e2239f559b967c39d70b62c922514c7d151508be3cd6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17904,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/docker-volume-backup-and-restore-script/",
+        "host": "blog.techdox.nz",
+        "path": "/docker-volume-backup-and-restore-script/",
+        "redirects": 0,
+        "sha256": "a8a66655c6f905ff0a34e2239f559b967c39d70b62c922514c7d151508be3cd6",
+        "status": 200
+      },
+      "canonical_path": "/docker-volume-backup-and-restore-script/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/docker-volume-backup-and-restore-script/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14570,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+        "host": "techdox.nz",
+        "path": "/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+        "redirects": 0,
+        "sha256": "9a8a9590a8926a8de742b0bf79b34b2132298a73f5f941c427243728c96d7789",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14570,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+        "host": "blog.techdox.nz",
+        "path": "/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+        "redirects": 0,
+        "sha256": "9a8a9590a8926a8de742b0bf79b34b2132298a73f5f941c427243728c96d7789",
+        "status": 200
+      },
+      "canonical_path": "/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/embracing-proxmox-virtualization-adventures-in-self-hosting/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14548,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+        "host": "techdox.nz",
+        "path": "/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+        "redirects": 0,
+        "sha256": "b7283118299445051aba3d827352c8bb2bc31f39fe409a8617aca78dd461d5ed",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14548,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+        "host": "blog.techdox.nz",
+        "path": "/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+        "redirects": 0,
+        "sha256": "b7283118299445051aba3d827352c8bb2bc31f39fe409a8617aca78dd461d5ed",
+        "status": 200
+      },
+      "canonical_path": "/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/how-to-expand-your-zimaboard-storage-with-a-1tb-sata-ssd/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 22213,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+        "host": "techdox.nz",
+        "path": "/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+        "redirects": 0,
+        "sha256": "e368af9d07c6eee7c1a2fd6d92bd108bce78a28db0eb05a42c4aa7152e711296",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 22213,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+        "host": "blog.techdox.nz",
+        "path": "/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+        "redirects": 0,
+        "sha256": "e368af9d07c6eee7c1a2fd6d92bd108bce78a28db0eb05a42c4aa7152e711296",
+        "status": 200
+      },
+      "canonical_path": "/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/i-rebuilt-my-homelab-network-with-opnsense-pi-hole-wireguard-and-npm/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 22375,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/i-tried-running-an-ai-agent-are-they-safe/",
+        "host": "techdox.nz",
+        "path": "/i-tried-running-an-ai-agent-are-they-safe/",
+        "redirects": 0,
+        "sha256": "49c965fed58f186564ec26e84665a10e3ecba57b3056ffc7c490af05a9048330",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 22375,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/i-tried-running-an-ai-agent-are-they-safe/",
+        "host": "blog.techdox.nz",
+        "path": "/i-tried-running-an-ai-agent-are-they-safe/",
+        "redirects": 0,
+        "sha256": "49c965fed58f186564ec26e84665a10e3ecba57b3056ffc7c490af05a9048330",
+        "status": 200
+      },
+      "canonical_path": "/i-tried-running-an-ai-agent-are-they-safe/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/i-tried-running-an-ai-agent-are-they-safe/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 15135,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/index.xml",
+        "host": "techdox.nz",
+        "path": "/index.xml",
+        "redirects": 0,
+        "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 15135,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/index.xml",
+        "redirects": 0,
+        "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+        "status": 200
+      },
+      "canonical_path": "/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/index.xml",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 15049,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/just-break-stuff/",
+        "host": "techdox.nz",
+        "path": "/just-break-stuff/",
+        "redirects": 0,
+        "sha256": "7da8ab8a9c95351cbb420cd403b59b50997de7a561a1e6a7905a07e4ee88bb23",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 15049,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/just-break-stuff/",
+        "host": "blog.techdox.nz",
+        "path": "/just-break-stuff/",
+        "redirects": 0,
+        "sha256": "7da8ab8a9c95351cbb420cd403b59b50997de7a561a1e6a7905a07e4ee88bb23",
+        "status": 200
+      },
+      "canonical_path": "/just-break-stuff/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/just-break-stuff/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 38540,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+        "host": "techdox.nz",
+        "path": "/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+        "redirects": 0,
+        "sha256": "ce736c8843a673bb20cf2f899cd2b274d7c6fd796097b11251b46077c2899809",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 38540,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+        "host": "blog.techdox.nz",
+        "path": "/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+        "redirects": 0,
+        "sha256": "ce736c8843a673bb20cf2f899cd2b274d7c6fd796097b11251b46077c2899809",
+        "status": 200
+      },
+      "canonical_path": "/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/kubesolo-moving-from-docker-to-kubernetes-in-a-homelab/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 12009,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/learning-to-code-with-chatgpt/",
+        "host": "techdox.nz",
+        "path": "/learning-to-code-with-chatgpt/",
+        "redirects": 0,
+        "sha256": "235534ba1ce570ab5ddc87db3d480558c84de20262c43754e46acce3e7ab3648",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 12009,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/learning-to-code-with-chatgpt/",
+        "host": "blog.techdox.nz",
+        "path": "/learning-to-code-with-chatgpt/",
+        "redirects": 0,
+        "sha256": "235534ba1ce570ab5ddc87db3d480558c84de20262c43754e46acce3e7ab3648",
+        "status": 200
+      },
+      "canonical_path": "/learning-to-code-with-chatgpt/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/learning-to-code-with-chatgpt/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17443,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+        "host": "techdox.nz",
+        "path": "/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+        "redirects": 0,
+        "sha256": "bd01e9cee1a3cf0990f36f229144b3173d2f0ef1afa1ca4f154d27ac5fb077fe",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17443,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+        "host": "blog.techdox.nz",
+        "path": "/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+        "redirects": 0,
+        "sha256": "bd01e9cee1a3cf0990f36f229144b3173d2f0ef1afa1ca4f154d27ac5fb077fe",
+        "status": 200
+      },
+      "canonical_path": "/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/lessons-learned-backing-up-and-restoring-docker-containers-on-ubuntu-server/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 9107,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/my-azure-devops-terraform-pipeline/",
+        "host": "techdox.nz",
+        "path": "/my-azure-devops-terraform-pipeline/",
+        "redirects": 0,
+        "sha256": "55f98fc380dfe742244646e212647480900d160a1d394c01e8c182a6c0a7c3a9",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 9107,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/my-azure-devops-terraform-pipeline/",
+        "host": "blog.techdox.nz",
+        "path": "/my-azure-devops-terraform-pipeline/",
+        "redirects": 0,
+        "sha256": "55f98fc380dfe742244646e212647480900d160a1d394c01e8c182a6c0a7c3a9",
+        "status": 200
+      },
+      "canonical_path": "/my-azure-devops-terraform-pipeline/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/my-azure-devops-terraform-pipeline/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 21553,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/my-homelab-ai-setup-useful-access-limited-permissions/",
+        "host": "techdox.nz",
+        "path": "/my-homelab-ai-setup-useful-access-limited-permissions/",
+        "redirects": 0,
+        "sha256": "04bfbf3df35196cd6304cd3259c41581fd7f60ac24915d7a757f72d7a22cc3e5",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 21553,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/my-homelab-ai-setup-useful-access-limited-permissions/",
+        "host": "blog.techdox.nz",
+        "path": "/my-homelab-ai-setup-useful-access-limited-permissions/",
+        "redirects": 0,
+        "sha256": "04bfbf3df35196cd6304cd3259c41581fd7f60ac24915d7a757f72d7a22cc3e5",
+        "status": 200
+      },
+      "canonical_path": "/my-homelab-ai-setup-useful-access-limited-permissions/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/my-homelab-ai-setup-useful-access-limited-permissions/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 11424,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/my-new-home-server-hp-elitedesk-800-sff/",
+        "host": "techdox.nz",
+        "path": "/my-new-home-server-hp-elitedesk-800-sff/",
+        "redirects": 0,
+        "sha256": "0e6c92d4e9e5795bdd5622cfb2c54041f9a5c8c83ecd8430bd93ffc14da3343c",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 11424,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/my-new-home-server-hp-elitedesk-800-sff/",
+        "host": "blog.techdox.nz",
+        "path": "/my-new-home-server-hp-elitedesk-800-sff/",
+        "redirects": 0,
+        "sha256": "0e6c92d4e9e5795bdd5622cfb2c54041f9a5c8c83ecd8430bd93ffc14da3343c",
+        "status": 200
+      },
+      "canonical_path": "/my-new-home-server-hp-elitedesk-800-sff/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/my-new-home-server-hp-elitedesk-800-sff/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 139158,
+        "content_type": "image/png",
+        "final_url": "https://techdox.nz/og-default.png",
+        "host": "techdox.nz",
+        "path": "/og-default.png",
+        "redirects": 0,
+        "sha256": "9b0e3b6c780a3811cb8e77c28eb4cb2eaf106ecbbf2e92ba96cff04e30b1faf8",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 139158,
+        "content_type": "image/png",
+        "final_url": "https://blog.techdox.nz/og-default.png",
+        "host": "blog.techdox.nz",
+        "path": "/og-default.png",
+        "redirects": 0,
+        "sha256": "9b0e3b6c780a3811cb8e77c28eb4cb2eaf106ecbbf2e92ba96cff04e30b1faf8",
+        "status": 200
+      },
+      "canonical_path": "/og-default.png",
+      "category": "direct-image-asset",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/og-default.png",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/"
+        ],
+        "observed_expected_target": true,
+        "path": "/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 295,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/page/1/",
+        "host": "techdox.nz",
+        "path": "/page/1/",
+        "redirects": 0,
+        "sha256": "b61ecfa467ff7fb17e93757a05f3234f75d899f75b626bfeee86e4d838addea9",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 295,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/page/1/",
+        "redirects": 0,
+        "sha256": "b61ecfa467ff7fb17e93757a05f3234f75d899f75b626bfeee86e4d838addea9",
+        "status": 200
+      },
+      "canonical_path": "/",
+      "category": "blog-pagination",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 19523,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/page/2/",
+        "host": "techdox.nz",
+        "path": "/page/2/",
+        "redirects": 0,
+        "sha256": "43b0f3575f3c96aa3350d7f7eeafd52ee5234f74e3f6785c10fa2f3ce3919263",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 19523,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/page/2/",
+        "host": "blog.techdox.nz",
+        "path": "/page/2/",
+        "redirects": 0,
+        "sha256": "43b0f3575f3c96aa3350d7f7eeafd52ee5234f74e3f6785c10fa2f3ce3919263",
+        "status": 200
+      },
+      "canonical_path": "/page/2/",
+      "category": "blog-pagination",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/page/2/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 20327,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/page/3/",
+        "host": "techdox.nz",
+        "path": "/page/3/",
+        "redirects": 0,
+        "sha256": "46b79eb43befaafe1a59f0123ade3068024abb786e5221707fe57f72a6f527b8",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 20327,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/page/3/",
+        "host": "blog.techdox.nz",
+        "path": "/page/3/",
+        "redirects": 0,
+        "sha256": "46b79eb43befaafe1a59f0123ade3068024abb786e5221707fe57f72a6f527b8",
+        "status": 200
+      },
+      "canonical_path": "/page/3/",
+      "category": "blog-pagination",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/page/3/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 9824,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/page/4/",
+        "host": "techdox.nz",
+        "path": "/page/4/",
+        "redirects": 0,
+        "sha256": "a217e3056575441b05d8765125869f8f5a459f3ae8e827bd4240e720ba8b9d08",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 9824,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/page/4/",
+        "host": "blog.techdox.nz",
+        "path": "/page/4/",
+        "redirects": 0,
+        "sha256": "a217e3056575441b05d8765125869f8f5a459f3ae8e827bd4240e720ba8b9d08",
+        "status": 200
+      },
+      "canonical_path": "/page/4/",
+      "category": "blog-pagination",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/page/4/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14400,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/personal-projects-and-cloud-certifications/",
+        "host": "techdox.nz",
+        "path": "/personal-projects-and-cloud-certifications/",
+        "redirects": 0,
+        "sha256": "b14f14266b4a8072647625560e1f9c9755cf40ded0532222598ab076d17e8c23",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14400,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/personal-projects-and-cloud-certifications/",
+        "host": "blog.techdox.nz",
+        "path": "/personal-projects-and-cloud-certifications/",
+        "redirects": 0,
+        "sha256": "b14f14266b4a8072647625560e1f9c9755cf40ded0532222598ab076d17e8c23",
+        "status": 200
+      },
+      "canonical_path": "/personal-projects-and-cloud-certifications/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/personal-projects-and-cloud-certifications/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17808,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/posts/",
+        "host": "techdox.nz",
+        "path": "/posts/",
+        "redirects": 0,
+        "sha256": "09c3f6b4acd0eeaf674b6615b352cad20766ceea9bdff9462d09ce14119a310b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17808,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/posts/",
+        "host": "blog.techdox.nz",
+        "path": "/posts/",
+        "redirects": 0,
+        "sha256": "09c3f6b4acd0eeaf674b6615b352cad20766ceea9bdff9462d09ce14119a310b",
+        "status": 200
+      },
+      "canonical_path": "/posts/",
+      "category": "blog-index",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/posts/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 15173,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/posts/index.xml",
+        "host": "techdox.nz",
+        "path": "/posts/index.xml",
+        "redirects": 0,
+        "sha256": "f9b66da2777e67e947e465b9104e675da04182a7e2f577a6fe0463b80c8a9f8c",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 15173,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/posts/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/posts/index.xml",
+        "redirects": 0,
+        "sha256": "f9b66da2777e67e947e465b9104e675da04182a7e2f577a6fe0463b80c8a9f8c",
+        "status": 200
+      },
+      "canonical_path": "/posts/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/posts/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/posts/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/posts/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/posts/"
+        ],
+        "observed_expected_target": true,
+        "path": "/posts/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 313,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/posts/page/1/",
+        "host": "techdox.nz",
+        "path": "/posts/page/1/",
+        "redirects": 0,
+        "sha256": "c60b8cd61bfcd448fc8383a5e3af8d6726c0a9f415709ada3de8598549a4f156",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 313,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/posts/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/posts/page/1/",
+        "redirects": 0,
+        "sha256": "c60b8cd61bfcd448fc8383a5e3af8d6726c0a9f415709ada3de8598549a4f156",
+        "status": 200
+      },
+      "canonical_path": "/posts/",
+      "category": "blog-index",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/posts/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 16284,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/posts/page/2/",
+        "host": "techdox.nz",
+        "path": "/posts/page/2/",
+        "redirects": 0,
+        "sha256": "1c84755d67a046aaa744d44764e80a2fcbef471b9b42967c0aac00558bb1b998",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 16284,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/posts/page/2/",
+        "host": "blog.techdox.nz",
+        "path": "/posts/page/2/",
+        "redirects": 0,
+        "sha256": "1c84755d67a046aaa744d44764e80a2fcbef471b9b42967c0aac00558bb1b998",
+        "status": 200
+      },
+      "canonical_path": "/posts/page/2/",
+      "category": "blog-index",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/posts/page/2/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 16918,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/posts/page/3/",
+        "host": "techdox.nz",
+        "path": "/posts/page/3/",
+        "redirects": 0,
+        "sha256": "3d240c2e6e069bd464a65f0c64e4924181ebf92df275ebde09d88f8b7caa5bad",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 16918,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/posts/page/3/",
+        "host": "blog.techdox.nz",
+        "path": "/posts/page/3/",
+        "redirects": 0,
+        "sha256": "3d240c2e6e069bd464a65f0c64e4924181ebf92df275ebde09d88f8b7caa5bad",
+        "status": 200
+      },
+      "canonical_path": "/posts/page/3/",
+      "category": "blog-index",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/posts/page/3/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 7811,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/posts/page/4/",
+        "host": "techdox.nz",
+        "path": "/posts/page/4/",
+        "redirects": 0,
+        "sha256": "911149a1a8acc1ea1382904a63a9687b322c7a74db22a5de3c32d2626f7cc350",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 7811,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/posts/page/4/",
+        "host": "blog.techdox.nz",
+        "path": "/posts/page/4/",
+        "redirects": 0,
+        "sha256": "911149a1a8acc1ea1382904a63a9687b322c7a74db22a5de3c32d2626f7cc350",
+        "status": 200
+      },
+      "canonical_path": "/posts/page/4/",
+      "category": "blog-index",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/posts/page/4/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 13840,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/question-everything-road-to-cka/",
+        "host": "techdox.nz",
+        "path": "/question-everything-road-to-cka/",
+        "redirects": 0,
+        "sha256": "b25558f24bb338a8c054ceb3dc829be55f1c53ba87c9fad1e81f1358e2864e14",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 13840,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/question-everything-road-to-cka/",
+        "host": "blog.techdox.nz",
+        "path": "/question-everything-road-to-cka/",
+        "redirects": 0,
+        "sha256": "b25558f24bb338a8c054ceb3dc829be55f1c53ba87c9fad1e81f1358e2864e14",
+        "status": 200
+      },
+      "canonical_path": "/question-everything-road-to-cka/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/question-everything-road-to-cka/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14,
+        "content_type": "text/plain; charset=utf-8",
+        "final_url": "https://techdox.nz/robots.txt",
+        "host": "techdox.nz",
+        "path": "/robots.txt",
+        "redirects": 0,
+        "sha256": "fd89345af6aca5dab85f2aa6a830e270a362b1fa6b5f19607ddd773a081ed651",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14,
+        "content_type": "text/plain; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/robots.txt",
+        "host": "blog.techdox.nz",
+        "path": "/robots.txt",
+        "redirects": 0,
+        "sha256": "fd89345af6aca5dab85f2aa6a830e270a362b1fa6b5f19607ddd773a081ed651",
+        "status": 200
+      },
+      "canonical_path": "/robots.txt",
+      "category": "landing-owned",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/robots.txt",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14680,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+        "host": "techdox.nz",
+        "path": "/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+        "redirects": 0,
+        "sha256": "405649ba0cc55106ce312b16f229a519f8a091ca225da80556dc9a967dc4c377",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14680,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+        "host": "blog.techdox.nz",
+        "path": "/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+        "redirects": 0,
+        "sha256": "405649ba0cc55106ce312b16f229a519f8a091ca225da80556dc9a967dc4c377",
+        "status": 200
+      },
+      "canonical_path": "/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/sandboxing-your-curiosity-exploring-new-services-without-breaking-your-lab/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17802,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+        "host": "techdox.nz",
+        "path": "/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+        "redirects": 0,
+        "sha256": "d862d94f526a8e5b492e40d46397bd730ce31819d5ebdd6e04ffd78a0726ca34",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17802,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+        "host": "blog.techdox.nz",
+        "path": "/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+        "redirects": 0,
+        "sha256": "d862d94f526a8e5b492e40d46397bd730ce31819d5ebdd6e04ffd78a0726ca34",
+        "status": 200
+      },
+      "canonical_path": "/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/securely-backup-docker-volumes-a-step-by-step-guide-nextcloud-example/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17528,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+        "host": "techdox.nz",
+        "path": "/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+        "redirects": 0,
+        "sha256": "aab95791a156833d4ee8fab09d040bf0c115ffc1461ae663c1044e9f3410b602",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17528,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+        "host": "blog.techdox.nz",
+        "path": "/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+        "redirects": 0,
+        "sha256": "aab95791a156833d4ee8fab09d040bf0c115ffc1461ae663c1044e9f3410b602",
+        "status": 200
+      },
+      "canonical_path": "/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/self-hosting-with-a-raspberry-pi-4-and-cloudflare/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 16459,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/selfhosting-and-containers/",
+        "host": "techdox.nz",
+        "path": "/selfhosting-and-containers/",
+        "redirects": 0,
+        "sha256": "9b1d7ad9437131121138a7d7b4224a2697b3475d6e74390e554b3a2b34fcc07e",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 16459,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/selfhosting-and-containers/",
+        "host": "blog.techdox.nz",
+        "path": "/selfhosting-and-containers/",
+        "redirects": 0,
+        "sha256": "9b1d7ad9437131121138a7d7b4224a2697b3475d6e74390e554b3a2b34fcc07e",
+        "status": 200
+      },
+      "canonical_path": "/selfhosting-and-containers/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/selfhosting-and-containers/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 18662,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/setting-up-wireguard/",
+        "host": "techdox.nz",
+        "path": "/setting-up-wireguard/",
+        "redirects": 0,
+        "sha256": "d2ce28d2e30bad04eb617c425e43e9d2b951552580da7add833d28e9a7a5b63c",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 18662,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/setting-up-wireguard/",
+        "host": "blog.techdox.nz",
+        "path": "/setting-up-wireguard/",
+        "redirects": 0,
+        "sha256": "d2ce28d2e30bad04eb617c425e43e9d2b951552580da7add833d28e9a7a5b63c",
+        "status": 200
+      },
+      "canonical_path": "/setting-up-wireguard/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/setting-up-wireguard/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 6881,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/sitemap.xml",
+        "host": "techdox.nz",
+        "path": "/sitemap.xml",
+        "redirects": 0,
+        "sha256": "5a9911c008ff2ec7a69df622c2c2696b82d09d71416176369ff16a57bbd35073",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 6881,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/sitemap.xml",
+        "host": "blog.techdox.nz",
+        "path": "/sitemap.xml",
+        "redirects": 0,
+        "sha256": "5a9911c008ff2ec7a69df622c2c2696b82d09d71416176369ff16a57bbd35073",
+        "status": 200
+      },
+      "canonical_path": "/sitemap.xml",
+      "category": "landing-owned",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/sitemap.xml",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5040,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/",
+        "host": "techdox.nz",
+        "path": "/tags/",
+        "redirects": 0,
+        "sha256": "06b8a3283cdcaaccde2ee2542cafcac1d0c72d1bb9ba999de158d0a48b9e8413",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5040,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/",
+        "redirects": 0,
+        "sha256": "06b8a3283cdcaaccde2ee2542cafcac1d0c72d1bb9ba999de158d0a48b9e8413",
+        "status": 200
+      },
+      "canonical_path": "/tags/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 8124,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/ai/",
+        "host": "techdox.nz",
+        "path": "/tags/ai/",
+        "redirects": 0,
+        "sha256": "f0ab892489625673bfd676bba43b582f0e36755ca110e9c31faf94af9f4009f0",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 8124,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/ai/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/ai/",
+        "redirects": 0,
+        "sha256": "f0ab892489625673bfd676bba43b582f0e36755ca110e9c31faf94af9f4009f0",
+        "status": 200
+      },
+      "canonical_path": "/tags/ai/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/ai/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2827,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/ai/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/ai/index.xml",
+        "redirects": 0,
+        "sha256": "8adeab337d9ee7c22db5c70d1769ba011b1d6a5cac8319ff62b9a0fffd4441eb",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2827,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/ai/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/ai/index.xml",
+        "redirects": 0,
+        "sha256": "8adeab337d9ee7c22db5c70d1769ba011b1d6a5cac8319ff62b9a0fffd4441eb",
+        "status": 200
+      },
+      "canonical_path": "/tags/ai/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/ai/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/ai/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/ai/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/ai/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/ai/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 319,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/ai/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/ai/page/1/",
+        "redirects": 0,
+        "sha256": "cb2b0b5ed6714aafbd18915695d1bfa26eed17d913b9787d4ca12e63fb068ebf",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 319,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/ai/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/ai/page/1/",
+        "redirects": 0,
+        "sha256": "cb2b0b5ed6714aafbd18915695d1bfa26eed17d913b9787d4ca12e63fb068ebf",
+        "status": 200
+      },
+      "canonical_path": "/tags/ai/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/ai/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 6868,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/automation/",
+        "host": "techdox.nz",
+        "path": "/tags/automation/",
+        "redirects": 0,
+        "sha256": "9e5700761aa3f490463b4926c84574def03612600a5201de42304737ba8403cc",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 6868,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/automation/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/automation/",
+        "redirects": 0,
+        "sha256": "9e5700761aa3f490463b4926c84574def03612600a5201de42304737ba8403cc",
+        "status": 200
+      },
+      "canonical_path": "/tags/automation/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/automation/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2004,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/automation/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/automation/index.xml",
+        "redirects": 0,
+        "sha256": "4b741610fa43f34a8ce56e2f8c093c22fa7c91d656e7a7f18c96c49592f7abc6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2004,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/automation/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/automation/index.xml",
+        "redirects": 0,
+        "sha256": "4b741610fa43f34a8ce56e2f8c093c22fa7c91d656e7a7f18c96c49592f7abc6",
+        "status": 200
+      },
+      "canonical_path": "/tags/automation/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/automation/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/automation/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/automation/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/automation/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/automation/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/automation/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/automation/page/1/",
+        "redirects": 0,
+        "sha256": "695553248a72978aa6e62a39af2d771599ecc45a8180d28de589391d18691253",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/automation/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/automation/page/1/",
+        "redirects": 0,
+        "sha256": "695553248a72978aa6e62a39af2d771599ecc45a8180d28de589391d18691253",
+        "status": 200
+      },
+      "canonical_path": "/tags/automation/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/automation/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 9420,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/certification/",
+        "host": "techdox.nz",
+        "path": "/tags/certification/",
+        "redirects": 0,
+        "sha256": "19f71995e3fe6049e7751fe1e39868d34a98287d65dc7d6267eeb49ad42e7cfa",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 9420,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/certification/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/certification/",
+        "redirects": 0,
+        "sha256": "19f71995e3fe6049e7751fe1e39868d34a98287d65dc7d6267eeb49ad42e7cfa",
+        "status": 200
+      },
+      "canonical_path": "/tags/certification/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/certification/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2984,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/certification/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/certification/index.xml",
+        "redirects": 0,
+        "sha256": "890b53020a1d762f161206378ccbba013d2a7f5e57d36214a655167c9924c83b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2984,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/certification/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/certification/index.xml",
+        "redirects": 0,
+        "sha256": "890b53020a1d762f161206378ccbba013d2a7f5e57d36214a655167c9924c83b",
+        "status": 200
+      },
+      "canonical_path": "/tags/certification/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/certification/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/certification/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/certification/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/certification/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/certification/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 352,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/certification/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/certification/page/1/",
+        "redirects": 0,
+        "sha256": "a2ded9baf25afa3b380fed6e53b6e35435e5e989a02c99c9db03e93c9d0b018b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 352,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/certification/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/certification/page/1/",
+        "redirects": 0,
+        "sha256": "a2ded9baf25afa3b380fed6e53b6e35435e5e989a02c99c9db03e93c9d0b018b",
+        "status": 200
+      },
+      "canonical_path": "/tags/certification/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/certification/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5412,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/chatgpt/",
+        "host": "techdox.nz",
+        "path": "/tags/chatgpt/",
+        "redirects": 0,
+        "sha256": "1a711b20d22f9cf4ae7a7c5cb1f71ada7946e15ea754379a122f91d74a2070c3",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5412,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/chatgpt/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/chatgpt/",
+        "redirects": 0,
+        "sha256": "1a711b20d22f9cf4ae7a7c5cb1f71ada7946e15ea754379a122f91d74a2070c3",
+        "status": 200
+      },
+      "canonical_path": "/tags/chatgpt/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/chatgpt/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1148,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/chatgpt/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/chatgpt/index.xml",
+        "redirects": 0,
+        "sha256": "f5851d21482a61474500baa5629528d5d36759948968b4cfbc7acf4e870d1adf",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1148,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/chatgpt/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/chatgpt/index.xml",
+        "redirects": 0,
+        "sha256": "f5851d21482a61474500baa5629528d5d36759948968b4cfbc7acf4e870d1adf",
+        "status": 200
+      },
+      "canonical_path": "/tags/chatgpt/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/chatgpt/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/chatgpt/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/chatgpt/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/chatgpt/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/chatgpt/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 334,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/chatgpt/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/chatgpt/page/1/",
+        "redirects": 0,
+        "sha256": "19886304c564a2e17c26cb8e784e746f6d4f1ae5782b3f6dd3b9746a981c16af",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 334,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/chatgpt/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/chatgpt/page/1/",
+        "redirects": 0,
+        "sha256": "19886304c564a2e17c26cb8e784e746f6d4f1ae5782b3f6dd3b9746a981c16af",
+        "status": 200
+      },
+      "canonical_path": "/tags/chatgpt/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/chatgpt/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5554,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/cloudflare/",
+        "host": "techdox.nz",
+        "path": "/tags/cloudflare/",
+        "redirects": 0,
+        "sha256": "d9f41b660b62b9e6ef8ee7ca3bf9bc1f2e9be25524ab3c2d803d6f06825dcc44",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5554,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/cloudflare/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/cloudflare/",
+        "redirects": 0,
+        "sha256": "d9f41b660b62b9e6ef8ee7ca3bf9bc1f2e9be25524ab3c2d803d6f06825dcc44",
+        "status": 200
+      },
+      "canonical_path": "/tags/cloudflare/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/cloudflare/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1554,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/cloudflare/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/cloudflare/index.xml",
+        "redirects": 0,
+        "sha256": "eb16768c8ee385abea28e0cdcded262fdb9d6a2319ed3f24ea10dcd9eaff80d1",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1554,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/cloudflare/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/cloudflare/index.xml",
+        "redirects": 0,
+        "sha256": "eb16768c8ee385abea28e0cdcded262fdb9d6a2319ed3f24ea10dcd9eaff80d1",
+        "status": 200
+      },
+      "canonical_path": "/tags/cloudflare/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/cloudflare/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/cloudflare/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/cloudflare/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/cloudflare/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/cloudflare/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/cloudflare/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/cloudflare/page/1/",
+        "redirects": 0,
+        "sha256": "c1cbd76a36da219a90bb14914d836f9117080a90d172e6300c117354e63d549a",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/cloudflare/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/cloudflare/page/1/",
+        "redirects": 0,
+        "sha256": "c1cbd76a36da219a90bb14914d836f9117080a90d172e6300c117354e63d549a",
+        "status": 200
+      },
+      "canonical_path": "/tags/cloudflare/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/cloudflare/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 13440,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/docker/",
+        "host": "techdox.nz",
+        "path": "/tags/docker/",
+        "redirects": 0,
+        "sha256": "f9393f322341295dea9b4464abd0ab37dedd4ff36d795e07a9bcf59a87f041c8",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 13440,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/docker/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/docker/",
+        "redirects": 0,
+        "sha256": "f9393f322341295dea9b4464abd0ab37dedd4ff36d795e07a9bcf59a87f041c8",
+        "status": 200
+      },
+      "canonical_path": "/tags/docker/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/docker/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5642,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/docker/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/docker/index.xml",
+        "redirects": 0,
+        "sha256": "86ce32e3a732465dbeb3f3ca2af6a1cd5635f780651ac9dfef652e9568a850b5",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5642,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/docker/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/docker/index.xml",
+        "redirects": 0,
+        "sha256": "86ce32e3a732465dbeb3f3ca2af6a1cd5635f780651ac9dfef652e9568a850b5",
+        "status": 200
+      },
+      "canonical_path": "/tags/docker/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/docker/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/docker/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/docker/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/docker/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/docker/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 331,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/docker/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/docker/page/1/",
+        "redirects": 0,
+        "sha256": "d6167e95ed976f539942c1f0681562c11a093f5d96ee4ce5a864e82abb9c572f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 331,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/docker/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/docker/page/1/",
+        "redirects": 0,
+        "sha256": "d6167e95ed976f539942c1f0681562c11a093f5d96ee4ce5a864e82abb9c572f",
+        "status": 200
+      },
+      "canonical_path": "/tags/docker/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/docker/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 8257,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/homelab/",
+        "host": "techdox.nz",
+        "path": "/tags/homelab/",
+        "redirects": 0,
+        "sha256": "65f988b53e31898ea879f1e02c87a885f9f5881bdd7b3c35db51c70cb9f71314",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 8257,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/homelab/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/homelab/",
+        "redirects": 0,
+        "sha256": "65f988b53e31898ea879f1e02c87a885f9f5881bdd7b3c35db51c70cb9f71314",
+        "status": 200
+      },
+      "canonical_path": "/tags/homelab/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/homelab/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 3003,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/homelab/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/homelab/index.xml",
+        "redirects": 0,
+        "sha256": "103548d6210f7ac90708aff6f4a6ed38fb27d1ce67a37e4823e3878bb8417aeb",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 3003,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/homelab/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/homelab/index.xml",
+        "redirects": 0,
+        "sha256": "103548d6210f7ac90708aff6f4a6ed38fb27d1ce67a37e4823e3878bb8417aeb",
+        "status": 200
+      },
+      "canonical_path": "/tags/homelab/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/homelab/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/homelab/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/homelab/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/homelab/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/homelab/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 334,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/homelab/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/homelab/page/1/",
+        "redirects": 0,
+        "sha256": "66743db05ebc0753b0cf7a73ff27217035b0b4e04e9162e89806a657b244f9bb",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 334,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/homelab/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/homelab/page/1/",
+        "redirects": 0,
+        "sha256": "66743db05ebc0753b0cf7a73ff27217035b0b4e04e9162e89806a657b244f9bb",
+        "status": 200
+      },
+      "canonical_path": "/tags/homelab/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/homelab/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 4289,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/index.xml",
+        "redirects": 0,
+        "sha256": "230ff8a3c09fff205fc46e21c93672b76f32b7bb76e4c2c06ed16a8e8047cda4",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 4289,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/index.xml",
+        "redirects": 0,
+        "sha256": "230ff8a3c09fff205fc46e21c93672b76f32b7bb76e4c2c06ed16a8e8047cda4",
+        "status": 200
+      },
+      "canonical_path": "/tags/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/index.xml",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 12292,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/kubernetes/",
+        "host": "techdox.nz",
+        "path": "/tags/kubernetes/",
+        "redirects": 0,
+        "sha256": "713868708c1cc3a03d53ea3bc6392851fface5c8f1b290cec7cd0af20d67a96f",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 12292,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/kubernetes/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/kubernetes/",
+        "redirects": 0,
+        "sha256": "713868708c1cc3a03d53ea3bc6392851fface5c8f1b290cec7cd0af20d67a96f",
+        "status": 200
+      },
+      "canonical_path": "/tags/kubernetes/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/kubernetes/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 4711,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/kubernetes/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/kubernetes/index.xml",
+        "redirects": 0,
+        "sha256": "efe2977cbe5c7aa38b47649c3585c9409601dc94cb5b4e905e029a8d5297ca28",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 4711,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/kubernetes/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/kubernetes/index.xml",
+        "redirects": 0,
+        "sha256": "efe2977cbe5c7aa38b47649c3585c9409601dc94cb5b4e905e029a8d5297ca28",
+        "status": 200
+      },
+      "canonical_path": "/tags/kubernetes/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/kubernetes/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/kubernetes/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/kubernetes/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/kubernetes/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/kubernetes/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/kubernetes/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/kubernetes/page/1/",
+        "redirects": 0,
+        "sha256": "671dcbca0e869fc582af8c5f51e63c5119b61e195f4d7a8cf8a91ce37a3cd932",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/kubernetes/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/kubernetes/page/1/",
+        "redirects": 0,
+        "sha256": "671dcbca0e869fc582af8c5f51e63c5119b61e195f4d7a8cf8a91ce37a3cd932",
+        "status": 200
+      },
+      "canonical_path": "/tags/kubernetes/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/kubernetes/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 6595,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/linux/",
+        "host": "techdox.nz",
+        "path": "/tags/linux/",
+        "redirects": 0,
+        "sha256": "904f4ba2277b0128aae051f27281eb6e251297cfe9fc13f32c5da7a2721e952d",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 6595,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/linux/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/linux/",
+        "redirects": 0,
+        "sha256": "904f4ba2277b0128aae051f27281eb6e251297cfe9fc13f32c5da7a2721e952d",
+        "status": 200
+      },
+      "canonical_path": "/tags/linux/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/linux/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 2119,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/linux/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/linux/index.xml",
+        "redirects": 0,
+        "sha256": "21299463a392860537d15ba0cd4e0be51e6fc274c5799ec6031863b69b58f368",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 2119,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/linux/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/linux/index.xml",
+        "redirects": 0,
+        "sha256": "21299463a392860537d15ba0cd4e0be51e6fc274c5799ec6031863b69b58f368",
+        "status": 200
+      },
+      "canonical_path": "/tags/linux/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/linux/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/linux/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/linux/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/linux/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/linux/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 328,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/linux/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/linux/page/1/",
+        "redirects": 0,
+        "sha256": "45b55a45b1354811022f71ea5177ebff7a38dc9c685580b87c2223568d0785e7",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 328,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/linux/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/linux/page/1/",
+        "redirects": 0,
+        "sha256": "45b55a45b1354811022f71ea5177ebff7a38dc9c685580b87c2223568d0785e7",
+        "status": 200
+      },
+      "canonical_path": "/tags/linux/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/linux/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5597,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/networking/",
+        "host": "techdox.nz",
+        "path": "/tags/networking/",
+        "redirects": 0,
+        "sha256": "4dfaee3c4dd336453c45680d741993e4889b6af398774b5f6f429373e24ca443",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5597,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/networking/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/networking/",
+        "redirects": 0,
+        "sha256": "4dfaee3c4dd336453c45680d741993e4889b6af398774b5f6f429373e24ca443",
+        "status": 200
+      },
+      "canonical_path": "/tags/networking/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/networking/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1306,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/networking/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/networking/index.xml",
+        "redirects": 0,
+        "sha256": "8ca254ce5d51e7eec2cbcb6376e8912a5c52ac9e0c74a037c080ce67f42fbaa6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1306,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/networking/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/networking/index.xml",
+        "redirects": 0,
+        "sha256": "8ca254ce5d51e7eec2cbcb6376e8912a5c52ac9e0c74a037c080ce67f42fbaa6",
+        "status": 200
+      },
+      "canonical_path": "/tags/networking/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/networking/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/networking/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/networking/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/networking/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/networking/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/networking/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/networking/page/1/",
+        "redirects": 0,
+        "sha256": "bd5949f5ab744444b2c997d5224170bdd3097316888d0a9705f0055501c9b7f6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 343,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/networking/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/networking/page/1/",
+        "redirects": 0,
+        "sha256": "bd5949f5ab744444b2c997d5224170bdd3097316888d0a9705f0055501c9b7f6",
+        "status": 200
+      },
+      "canonical_path": "/tags/networking/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/networking/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5459,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/proxmox/",
+        "host": "techdox.nz",
+        "path": "/tags/proxmox/",
+        "redirects": 0,
+        "sha256": "f6157d38ba5baf4f2e54f6e842f6fbee3ac2b45d349f090245bc823e592b07cb",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5459,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/proxmox/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/proxmox/",
+        "redirects": 0,
+        "sha256": "f6157d38ba5baf4f2e54f6e842f6fbee3ac2b45d349f090245bc823e592b07cb",
+        "status": 200
+      },
+      "canonical_path": "/tags/proxmox/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/proxmox/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1701,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/proxmox/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/proxmox/index.xml",
+        "redirects": 0,
+        "sha256": "423ca0c3251a8fc4011eee7d94ab5de71f709ddb7eaa0790bb2e0a7068e8778b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1701,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/proxmox/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/proxmox/index.xml",
+        "redirects": 0,
+        "sha256": "423ca0c3251a8fc4011eee7d94ab5de71f709ddb7eaa0790bb2e0a7068e8778b",
+        "status": 200
+      },
+      "canonical_path": "/tags/proxmox/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/proxmox/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/proxmox/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/proxmox/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/proxmox/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/proxmox/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 334,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/proxmox/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/proxmox/page/1/",
+        "redirects": 0,
+        "sha256": "741a7a9acb746bfcf68eee3ff3b1dab3806e223ae2595060e65aa2e2e95f5597",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 334,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/proxmox/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/proxmox/page/1/",
+        "redirects": 0,
+        "sha256": "741a7a9acb746bfcf68eee3ff3b1dab3806e223ae2595060e65aa2e2e95f5597",
+        "status": 200
+      },
+      "canonical_path": "/tags/proxmox/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/proxmox/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5570,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/raspberry-pi/",
+        "host": "techdox.nz",
+        "path": "/tags/raspberry-pi/",
+        "redirects": 0,
+        "sha256": "4581f40247415b618332c8c485f6fc267943062c1a4c16c68476074d26464d62",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5570,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/raspberry-pi/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/raspberry-pi/",
+        "redirects": 0,
+        "sha256": "4581f40247415b618332c8c485f6fc267943062c1a4c16c68476074d26464d62",
+        "status": 200
+      },
+      "canonical_path": "/tags/raspberry-pi/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/raspberry-pi/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1562,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/raspberry-pi/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/raspberry-pi/index.xml",
+        "redirects": 0,
+        "sha256": "188009ddebed9f71d36f33e79fe7bb34840085bfbf265934d295c40558e54cfd",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1562,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/raspberry-pi/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/raspberry-pi/index.xml",
+        "redirects": 0,
+        "sha256": "188009ddebed9f71d36f33e79fe7bb34840085bfbf265934d295c40558e54cfd",
+        "status": 200
+      },
+      "canonical_path": "/tags/raspberry-pi/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/raspberry-pi/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/raspberry-pi/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/raspberry-pi/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/raspberry-pi/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/raspberry-pi/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 349,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/raspberry-pi/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/raspberry-pi/page/1/",
+        "redirects": 0,
+        "sha256": "c2ca6ee5cb69fe2f6afaedf42cb7f9fc3d0c112af1eeb1fa271c0d3b556ba71b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 349,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/raspberry-pi/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/raspberry-pi/page/1/",
+        "redirects": 0,
+        "sha256": "c2ca6ee5cb69fe2f6afaedf42cb7f9fc3d0c112af1eeb1fa271c0d3b556ba71b",
+        "status": 200
+      },
+      "canonical_path": "/tags/raspberry-pi/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/raspberry-pi/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 5431,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/security/",
+        "host": "techdox.nz",
+        "path": "/tags/security/",
+        "redirects": 0,
+        "sha256": "e6ab509d07db1aa56f8b399e69cfc374a71d4f4bfc7063ea2f4f952775467fde",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 5431,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/security/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/security/",
+        "redirects": 0,
+        "sha256": "e6ab509d07db1aa56f8b399e69cfc374a71d4f4bfc7063ea2f4f952775467fde",
+        "status": 200
+      },
+      "canonical_path": "/tags/security/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/security/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 1252,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/security/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/security/index.xml",
+        "redirects": 0,
+        "sha256": "e7eae3701ae07595b93f462d31f072e3bda707e16ad2891c6e118e6c90201895",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 1252,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/security/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/security/index.xml",
+        "redirects": 0,
+        "sha256": "e7eae3701ae07595b93f462d31f072e3bda707e16ad2891c6e118e6c90201895",
+        "status": 200
+      },
+      "canonical_path": "/tags/security/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/security/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/security/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/security/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/security/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/security/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 337,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/security/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/security/page/1/",
+        "redirects": 0,
+        "sha256": "8f13a28701d1a7226ca97f6f5aad57db9c4af7100e297c211a8b3b7bce8cece1",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 337,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/security/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/security/page/1/",
+        "redirects": 0,
+        "sha256": "8f13a28701d1a7226ca97f6f5aad57db9c4af7100e297c211a8b3b7bce8cece1",
+        "status": 200
+      },
+      "canonical_path": "/tags/security/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/security/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17302,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/selfhosting/",
+        "host": "techdox.nz",
+        "path": "/tags/selfhosting/",
+        "redirects": 0,
+        "sha256": "900dc751d6e0e6ff5a0e0d3940bfd10cff53cd59dcd37df55baab5ae421102f4",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17302,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/selfhosting/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/selfhosting/",
+        "redirects": 0,
+        "sha256": "900dc751d6e0e6ff5a0e0d3940bfd10cff53cd59dcd37df55baab5ae421102f4",
+        "status": 200
+      },
+      "canonical_path": "/tags/selfhosting/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/selfhosting/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 13052,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/selfhosting/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/selfhosting/index.xml",
+        "redirects": 0,
+        "sha256": "63772352d2b3b330b6230e047c0cbc58ba9f37243aaa905e9b980730e3ae8a1b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 13052,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/selfhosting/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/selfhosting/index.xml",
+        "redirects": 0,
+        "sha256": "63772352d2b3b330b6230e047c0cbc58ba9f37243aaa905e9b980730e3ae8a1b",
+        "status": 200
+      },
+      "canonical_path": "/tags/selfhosting/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/selfhosting/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/selfhosting/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/selfhosting/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/selfhosting/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/selfhosting/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 346,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/selfhosting/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/selfhosting/page/1/",
+        "redirects": 0,
+        "sha256": "d0fc96592a1ce6cf14ed9e91c6071982d9a68a4af923ec89d9239c04d589f21e",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 346,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/selfhosting/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/selfhosting/page/1/",
+        "redirects": 0,
+        "sha256": "d0fc96592a1ce6cf14ed9e91c6071982d9a68a4af923ec89d9239c04d589f21e",
+        "status": 200
+      },
+      "canonical_path": "/tags/selfhosting/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/selfhosting/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 12535,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/selfhosting/page/2/",
+        "host": "techdox.nz",
+        "path": "/tags/selfhosting/page/2/",
+        "redirects": 0,
+        "sha256": "dc970652b0a2954c7ede06a2f9ee3f86386a5a604e9d7e78210a17e7bf54ae18",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 12535,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/selfhosting/page/2/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/selfhosting/page/2/",
+        "redirects": 0,
+        "sha256": "dc970652b0a2954c7ede06a2f9ee3f86386a5a604e9d7e78210a17e7bf54ae18",
+        "status": 200
+      },
+      "canonical_path": "/tags/selfhosting/page/2/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/selfhosting/page/2/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 11073,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/zimaboard/",
+        "host": "techdox.nz",
+        "path": "/tags/zimaboard/",
+        "redirects": 0,
+        "sha256": "5063eca946ff82d6b8178968b3b42a15fdacf46adec40da403bb2063bf931cdf",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 11073,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/zimaboard/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/zimaboard/",
+        "redirects": 0,
+        "sha256": "5063eca946ff82d6b8178968b3b42a15fdacf46adec40da403bb2063bf931cdf",
+        "status": 200
+      },
+      "canonical_path": "/tags/zimaboard/",
+      "category": "blog-taxonomy",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/zimaboard/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 4297,
+        "content_type": "application/xml",
+        "final_url": "https://techdox.nz/tags/zimaboard/index.xml",
+        "host": "techdox.nz",
+        "path": "/tags/zimaboard/index.xml",
+        "redirects": 0,
+        "sha256": "4c333f59b88dcdfedbbe7493ca95989be5a39228d6dd28172f8cc8b20e1a4c3e",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 4297,
+        "content_type": "application/xml",
+        "final_url": "https://blog.techdox.nz/tags/zimaboard/index.xml",
+        "host": "blog.techdox.nz",
+        "path": "/tags/zimaboard/index.xml",
+        "redirects": 0,
+        "sha256": "4c333f59b88dcdfedbbe7493ca95989be5a39228d6dd28172f8cc8b20e1a4c3e",
+        "status": 200
+      },
+      "canonical_path": "/tags/zimaboard/index.xml",
+      "category": "rss-feed",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/tags/zimaboard/index.xml",
+      "same_body": true
+    },
+    {
+      "alias_observation": {
+        "canonical_links": [
+          "https://techdox.nz/tags/zimaboard/"
+        ],
+        "expected_equivalent_apex": "https://techdox.nz/tags/zimaboard/",
+        "meta_refresh": [
+          "0; url=https://techdox.nz/tags/zimaboard/"
+        ],
+        "observed_expected_target": true,
+        "path": "/tags/zimaboard/page/1/",
+        "status": 200
+      },
+      "apex": {
+        "bytes": 340,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/tags/zimaboard/page/1/",
+        "host": "techdox.nz",
+        "path": "/tags/zimaboard/page/1/",
+        "redirects": 0,
+        "sha256": "828f2edb7e9e7b9c065fbf5226a4222aa3c25ccfb9e87577adc10eff754460b4",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 340,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/tags/zimaboard/page/1/",
+        "host": "blog.techdox.nz",
+        "path": "/tags/zimaboard/page/1/",
+        "redirects": 0,
+        "sha256": "828f2edb7e9e7b9c065fbf5226a4222aa3c25ccfb9e87577adc10eff754460b4",
+        "status": 200
+      },
+      "canonical_path": "/tags/zimaboard/",
+      "category": "blog-taxonomy",
+      "page_one_alias": true,
+      "passed": true,
+      "path": "/tags/zimaboard/page/1/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 16190,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+        "host": "techdox.nz",
+        "path": "/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+        "redirects": 0,
+        "sha256": "95faf7971d400d01702027333a981d18bec7d7b60195a597a732fe8e524a5549",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 16190,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+        "host": "blog.techdox.nz",
+        "path": "/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+        "redirects": 0,
+        "sha256": "95faf7971d400d01702027333a981d18bec7d7b60195a597a732fe8e524a5549",
+        "status": 200
+      },
+      "canonical_path": "/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/the-importance-of-not-dismissing-docker-swarm-ensuring-your-application-can-truly-scale/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14560,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/the-road-to-cka-certified-kubernetes-administrator/",
+        "host": "techdox.nz",
+        "path": "/the-road-to-cka-certified-kubernetes-administrator/",
+        "redirects": 0,
+        "sha256": "23df06babdd12b24b1bbec0422dad17fbaf645c503fd4204da726614ef828d14",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14560,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/the-road-to-cka-certified-kubernetes-administrator/",
+        "host": "blog.techdox.nz",
+        "path": "/the-road-to-cka-certified-kubernetes-administrator/",
+        "redirects": 0,
+        "sha256": "23df06babdd12b24b1bbec0422dad17fbaf645c503fd4204da726614ef828d14",
+        "status": 200
+      },
+      "canonical_path": "/the-road-to-cka-certified-kubernetes-administrator/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/the-road-to-cka-certified-kubernetes-administrator/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17146,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/things-kubernetes-forced-me-to-learn-this-week/",
+        "host": "techdox.nz",
+        "path": "/things-kubernetes-forced-me-to-learn-this-week/",
+        "redirects": 0,
+        "sha256": "6943cd7e54b6ac39e674addbe24e2e31cba441c02361588b0453f42955d4d483",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17146,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/things-kubernetes-forced-me-to-learn-this-week/",
+        "host": "blog.techdox.nz",
+        "path": "/things-kubernetes-forced-me-to-learn-this-week/",
+        "redirects": 0,
+        "sha256": "6943cd7e54b6ac39e674addbe24e2e31cba441c02361588b0453f42955d4d483",
+        "status": 200
+      },
+      "canonical_path": "/things-kubernetes-forced-me-to-learn-this-week/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/things-kubernetes-forced-me-to-learn-this-week/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 18556,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/umbrel-a-selfhosted-dashboard/",
+        "host": "techdox.nz",
+        "path": "/umbrel-a-selfhosted-dashboard/",
+        "redirects": 0,
+        "sha256": "0d483418113c6ba15c3c957f806c362e50603a2d447bb06eaf2791957688c41b",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 18556,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/umbrel-a-selfhosted-dashboard/",
+        "host": "blog.techdox.nz",
+        "path": "/umbrel-a-selfhosted-dashboard/",
+        "redirects": 0,
+        "sha256": "0d483418113c6ba15c3c957f806c362e50603a2d447bb06eaf2791957688c41b",
+        "status": 200
+      },
+      "canonical_path": "/umbrel-a-selfhosted-dashboard/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/umbrel-a-selfhosted-dashboard/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 9495,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/using-bookstack-as-my-knowledge-base/",
+        "host": "techdox.nz",
+        "path": "/using-bookstack-as-my-knowledge-base/",
+        "redirects": 0,
+        "sha256": "8e2b4385149058b9e69fa3669d4479f623a68de846576cc4b7315ec947418df3",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 9495,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/using-bookstack-as-my-knowledge-base/",
+        "host": "blog.techdox.nz",
+        "path": "/using-bookstack-as-my-knowledge-base/",
+        "redirects": 0,
+        "sha256": "8e2b4385149058b9e69fa3669d4479f623a68de846576cc4b7315ec947418df3",
+        "status": 200
+      },
+      "canonical_path": "/using-bookstack-as-my-knowledge-base/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/using-bookstack-as-my-knowledge-base/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 17747,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/why-linux-for-selfhosting/",
+        "host": "techdox.nz",
+        "path": "/why-linux-for-selfhosting/",
+        "redirects": 0,
+        "sha256": "d4866e0dd54aaadeea7e7c7b6492e972d87e32e886b1a388fc8a6ceeceae75b6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 17747,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/why-linux-for-selfhosting/",
+        "host": "blog.techdox.nz",
+        "path": "/why-linux-for-selfhosting/",
+        "redirects": 0,
+        "sha256": "d4866e0dd54aaadeea7e7c7b6492e972d87e32e886b1a388fc8a6ceeceae75b6",
+        "status": 200
+      },
+      "canonical_path": "/why-linux-for-selfhosting/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/why-linux-for-selfhosting/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 15277,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/why-selfhost/",
+        "host": "techdox.nz",
+        "path": "/why-selfhost/",
+        "redirects": 0,
+        "sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 15277,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/why-selfhost/",
+        "host": "blog.techdox.nz",
+        "path": "/why-selfhost/",
+        "redirects": 0,
+        "sha256": "d7b149a8d43264f89fb02ac5ed2d14b19f79d52cd5f577dfbe82d622421d06a6",
+        "status": 200
+      },
+      "canonical_path": "/why-selfhost/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/why-selfhost/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 15402,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/why-you-need-to-learn-linux/",
+        "host": "techdox.nz",
+        "path": "/why-you-need-to-learn-linux/",
+        "redirects": 0,
+        "sha256": "4bb55d611dbe38256be31eaebd8eb881d125f84922c07e8ce24b2d997837ac99",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 15402,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/why-you-need-to-learn-linux/",
+        "host": "blog.techdox.nz",
+        "path": "/why-you-need-to-learn-linux/",
+        "redirects": 0,
+        "sha256": "4bb55d611dbe38256be31eaebd8eb881d125f84922c07e8ce24b2d997837ac99",
+        "status": 200
+      },
+      "canonical_path": "/why-you-need-to-learn-linux/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/why-you-need-to-learn-linux/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 14417,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/why-you-need-to-selfhost-a-website/",
+        "host": "techdox.nz",
+        "path": "/why-you-need-to-selfhost-a-website/",
+        "redirects": 0,
+        "sha256": "2043631eb960106a1506580ffc8cd489609118ab7f0eea3da4970d3e7bc919e7",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 14417,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/why-you-need-to-selfhost-a-website/",
+        "host": "blog.techdox.nz",
+        "path": "/why-you-need-to-selfhost-a-website/",
+        "redirects": 0,
+        "sha256": "2043631eb960106a1506580ffc8cd489609118ab7f0eea3da4970d3e7bc919e7",
+        "status": 200
+      },
+      "canonical_path": "/why-you-need-to-selfhost-a-website/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/why-you-need-to-selfhost-a-website/",
+      "same_body": true
+    },
+    {
+      "apex": {
+        "bytes": 16468,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://techdox.nz/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+        "host": "techdox.nz",
+        "path": "/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+        "redirects": 0,
+        "sha256": "c2b67b881be0f048118ce0674091b67848bd02100c4ea54239a12a3549d8ff13",
+        "status": 200
+      },
+      "blog": {
+        "bytes": 16468,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://blog.techdox.nz/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+        "host": "blog.techdox.nz",
+        "path": "/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+        "redirects": 0,
+        "sha256": "c2b67b881be0f048118ce0674091b67848bd02100c4ea54239a12a3549d8ff13",
+        "status": 200
+      },
+      "canonical_path": "/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+      "category": "blog-article",
+      "page_one_alias": false,
+      "passed": true,
+      "path": "/zimaboard-the-ultimate-single-board-computer-for-diy-projects/",
+      "same_body": true
+    }
+  ],
+  "same_body_count": 141,
+  "verified_at": "2026-07-25T12:09:55.571916Z"
+}

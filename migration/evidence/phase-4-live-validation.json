@@ -1,0 +1,23 @@
+{
+  "validated_at": "2026-07-26T08:41:00Z",
+  "method": "HEAD requests with redirect following disabled",
+  "rule": {
+    "name": "Techdox apex blog migration — temporary 302 validation",
+    "expression": "http.host eq \"techdox.nz\"",
+    "list": "techdox_apex_blog_phase4_302",
+    "status_during_test": "enabled",
+    "status_after_test": "disabled"
+  },
+  "manifest_entries": 212,
+  "https_mappings_passed": 212,
+  "http_mappings_passed": 212,
+  "total_scheme_checks_passed": 424,
+  "total_scheme_checks": 424,
+  "protected_route_captures": 0,
+  "subdomain_captures": 0,
+  "target_redirects_or_failures": 0,
+  "loops": 0,
+  "unexpected_redirects": 0,
+  "query_string_preservation": "passed",
+  "result": "PASS"
+}

@@ -1,0 +1,284 @@
+{
+  "alias_checks": [
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/"
+      ],
+      "expected": "https://blog.techdox.nz/",
+      "passed": true,
+      "path": "/page/1/",
+      "refreshes": [
+        "https://blog.techdox.nz/"
+      ],
+      "status": 200
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/posts/"
+      ],
+      "expected": "https://blog.techdox.nz/posts/",
+      "passed": true,
+      "path": "/posts/page/1/",
+      "refreshes": [
+        "https://blog.techdox.nz/posts/"
+      ],
+      "status": 200
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/tags/ai/"
+      ],
+      "expected": "https://blog.techdox.nz/tags/ai/",
+      "passed": true,
+      "path": "/tags/ai/page/1/",
+      "refreshes": [
+        "https://blog.techdox.nz/tags/ai/"
+      ],
+      "status": 200
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/tags/selfhosting/"
+      ],
+      "expected": "https://blog.techdox.nz/tags/selfhosting/",
+      "passed": true,
+      "path": "/tags/selfhosting/page/1/",
+      "refreshes": [
+        "https://blog.techdox.nz/tags/selfhosting/"
+      ],
+      "status": 200
+    }
+  ],
+  "deployment": {
+    "commit": "b6d68bf9b7d131933d940a2b79452396ed014f2b",
+    "environment": "preview",
+    "hugo_version": "0.147.7",
+    "id": "249486f4-2dd1-4b46-baf2-97d8021c81f9",
+    "url": "https://249486f4.techdox.pages.dev"
+  },
+  "errors": [],
+  "exact_canonical_checks": [
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/why-selfhost/"
+      ],
+      "expected": "https://blog.techdox.nz/why-selfhost/",
+      "name": "article",
+      "og_urls": [
+        "https://blog.techdox.nz/why-selfhost/"
+      ],
+      "passed": true,
+      "path": "/why-selfhost/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/"
+      ],
+      "expected": "https://blog.techdox.nz/",
+      "name": "homepage-page-1",
+      "og_urls": [
+        "https://blog.techdox.nz/"
+      ],
+      "passed": true,
+      "path": "/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/page/2/"
+      ],
+      "expected": "https://blog.techdox.nz/page/2/",
+      "name": "homepage-page-2",
+      "og_urls": [
+        "https://blog.techdox.nz/page/2/"
+      ],
+      "passed": true,
+      "path": "/page/2/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/posts/"
+      ],
+      "expected": "https://blog.techdox.nz/posts/",
+      "name": "posts-page-1",
+      "og_urls": [
+        "https://blog.techdox.nz/posts/"
+      ],
+      "passed": true,
+      "path": "/posts/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/posts/page/2/"
+      ],
+      "expected": "https://blog.techdox.nz/posts/page/2/",
+      "name": "posts-page-2",
+      "og_urls": [
+        "https://blog.techdox.nz/posts/page/2/"
+      ],
+      "passed": true,
+      "path": "/posts/page/2/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/tags/selfhosting/"
+      ],
+      "expected": "https://blog.techdox.nz/tags/selfhosting/",
+      "name": "tag-page-1",
+      "og_urls": [
+        "https://blog.techdox.nz/tags/selfhosting/"
+      ],
+      "passed": true,
+      "path": "/tags/selfhosting/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/tags/selfhosting/page/2/"
+      ],
+      "expected": "https://blog.techdox.nz/tags/selfhosting/page/2/",
+      "name": "tag-page-2",
+      "og_urls": [
+        "https://blog.techdox.nz/tags/selfhosting/page/2/"
+      ],
+      "passed": true,
+      "path": "/tags/selfhosting/page/2/"
+    }
+  ],
+  "feed_checks": [
+    {
+      "apex_reference_count": 0,
+      "blog_reference_count": 42,
+      "passed": true,
+      "path": "/index.xml"
+    },
+    {
+      "apex_reference_count": 0,
+      "blog_reference_count": 34,
+      "passed": true,
+      "path": "/tags/selfhosting/index.xml"
+    }
+  ],
+  "generated_at": "2026-07-26T08:54:04.593751Z",
+  "passed": true,
+  "preview_indexing": {
+    "noindex": true,
+    "x_robots_tag": "noindex"
+  },
+  "route_checks": [
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "root",
+      "passed": true,
+      "path": "/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "article",
+      "passed": true,
+      "path": "/why-selfhost/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "homepage-page-2",
+      "passed": true,
+      "path": "/page/2/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "posts",
+      "passed": true,
+      "path": "/posts/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "posts-page-2",
+      "passed": true,
+      "path": "/posts/page/2/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "tag",
+      "passed": true,
+      "path": "/tags/selfhosting/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "tag-page-2",
+      "passed": true,
+      "path": "/tags/selfhosting/page/2/",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "main-feed",
+      "passed": true,
+      "path": "/index.xml",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "tag-feed",
+      "passed": true,
+      "path": "/tags/selfhosting/index.xml",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "image",
+      "passed": true,
+      "path": "/content/images/2023/03/IMG_2009-Small.png",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "sitemap",
+      "passed": true,
+      "path": "/sitemap.xml",
+      "status": 200
+    },
+    {
+      "expected_status": 200,
+      "location": null,
+      "name": "robots",
+      "passed": true,
+      "path": "/robots.txt",
+      "status": 200
+    },
+    {
+      "expected_status": 404,
+      "location": null,
+      "name": "evidence-not-served",
+      "passed": true,
+      "path": "/migration/phase-2b-report.md",
+      "status": 404
+    },
+    {
+      "expected_status": 404,
+      "location": null,
+      "name": "unknown-route",
+      "passed": true,
+      "path": "/definitely-not-a-real-route-phase2b/",
+      "status": 404
+    }
+  ],
+  "sitemap": {
+    "all_blog_host": true,
+    "url_count": 52
+  }
+}

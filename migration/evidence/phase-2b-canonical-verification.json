@@ -1,0 +1,108 @@
+{
+  "errors": [],
+  "exact_checks": [
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/why-selfhost/"
+      ],
+      "expected": "https://blog.techdox.nz/why-selfhost/",
+      "generated_file": "why-selfhost/index.html",
+      "name": "article",
+      "og_urls": [
+        "https://blog.techdox.nz/why-selfhost/"
+      ],
+      "passed": true,
+      "route": "/why-selfhost/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/"
+      ],
+      "expected": "https://blog.techdox.nz/",
+      "generated_file": "index.html",
+      "name": "homepage-page-1",
+      "og_urls": [
+        "https://blog.techdox.nz/"
+      ],
+      "passed": true,
+      "route": "/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/page/2/"
+      ],
+      "expected": "https://blog.techdox.nz/page/2/",
+      "generated_file": "page/2/index.html",
+      "name": "homepage-page-2",
+      "og_urls": [
+        "https://blog.techdox.nz/page/2/"
+      ],
+      "passed": true,
+      "route": "/page/2/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/posts/"
+      ],
+      "expected": "https://blog.techdox.nz/posts/",
+      "generated_file": "posts/index.html",
+      "name": "posts-page-1",
+      "og_urls": [
+        "https://blog.techdox.nz/posts/"
+      ],
+      "passed": true,
+      "route": "/posts/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/posts/page/2/"
+      ],
+      "expected": "https://blog.techdox.nz/posts/page/2/",
+      "generated_file": "posts/page/2/index.html",
+      "name": "posts-page-2",
+      "og_urls": [
+        "https://blog.techdox.nz/posts/page/2/"
+      ],
+      "passed": true,
+      "route": "/posts/page/2/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/tags/selfhosting/"
+      ],
+      "expected": "https://blog.techdox.nz/tags/selfhosting/",
+      "generated_file": "tags/selfhosting/index.html",
+      "name": "tag-page-1",
+      "og_urls": [
+        "https://blog.techdox.nz/tags/selfhosting/"
+      ],
+      "passed": true,
+      "route": "/tags/selfhosting/"
+    },
+    {
+      "canonicals": [
+        "https://blog.techdox.nz/tags/selfhosting/page/2/"
+      ],
+      "expected": "https://blog.techdox.nz/tags/selfhosting/page/2/",
+      "generated_file": "tags/selfhosting/page/2/index.html",
+      "name": "tag-page-2",
+      "og_urls": [
+        "https://blog.techdox.nz/tags/selfhosting/page/2/"
+      ],
+      "passed": true,
+      "route": "/tags/selfhosting/page/2/"
+    }
+  ],
+  "exact_passed": 7,
+  "exact_total": 7,
+  "expected_host": "blog.techdox.nz",
+  "generated_at": "2026-07-25T22:49:27.930830Z",
+  "passed": true,
+  "site_scan": {
+    "duplicate_canonical": [],
+    "html_files": 77,
+    "missing_canonical": [],
+    "wrong_host_canonical": []
+  },
+  "source_branch": "migration/landing-blog-split"
+}

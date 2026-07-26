@@ -6,7 +6,7 @@
   <p class="hero-sub">{{ .Pages.Len }} {{ if eq .Pages.Len 1 }}post{{ else }}posts{{ end }}</p>
   {{ else }}{{ with .Description }}<p class="hero-sub">{{ . }}</p>{{ end }}{{ end }}
 </header>
-{{ $paginator := .Paginate (.Pages.ByDate.Reverse) }}
+{{ $paginator := partial "paginator.html" . }}
 <div class="grid">
 {{ range $paginator.Pages }}
   {{ partial "post-card.html" . }}

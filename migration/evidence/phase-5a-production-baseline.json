@@ -1,0 +1,87 @@
+{
+  "captured_at": "2026-07-26T08:58:41.956207+00:00",
+  "purpose": "Phase 5A fresh production and rollback baseline",
+  "responses": {
+    "apex_home": {
+      "url": "https://techdox.nz/",
+      "status": 200,
+      "final_url": "https://techdox.nz/",
+      "sha256": "6888539bf08ee05aaa4dc5a83210cf1f9b587f586a7d8e6efc2c8555b6d2dd21",
+      "bytes": 25496
+    },
+    "apex_article": {
+      "url": "https://techdox.nz/why-selfhost/",
+      "status": 200,
+      "final_url": "https://techdox.nz/why-selfhost/",
+      "sha256": "73cb7af012e6b973176fc20b43e0cae272d318cd840d26c1f3f23b0c1be39514",
+      "bytes": 15636
+    },
+    "apex_feed": {
+      "url": "https://techdox.nz/index.xml",
+      "status": 200,
+      "final_url": "https://techdox.nz/index.xml",
+      "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "bytes": 15135
+    },
+    "blog_home": {
+      "url": "https://blog.techdox.nz/",
+      "status": 200,
+      "final_url": "https://blog.techdox.nz/",
+      "sha256": "6888539bf08ee05aaa4dc5a83210cf1f9b587f586a7d8e6efc2c8555b6d2dd21",
+      "bytes": 25496
+    },
+    "blog_article": {
+      "url": "https://blog.techdox.nz/why-selfhost/",
+      "status": 200,
+      "final_url": "https://blog.techdox.nz/why-selfhost/",
+      "sha256": "73cb7af012e6b973176fc20b43e0cae272d318cd840d26c1f3f23b0c1be39514",
+      "bytes": 15636
+    },
+    "blog_feed": {
+      "url": "https://blog.techdox.nz/index.xml",
+      "status": 200,
+      "final_url": "https://blog.techdox.nz/index.xml",
+      "sha256": "97d6d9d4f16ad638ca57eec836da2b575da6e0238c37f736dfd27f448b0b8a0a",
+      "bytes": 15135
+    },
+    "docs": {
+      "url": "https://docs.techdox.nz/",
+      "status": 200,
+      "sha256": "982fd07050db27742c995217cda82a518983152f017c49c09bfbe11008597947",
+      "bytes": 53427
+    },
+    "store": {
+      "url": "https://store.techdox.nz/",
+      "status": 200,
+      "sha256": "c00a7292ba7b3e89be756baa4e463e69b95dc967feaa2fe58cce398f554e2499",
+      "bytes": 125350
+    },
+    "landing_preview": {
+      "url": "https://f411c56e.techdox-landing.pages.dev/",
+      "status": 200,
+      "sha256": "19680c94e8919e8c8ffb8b23db6acde6ee5520619278fc1f1bef89e96df079e0",
+      "bytes": 13858
+    },
+    "blog_preview": {
+      "url": "https://249486f4.techdox.pages.dev/",
+      "status": 200,
+      "sha256": "3593c432f672019866da065df2f53d491438dd06219a216f069bdbeedba65247",
+      "bytes": 25218
+    }
+  },
+  "route_inventory": {
+    "legacy_sources": 212,
+    "direct_200": 137,
+    "existing_trailing_slash_308": 75,
+    "migration_302": 0,
+    "unique_blog_targets_direct_200": 121,
+    "unique_blog_targets_total": 121
+  },
+  "checks": {
+    "apex_matches_blog": true,
+    "all_expected_200": true,
+    "temporary_redirect_rule_disabled": true,
+    "protected_routes_uncaptured": true,
+    "docs_and_store_healthy": true
+  }
+}
