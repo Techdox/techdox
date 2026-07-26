@@ -10,7 +10,7 @@ This directory is the version-controlled control plane for moving the existing H
 - [x] Phase 3 — Build and verify the isolated landing preview
 - [x] Phase 4 — Configure, exercise, and disable temporary redirects
 - [x] Phase 5A — Production cutover preflight
-- [ ] Phase 5B — Controlled production cutover
+- [x] Phase 5B — Controlled production cutover
 
 Phase 1 was read-only against production. Phase 2A attached `blog.techdox.nz`
 without deploying source or enabling redirects; see `phase-2a-report.md`.
@@ -18,7 +18,9 @@ Phase 2B changes only the migration branch and its preview. Phase 3 produced a
 verified landing preview in the separate `Techdox/techdox-landing` repository.
 Phase 4 proved all exact redirects using a temporary 302 rule and returned that
 rule to disabled. Phase 5A preflight is documented but must not be treated as
-cutover approval.
+cutover approval. Phase 5B completed the production split: the landing owns the
+apex, the blog owns `blog.techdox.nz`, and the exact permanent redirects are
+active.
 
 ## Architecture
 
@@ -134,6 +136,10 @@ The archive also shows historical `www.techdox.nz` use. `www` does not currently
 | `evidence/phase-5a-production-baseline.json` | Fresh production hashes, route shape, and rollback baseline |
 | `evidence/phase-5a-controls.json` | Pull request, Pages, redirect-list, and no-production-change controls |
 | `evidence/phase-5a-blog-preview-verification.json` | Live verification of the exact blog release candidate preview |
+| `phase-5b-report.md` | Final production cutover, deployment, redirect, verification, and rollback report |
+| `evidence/phase-5b-controls.json` | Final GitHub, Pages, domain, redirect-rule, and deferred-follow-up state |
+| `evidence/phase-5b-live-verification.json` | Full live HTTPS, HTTP, target, protected-route, service, and metadata verification |
+| `scripts/verify_phase5b.py` | Repeatable full production cutover verifier |
 | `evidence/wayback-historical-paths.json` | Historical URL classification |
 
 ## Rebuild and verify

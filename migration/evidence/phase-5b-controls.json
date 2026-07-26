@@ -1,0 +1,78 @@
+{
+  "captured_at": "2026-07-26T09:24:10Z",
+  "gate": "PASS",
+  "github": {
+    "blog": {
+      "repository": "Techdox/techdox",
+      "pull_request": 3,
+      "state": "MERGED",
+      "merged_at": "2026-07-26T09:07:00Z",
+      "merge_commit": "45f4e8ea96037d82886aba0ccbafae6301599b73"
+    },
+    "landing": {
+      "repository": "Techdox/techdox-landing",
+      "pull_request": 1,
+      "state": "MERGED",
+      "merged_at": "2026-07-26T09:08:11Z",
+      "merge_commit": "2145fe0f1a04ccb8130a5de27f44dd1601844f37"
+    }
+  },
+  "pages": {
+    "blog": {
+      "project": "techdox",
+      "production_deployment_id": "91b2c659-2621-4413-9a5f-62d544840786",
+      "immutable_url": "https://91b2c659.techdox.pages.dev",
+      "commit": "45f4e8ea96037d82886aba0ccbafae6301599b73",
+      "custom_domains": [
+        "blog.techdox.nz"
+      ],
+      "automatic_deployments": true
+    },
+    "landing": {
+      "project": "techdox-landing",
+      "deployment_mode": "Direct Upload",
+      "production_deployment_id": "f97a22b9-b22b-4459-aa81-b172e77f2bb2",
+      "immutable_url": "https://f97a22b9.techdox-landing.pages.dev",
+      "source_branch": "main",
+      "source_commit": "2145fe0f1a04ccb8130a5de27f44dd1601844f37",
+      "artifact_zip_sha256": "18566a3e87f02b6bb3fad68d27219b817382ed8a8bb4d8146bcba38b84fb34f6",
+      "custom_domains": [
+        "techdox.nz"
+      ],
+      "custom_domain_status": "Active",
+      "ssl": "enabled"
+    }
+  },
+  "redirects": {
+    "temporary_rule": {
+      "name": "Techdox apex blog migration — temporary 302 validation",
+      "list": "techdox_apex_blog_phase4_302",
+      "enabled": false
+    },
+    "production_rule": {
+      "id": "bba8c7249541473cba78b9af75342ab6",
+      "name": "Techdox apex blog migration — permanent 301 redirects",
+      "list": "techdox_apex_blog_production_301",
+      "expression": "http.host eq \"techdox.nz\"",
+      "key": "http.request.full_uri",
+      "items": 212,
+      "enabled": true
+    }
+  },
+  "live_verification": {
+    "passed": true,
+    "https_mappings": "212/212",
+    "http_mappings": "212/212",
+    "unique_blog_targets_direct_200": "121/121",
+    "protected_and_service_checks": "13/13",
+    "query_strings_preserved": true,
+    "landing_matches_verified_artifact": true,
+    "blog_canonicals_use_blog_host": true,
+    "blog_feed_uses_blog_host": true,
+    "docs_healthy": true,
+    "store_healthy": true
+  },
+  "deferred_follow_up": {
+    "landing_git_integration": "The landing project remains Direct Upload. Git-connected automatic deployment will be configured separately after the completed cutover."
+  }
+}
