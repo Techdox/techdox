@@ -1,0 +1,167 @@
+{
+  "cloudflare_web_analytics_beacon_present": true,
+  "errors": {
+    "mapping_errors": [],
+    "metadata_errors": [],
+    "protected_errors": [],
+    "target_errors": []
+  },
+  "generated_at": "2026-07-26T09:22:20.318083+00:00",
+  "landing": {
+    "bytes": 14217,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://techdox.nz/",
+    "location": null,
+    "sha256": "21cdbd24cc4b93f2cd4881a111371c29ac14c2ffc30e6696240688a7fdc46381",
+    "status": 200,
+    "url": "https://techdox.nz/"
+  },
+  "landing_normalized_sha256": "19680c94e8919e8c8ffb8b23db6acde6ee5520619278fc1f1bef89e96df079e0",
+  "landing_origin": {
+    "bytes": 13858,
+    "content_type": "text/html; charset=utf-8",
+    "final_url": "https://techdox-landing.pages.dev/",
+    "location": null,
+    "sha256": "19680c94e8919e8c8ffb8b23db6acde6ee5520619278fc1f1bef89e96df079e0",
+    "status": 200,
+    "url": "https://techdox-landing.pages.dev/"
+  },
+  "landing_origin_normalized_sha256": "19680c94e8919e8c8ffb8b23db6acde6ee5520619278fc1f1bef89e96df079e0",
+  "metadata_checks": {
+    "blog_article_canonical_present": true,
+    "blog_article_og_url_present": true,
+    "blog_article_status": true,
+    "blog_feed_status": true,
+    "blog_feed_uses_blog_host": true,
+    "landing_hash_matches_verified_artifact": true,
+    "landing_matches_pages_origin": true
+  },
+  "passed": true,
+  "protected_results": {
+    "https://blog.techdox.nz/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://blog.techdox.nz/",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://blog.techdox.nz/"
+    },
+    "https://blog.techdox.nz/index.xml": {
+      "bytes": null,
+      "content_type": "application/xml",
+      "final_url": "https://blog.techdox.nz/index.xml",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://blog.techdox.nz/index.xml"
+    },
+    "https://blog.techdox.nz/why-selfhost/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://blog.techdox.nz/why-selfhost/",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://blog.techdox.nz/why-selfhost/"
+    },
+    "https://docs.techdox.nz/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://docs.techdox.nz/",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://docs.techdox.nz/"
+    },
+    "https://store.techdox.nz/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://store.techdox.nz/",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://store.techdox.nz/"
+    },
+    "https://techdox-landing.pages.dev/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://techdox-landing.pages.dev/",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://techdox-landing.pages.dev/"
+    },
+    "https://techdox.nz/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://techdox.nz/",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://techdox.nz/"
+    },
+    "https://techdox.nz/about/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://techdox.nz/about/",
+      "location": null,
+      "sha256": null,
+      "status": 404,
+      "url": "https://techdox.nz/about/"
+    },
+    "https://techdox.nz/contact/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://techdox.nz/contact/",
+      "location": null,
+      "sha256": null,
+      "status": 404,
+      "url": "https://techdox.nz/contact/"
+    },
+    "https://techdox.nz/phase5b-nonmanifest-codex": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://techdox.nz/phase5b-nonmanifest-codex",
+      "location": null,
+      "sha256": null,
+      "status": 404,
+      "url": "https://techdox.nz/phase5b-nonmanifest-codex"
+    },
+    "https://techdox.nz/projects/": {
+      "bytes": null,
+      "content_type": "text/html; charset=utf-8",
+      "final_url": "https://techdox.nz/projects/",
+      "location": null,
+      "sha256": null,
+      "status": 404,
+      "url": "https://techdox.nz/projects/"
+    },
+    "https://techdox.nz/robots.txt": {
+      "bytes": null,
+      "content_type": "text/plain; charset=utf-8",
+      "final_url": "https://techdox.nz/robots.txt",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://techdox.nz/robots.txt"
+    },
+    "https://techdox.nz/sitemap.xml": {
+      "bytes": null,
+      "content_type": "application/xml",
+      "final_url": "https://techdox.nz/sitemap.xml",
+      "location": null,
+      "sha256": null,
+      "status": 200,
+      "url": "https://techdox.nz/sitemap.xml"
+    }
+  },
+  "summary": {
+    "http_mappings": 212,
+    "https_mappings": 212,
+    "mappings_per_scheme": 212,
+    "protected_checks": 13,
+    "unique_targets": 121,
+    "unique_targets_200": 121
+  }
+}
