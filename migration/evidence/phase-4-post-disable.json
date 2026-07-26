@@ -1,0 +1,29 @@
+{
+  "verified_at": "2026-07-26T08:42:00Z",
+  "dashboard_rule_enabled": false,
+  "manifest_sources_tested": 212,
+  "source_status_counts": {
+    "200": 137,
+    "308": 75
+  },
+  "temporary_302_responses": 0,
+  "unique_blog_targets_tested": 121,
+  "blog_target_status_counts": {
+    "200": 121
+  },
+  "protected_routes": {
+    "/": 200,
+    "/robots.txt": 200,
+    "/sitemap.xml": 200,
+    "/about/": 404,
+    "/contact/": 404,
+    "/projects/": 404,
+    "/phase4-random-nonmanifest-path-codex": 404
+  },
+  "subdomain_homepages": {
+    "blog.techdox.nz": 200,
+    "docs.techdox.nz": 200,
+    "store.techdox.nz": 200
+  },
+  "result": "BASELINE RESTORED"
+}
