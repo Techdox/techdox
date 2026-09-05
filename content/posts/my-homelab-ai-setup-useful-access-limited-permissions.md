@@ -8,8 +8,6 @@ description = "How Hermes helped migrate my homelab from Docker to Kubernetes us
 feature_image = ""
 +++
 
-# My Homelab AI Setup: Useful Access, Limited Permissions
-
 I used Hermes to help migrate my homelab from Docker onto Kubernetes.
 
 That sounds a bit dramatic, but it's basically true. I gave Hermes access to the parts of my homelab it needed to work with, including Proxmox and the Docker hosts running my existing services, and told it to review the whole setup and make a migration plan.

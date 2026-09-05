@@ -8,8 +8,6 @@ description = "Privacy is not about disappearing from the internet. It is about 
 feature_image = ""
 +++
 
-# I Don't Want to Be the Product
-
 For a long time, I treated privacy as a niche concern. Something for people who wanted to disappear from the internet, run everything themselves, or make daily life harder than it needed to be.
 
 That is not where I have landed.

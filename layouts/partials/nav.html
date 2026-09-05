@@ -1,9 +1,9 @@
-<nav id="nav">
-  <a class="brand" href="{{ "/" | relURL }}">
-    <span class="mono">~/</span><span class="name">techdox</span><span class="cursor"></span>
+<nav id="nav" aria-label="Primary navigation">
+  <a class="brand" href="https://techdox.nz/" aria-label="Techdox home">
+    <span class="mono">~/</span><span class="name">techdox</span><span class="cursor" aria-hidden="true"></span>
   </a>
   <div class="navlinks">
-    {{ range .Site.Menus.main }}<a href="{{ .URL }}">{{ .Name }}</a>{{ end }}
+    <a href="/posts/">Blog</a><a href="/tags/">Topics</a><a href="https://docs.techdox.nz/">Docs</a><a href="https://techdox.nz/#projects">Projects</a><a href="/search/">Search</a>
   </div>
-  <button class="themebtn" id="theme" title="Toggle theme" aria-label="Toggle theme">&#9680;</button>
+  <button type="button" class="themebtn" id="theme" title="Toggle theme" aria-label="Toggle theme">&#9680;</button>
 </nav>

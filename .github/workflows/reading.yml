@@ -1,0 +1,33 @@
+name: Reading regression checks
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  reading:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install Hugo with verified release archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/hugo"
+          cd "$RUNNER_TEMP/hugo"
+          gh release download v0.147.7 -R gohugoio/hugo -p hugo_extended_0.147.7_linux-amd64.tar.gz -p hugo_0.147.7_checksums.txt
+          python -c "from pathlib import Path; import hashlib; p=Path('hugo_extended_0.147.7_linux-amd64.tar.gz'); expected=next(l.split()[0] for l in Path('hugo_0.147.7_checksums.txt').read_text().splitlines() if l.split()[-1]==p.name); assert hashlib.sha256(p.read_bytes()).hexdigest()==expected"
+          tar -xzf hugo_extended_0.147.7_linux-amd64.tar.gz hugo
+      - name: Install browser test dependencies
+        run: |
+          pip install -r tests/requirements.txt
+          python -m playwright install --with-deps chromium
+      - name: Build and exercise the reading experience
+        env:
+          HUGO_BIN: ${{ runner.temp }}/hugo/hugo
+        run: python scripts/test.py

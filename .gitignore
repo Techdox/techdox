@@ -7,3 +7,5 @@ ghost_to_hugo.py
 fetch_images.py
 *.ghost.*.json
 .DS_Store
+__pycache__/
+.venv/

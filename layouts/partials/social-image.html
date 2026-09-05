@@ -1,0 +1,21 @@
+{{- $lines := slice -}}
+{{- $line := "" -}}
+{{- range split .Title " " -}}
+  {{- $candidate := strings.TrimSpace (printf "%s %s" $line .) -}}
+  {{- if and (gt (len $candidate) 34) (ne $line "") -}}
+    {{- $lines = $lines | append $line -}}
+    {{- $line = . -}}
+  {{- else -}}
+    {{- $line = $candidate -}}
+  {{- end -}}
+{{- end -}}
+{{- $lines = $lines | append $line -}}
+{{- $title := delimit $lines "\n" -}}
+{{- $size := 52 -}}
+{{- if gt (len $lines) 5 }}{{ $size = 40 }}{{ end -}}
+{{- $base := resources.Get "images/social-base.png" -}}
+{{- $brand := images.Text "~/techdox" (dict "color" "#4d8dff" "size" 36 "x" 64 "y" 52) -}}
+{{- $heading := images.Text $title (dict "color" "#f4f7fb" "size" $size "linespacing" 10 "x" 64 "y" 168) -}}
+{{- $meta := images.Text (printf "Nick Wilkinson  /  %s  /  blog.techdox.nz" (.Date.Format "2 Jan 2006")) (dict "color" "#a9b6c9" "size" 24 "x" 64 "y" 558) -}}
+{{- $image := $base.Filter $brand $heading $meta -}}
+{{- return $image.Permalink -}}

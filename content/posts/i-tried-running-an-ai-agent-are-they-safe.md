@@ -8,8 +8,6 @@ description = "I tried running an AI agent to see what it could actually do, whe
 feature_image = ""
 +++
 
-# I Tried Running an AI Agent, Are They Safe?
-
 AI agents are everywhere at the moment.
 
 Not just chatbots that answer questions, but tools that can read files, run commands, edit code, browse documentation, and start making decisions on your behalf.

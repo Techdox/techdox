@@ -1,0 +1,16 @@
+{{ define "main" }}
+<header class="list-head"><p class="eyebrow">Find something useful</p><h1>Search posts</h1><p>Search the guides and build notes. Everything stays in your browser.</p></header>
+{{ $entries := slice }}
+{{ range where .Site.RegularPages "Section" "posts" }}
+  {{ $entries = $entries | append (dict "title" .Title "url" .RelPermalink "description" (.Description | default (.Summary | plainify)) "text" .Plain "tags" (.Params.tags | default slice) "date" (.Date.Format "Jan 2, 2006")) }}
+{{ end }}
+{{ $index := resources.FromString "search-index.json" ($entries | jsonify) | fingerprint }}
+<section class="search-panel" data-search-index="{{ $index.RelPermalink }}" aria-label="Post search">
+  <label for="search-input">Search posts</label>
+  <input type="search" id="search-input" placeholder="Try Docker, privacy or Kubernetes" autocomplete="off" aria-describedby="search-status">
+  <p id="search-status" role="status" aria-live="polite">Enter a topic or keyword.</p>
+  <noscript><p>Search needs JavaScript. You can still browse <a href="/posts/">all posts</a> or <a href="/tags/">topics</a>.</p></noscript>
+  <div id="search-results" class="grid"></div>
+</section>
+{{ with resources.Get "js/search.js" | minify | fingerprint }}<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+{{ end }}

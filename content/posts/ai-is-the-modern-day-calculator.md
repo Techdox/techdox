@@ -8,8 +8,6 @@ description = "I thought giving an AI agent access to my servers was a terrible 
 feature_image = ""
 +++
 
-# AI Is the Modern-Day Calculator
-
 I think it's safe to say that AI is here to stay.
 
 If you're still on the fence, or feel like you're playing catch-up, I was in a similar position until a few months ago. I used AI, but only at the surface level.
