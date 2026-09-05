@@ -2,11 +2,15 @@
 <html lang="{{ site.Language.LanguageCode | default "en" }}" data-theme="dark">
 <head>{{ partial "head.html" . }}</head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
   <div class="wrap">
     {{ partial "nav.html" . }}
-    {{ block "main" . }}{{ end }}
+    <main id="main" tabindex="-1">{{ block "main" . }}{{ end }}</main>
     {{ partial "footer.html" . }}
   </div>
+  {{ if and .IsPage (eq .Section "posts") }}
+    {{ with resources.Get "js/copy-code.js" | minify | fingerprint }}<script defer src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}"></script>{{ end }}
+  {{ end }}
   <script>
     const nav = document.getElementById('nav');
     addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 10));
@@ -16,7 +20,7 @@
         const root = document.documentElement;
         const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
         root.setAttribute('data-theme', next);
-        localStorage.setItem('tdx-theme', next);
+        try { localStorage.setItem('tdx-theme', next); } catch (_) { /* Storage can be disabled. */ }
       };
     }
   </script>

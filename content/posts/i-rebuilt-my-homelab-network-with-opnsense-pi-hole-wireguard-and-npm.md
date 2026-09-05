@@ -8,8 +8,6 @@ description = "I rebuilt my homelab network around OPNsense, Pi-hole, WireGuard,
 feature_image = "/content/images/2026/05/blog.png"
 +++
 
-# I Rebuilt My Homelab Network with OPNsense, Pi-hole, WireGuard, and NPM
-
 I’ve been running a homelab for a while now, but after a recent rebuild, I finally have a network setup I’m genuinely happy with.
 
 This isn’t a step-by-step guide. There are already plenty of those out there. This is more of a walkthrough of what I’m running, why I chose it, and a few things that surprised me along the way.

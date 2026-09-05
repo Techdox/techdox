@@ -1,4 +1,6 @@
 {{ define "main" }}
+{{ $paginator := partial "paginator.html" . }}
+{{ if eq $paginator.PageNumber 1 }}
 <header class="home-hero">
   <div class="hero-left">
     <h1 class="hero">Break things,<br>start small, <em>document</em> everything.</h1>
@@ -30,6 +32,9 @@
     </div>
   </div>
 </header>
+{{ else }}
+<header class="list-head"><h1>Blog archive</h1><p>Build notes, guides and lessons from the lab.</p></header>
+{{ end }}
 
 {{ $allTags := .Site.Taxonomies.tags.ByCount }}
 {{ if $allTags }}
@@ -43,20 +48,18 @@
 {{ $featured := index (where $posts "Params.featured" true) 0 }}
 {{ if not $featured }}{{ $featured = index $posts 0 }}{{ end }}
 
-{{ $paginator := partial "paginator.html" . }}
-
 {{ if eq $paginator.PageNumber 1 }}
 
-{{ $startHere := sort (where .Site.RegularPages "Params.start_here" true) "Date" "asc" }}
+{{ $startHere := slice (.Site.GetPage "posts/why-selfhost") (.Site.GetPage "posts/why-linux-for-selfhosting") (.Site.GetPage "posts/self-hosting-with-a-raspberry-pi-4-and-cloudflare") (.Site.GetPage "posts/kubesolo-from-docker-to-kubernetes") }}
 {{ if $startHere }}
 <div class="sec-head"><h2>Start here</h2><div class="line"></div></div>
-<p class="sh-intro">New to self-hosting? These posts take you from "why bother" to running your own Kubernetes cluster — in the right order.</p>
+<p class="sh-intro">Start with why, learn the Linux foundations, then run your first services. Kubernetes is an optional next step, not a requirement.</p>
 <div class="start-here">
   {{ range $i, $p := $startHere }}
   <a class="sh-item" href="{{ $p.RelPermalink }}">
     <span class="sh-num">{{ printf "%02d" (add $i 1) }}</span>
     <div class="sh-body">
-      <span class="sh-title">{{ $p.Title }}</span>
+      <span class="sh-title">{{ if eq $i 3 }}<span class="sh-optional">Optional · </span>{{ end }}{{ $p.Title }}</span>
       <span class="sh-desc">{{ with $p.Params.description }}{{ . | truncate 90 }}{{ else }}{{ $p.Summary | plainify | truncate 90 }}{{ end }}</span>
     </div>
     <span class="sh-arrow">→</span>
@@ -94,7 +97,7 @@
   <div class="body">
     {{ with .Params.tags }}<span class="tag">{{ index . 0 }}</span>{{ end }}
     <h3>{{ .Title }}</h3>
-    <p>{{ .Summary | plainify | truncate 170 }}</p>
+    <p>{{ with .Description }}{{ . | plainify | truncate 170 }}{{ else }}{{ .Summary | plainify | truncate 170 }}{{ end }}</p>
     <div class="meta">{{ .Site.Params.author }} <span class="dot"></span> {{ .Date.Format "Jan 2, 2006" }} <span class="dot"></span> {{ .ReadingTime }} min read</div>
   </div>
 </a>

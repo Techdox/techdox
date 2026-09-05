@@ -7,10 +7,12 @@
     <div class="foot-links">
       <div class="foot-col">
         <h5>Site</h5>
-        <a href="{{ "/" | relURL }}">Home</a>
+        <a href="https://techdox.nz/">Techdox home</a>
+        <a href="{{ "/" | relURL }}">Blog home</a>
         <a href="{{ "/posts/" | relURL }}">Posts</a>
         <a href="{{ "/tags/" | relURL }}">Tags</a>
-        {{ with .OutputFormats.Get "rss" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+        <a href="/search/">Search</a>
+        <a href="/index.xml">RSS</a>
       </div>
       <div class="foot-col">
         <h5>Elsewhere</h5>
@@ -18,5 +20,5 @@
       </div>
     </div>
   </div>
-  <div class="copyright">© {{ now.Year }} {{ .Site.Title }} — built with markdown, served from the lab.</div>
+  <div class="copyright">© {{ now.Year }} {{ .Site.Title }} — written in the lab, published with Hugo.</div>
 </footer>

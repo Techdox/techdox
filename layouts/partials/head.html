@@ -5,6 +5,8 @@
 <title>{{ if .IsHome }}{{ .Site.Title }} — Self-hosting, homelab &amp; Kubernetes{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="theme-color" content="#0b0d11">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="alternate icon" href="/favicon.ico" sizes="64x64">
 
 {{ $canonical := .Permalink }}
 {{ with partial "paginator.html" . }}
@@ -16,6 +18,7 @@
 {{ $ogTitle := cond .IsHome .Site.Title .Title }}
 {{ $ogDesc  := cond (ne .Description "") .Description .Site.Params.description }}
 {{ $ogImage := "/og-default.png" | absURL }}
+{{ if and .IsPage (eq .Section "posts") }}{{ $ogImage = partial "social-image.html" . }}{{ end }}
 {{ with .Params.feature_image }}
   {{ if hasPrefix . "http" }}
     {{ $ogImage = . }}

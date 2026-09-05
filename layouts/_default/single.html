@@ -57,7 +57,7 @@
 {{ $related := first 3 (where (.Site.RegularPages.Related .) "Section" "posts") }}
 {{ with $related }}
 <section class="related-posts">
-  <div class="sec-head"><h2>More on {{ with $.Params.tags }}{{ index . 0 }}{{ else }}this topic{{ end }}</h2><div class="line"></div></div>
+  <div class="sec-head"><h2>Related reading</h2><div class="line"></div></div>
   <div class="grid">
     {{ range . }}{{ partial "post-card.html" . }}{{ end }}
   </div>
