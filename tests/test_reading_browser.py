@@ -36,6 +36,7 @@ class Reading(unittest.TestCase):
                     self.page.wait_for_timeout(1600)
                     self.assertLessEqual(self.page.evaluate('document.documentElement.scrollWidth'), width)
                     if path == '/':
+                        self.assertTrue(self.page.locator('.navlinks a').evaluate_all('items => items.every(e => e.getBoundingClientRect().right <= innerWidth - 16)'), 'Every navigation label must be visible without horizontal scrolling')
                         self.assertFalse(self.page.locator('.feat-term').evaluate('(e) => e.getBoundingClientRect().right > innerWidth'), 'Featured terminal must fit, not be silently clipped')
                     if path == TUTORIAL:
                         self.assertEqual(self.page.locator('.prose pre').first.evaluate('(e) => getComputedStyle(e).overflowX'), 'auto')
