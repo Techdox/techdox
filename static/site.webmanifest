@@ -1,0 +1,14 @@
+{
+  "name": "Techdox Blog",
+  "short_name": "Techdox",
+  "start_url": "/",
+  "scope": "/",
+  "display": "browser",
+  "background_color": "#090c12",
+  "theme_color": "#090c12",
+  "icons": [
+    { "src": "/icon-48.png", "sizes": "48x48", "type": "image/png", "purpose": "any" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
