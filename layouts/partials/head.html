@@ -4,9 +4,12 @@
 <script>try{var t=localStorage.getItem('tdx-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
 <title>{{ if .IsHome }}{{ .Site.Title }} — Self-hosting, homelab &amp; Kubernetes{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ .Site.Params.description }}{{ end }}">
-<meta name="theme-color" content="#0b0d11">
+<meta name="theme-color" content="#090c12">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="alternate icon" href="/favicon.ico" sizes="64x64">
+<link rel="alternate icon" href="/favicon.ico">
+<link rel="icon" href="/icon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/site.webmanifest">
 
 {{ $canonical := .Permalink }}
 {{ with partial "paginator.html" . }}

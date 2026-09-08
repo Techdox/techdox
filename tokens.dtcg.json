@@ -1,0 +1,226 @@
+{
+  "$schema": "https://www.designtokens.org/schemas/2025.10/format.json",
+  "$description": "Practical self-hosting, from my own homelab.",
+  "color": {
+    "$type": "color",
+    "primary": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.302,
+          0.553,
+          1
+        ],
+        "hex": "#4d8dff"
+      }
+    },
+    "background": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.035,
+          0.047,
+          0.071
+        ],
+        "hex": "#090c12"
+      }
+    },
+    "raised": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.051,
+          0.071,
+          0.106
+        ],
+        "hex": "#0d121b"
+      }
+    },
+    "panel": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.067,
+          0.094,
+          0.141
+        ],
+        "hex": "#111824"
+      }
+    },
+    "soft": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.082,
+          0.118,
+          0.173
+        ],
+        "hex": "#151e2c"
+      }
+    },
+    "text": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.957,
+          0.969,
+          0.984
+        ],
+        "hex": "#f4f7fb"
+      }
+    },
+    "muted": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.604,
+          0.659,
+          0.737
+        ],
+        "hex": "#9aa8bc"
+      }
+    },
+    "bright": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.475,
+          0.667,
+          1
+        ],
+        "hex": "#79aaff"
+      }
+    },
+    "cyan": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.396,
+          0.863,
+          0.914
+        ],
+        "hex": "#65dce9"
+      }
+    },
+    "success": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.396,
+          0.902,
+          0.655
+        ],
+        "hex": "#65e6a7"
+      }
+    },
+    "caution": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          0.82,
+          0.4
+        ],
+        "hex": "#ffd166"
+      }
+    },
+    "line": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.161,
+          0.204,
+          0.271
+        ],
+        "hex": "#293445"
+      }
+    },
+    "lightBackground": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.965,
+          0.961,
+          0.945
+        ],
+        "hex": "#f6f5f1"
+      }
+    },
+    "lightPanel": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          1,
+          1,
+          1
+        ],
+        "hex": "#ffffff"
+      }
+    },
+    "lightText": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.078,
+          0.094,
+          0.122
+        ],
+        "hex": "#14181f"
+      }
+    },
+    "lightMuted": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.337,
+          0.369,
+          0.424
+        ],
+        "hex": "#565e6c"
+      }
+    },
+    "lightAccent": {
+      "$value": {
+        "colorSpace": "srgb",
+        "components": [
+          0.098,
+          0.345,
+          0.843
+        ],
+        "hex": "#1958d7"
+      }
+    }
+  },
+  "rounded": {
+    "$type": "dimension",
+    "panel": {
+      "$value": {
+        "value": 18,
+        "unit": "px"
+      }
+    }
+  },
+  "typography": {
+    "h1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Fraunces",
+        "fontWeight": 600
+      }
+    },
+    "body-md": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Hanken Grotesk",
+        "fontWeight": 400
+      }
+    },
+    "label": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "JetBrains Mono",
+        "fontWeight": 500
+      }
+    }
+  }
+}

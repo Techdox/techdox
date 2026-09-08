@@ -12,9 +12,9 @@ summaryLength = 28
   posts = "/:slug/"
 
 [params]
-  description = "Self-hosting tutorials, homelab projects, and Cloudflare Zero Trust guides."
+  description = "Practical self-hosting, from my own homelab."
   author = "Nick Wilkinson"
-  tagline = "Your fun and informative source for IT goodness."
+  tagline = "Practical self-hosting, from my own homelab."
   buttondown = "techdox"
 
 [taxonomies]
