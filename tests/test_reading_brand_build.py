@@ -89,7 +89,7 @@ class Brand(unittest.TestCase):
 
     def test_supplied_wordmarks(self):
         home = (BUILD / 'index.html').read_text()
-        for name in ('primary-dark.svg', 'primary-light.svg'):
+        for name in ('wordmark-web-dark.svg', 'wordmark-web-light.svg'):
             self.assertIn('/brand/' + name, home)
             svg = (BUILD / 'brand' / name).read_text()
             self.assertNotIn('<text', svg)

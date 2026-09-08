@@ -105,7 +105,7 @@ redesign the reading layout.
 
 `layouts/partials/brand.html` uses byte-identical outlined `primary-dark.svg`
 (off-white lettering) and `primary-light.svg` (dark lettering), selected by the
-existing `data-theme`. Cursor is part of the master and remains static.
+existing `data-theme`. Nick explicitly overrides the kit static-cursor rule for techdox.nz, docs.techdox.nz and blog.techdox.nz: blink only the supplied attached cursor at 1.2s with step timing in web-only SVG derivatives. Keep all paths, fills, transforms, canvas geometry, visible size, clearspace, themed variants and accessible link names unchanged. Never add a second cursor or animate the letters. Reduced motion selects the unchanged static artwork via a native picture source; retain the SVG media-query safeguard too. Original masters, icons, favicons and social artwork remain byte-identical and static.
 
 The 960×180 SVG canvas contains surplus transparent space. CSS positions the
 unmodified master at 240×45 in a 160×30 crop, offset -12/-7px; only transparent

@@ -53,7 +53,7 @@ class BrandBrowser(unittest.TestCase):
                       host.innerHTML = text; document.body.append(host);
                       const svg = host.firstElementChild, b = svg.getBBox();
                       const fill = [...svg.querySelectorAll('g')].map(g => g.getAttribute('fill'));
-                      const r = img.getBoundingClientRect(), mark = img.parentElement.getBoundingClientRect();
+                      const r = img.getBoundingClientRect(), mark = img.closest('.brand-mark').getBoundingClientRect();
                       const scale = r.width / svg.viewBox.baseVal.width;
                       const visible = {x:r.x+b.x*scale, y:r.y+b.y*scale, width:b.width*scale, height:b.height*scale};
                       const padding = getComputedStyle(img.closest('.brand'));

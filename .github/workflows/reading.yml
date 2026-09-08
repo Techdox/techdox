@@ -31,3 +31,25 @@ jobs:
         env:
           HUGO_BIN: ${{ runner.temp }}/hugo/hugo
         run: python scripts/test.py
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Temporal cursor test dependencies
+        run: |
+          npm install --prefix "$RUNNER_TEMP/cursor-tools" playwright@1.62.0
+          pip install Pillow==11.3.0
+      - name: Verify temporal website cursor pixels
+        run: |
+          "$RUNNER_TEMP/hugo/hugo" --gc --minify --destination "$RUNNER_TEMP/cursor-site"
+          python -m http.server 8767 --bind 127.0.0.1 --directory "$RUNNER_TEMP/cursor-site" > /tmp/cursor-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID"' EXIT
+          curl --fail --silent --retry 10 --retry-connrefused --retry-delay 1 http://127.0.0.1:8767/ > /dev/null
+          NODE_PATH="$RUNNER_TEMP/cursor-tools/node_modules" BASE_URL=http://127.0.0.1:8767 ARTIFACT_DIR="$RUNNER_TEMP/cursor-evidence" node scripts/cursor-temporal.cjs
+          python scripts/check-cursor-pixels.py "$RUNNER_TEMP/cursor-evidence"
+      - name: Preserve cursor evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: cursor-evidence
+          path: ${{ runner.temp }}/cursor-evidence/

@@ -565,3 +565,6 @@ footer { margin-top: 84px; border-top: 1px solid var(--border); padding: 46px 0 
   .navlinks::-webkit-scrollbar { display: none; }
   .navlinks a { white-space: nowrap; }
 }
+
+/* Native reduced-motion source without changing logo layout. */
+.wordmark-picture { display: contents; }
