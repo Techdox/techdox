@@ -29,6 +29,8 @@
     {{ .Content }}
   </div>
 
+  {{ partial "comments.html" . }}
+
   {{ with .Params.tags }}
   <div class="post-tags">
     {{ range . }}<a class="tag" href="{{ (printf "/tags/%s/" (. | urlize)) | relURL }}">{{ . }}</a>{{ end }}
