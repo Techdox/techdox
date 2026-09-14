@@ -1,7 +1,7 @@
 {{- $lines := slice -}}
 {{- $line := "" -}}
 {{- range split .Title " " -}}
-  {{- $candidate := strings.TrimSpace (printf "%s %s" $line .) -}}
+  {{- $candidate := strings.Trim (printf "%s %s" $line .) " " -}}
   {{- if and (gt (len $candidate) 34) (ne $line "") -}}
     {{- $lines = $lines | append $line -}}
     {{- $line = . -}}
