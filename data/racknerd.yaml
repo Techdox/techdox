@@ -1,52 +1,81 @@
 aff: "https://my.racknerd.com/aff.php?aff=5792"
+campaign: "Black Friday 2026"
+source: "https://racknerd.com/BlackFriday/"
 categories:
   - name: "KVM VPS"
+    period: year
+    description: "Self-managed Linux servers with root access. Use ctrl to reboot, reinstall, open a console or set network firewall rules. Its one-click apps include Ollama and LibreChat; check their memory requirements before picking a plan."
     plans:
       - name: "1 GB KVM VPS"
-        price: "$21.99"
-        pid: 952
-        specs: ["1 vCPU Core", "1 GB RAM", "20 GB SSD", "3 TB Bandwidth"]
-      - name: "2 GB KVM VPS"
-        price: "$35.99"
-        pid: 953
-        specs: ["2 vCPU Cores", "2 GB RAM", "35 GB SSD", "5 TB Bandwidth"]
+        pid: 968
+        price: "$15.98"
+        specs: ["1 vCPU", "20 GB SSD", "3 TB monthly transfer"]
+      - name: "2.5 GB KVM VPS"
+        pid: 969
+        price: "$27.98"
+        specs: ["2 vCPUs", "30 GB SSD", "6 TB monthly transfer"]
       - name: "4 GB KVM VPS"
-        price: "$59.99"
-        pid: 954
-        specs: ["3 vCPU Cores", "4 GB RAM", "60 GB SSD", "7 TB Bandwidth"]
+        pid: 970
+        price: "$47.98"
+        specs: ["4 vCPUs", "60 GB SSD", "10 TB monthly transfer"]
+        badge: "Most popular"
       - name: "6 GB KVM VPS"
-        price: "$89.99"
-        pid: 955
-        specs: ["6 vCPU Cores", "6 GB RAM", "100 GB SSD", "12 TB Bandwidth"]
+        pid: 971
+        price: "$74.98"
+        specs: ["6 vCPUs", "85 GB SSD", "15 TB monthly transfer"]
       - name: "8 GB KVM VPS"
-        price: "$119.99"
-        pid: 956
-        specs: ["7 vCPU Cores", "8 GB RAM", "150 GB SSD", "20 TB Bandwidth"]
-  - name: "Shared Hosting"
+        pid: 972
+        price: "$94.98"
+        specs: ["6 vCPUs", "140 GB SSD", "20 TB monthly transfer"]
+  - name: "Shared hosting"
+    period: year
+    description: "For websites without a server to maintain. Includes AdminBolt with its AI assistant for email, DNS and databases, LiteSpeed, CloudLinux, daily backups and free website migration."
     plans:
-      - name: "30 GB Shared"
-        price: "$10.49"
-        pid: 933
-        specs: ["30 GB NVMe Storage", "3 TB Transfer", "Host 2 Domains", "cPanel"]
-      - name: "85 GB Shared"
-        price: "$24.99"
-        pid: 934
-        specs: ["85 GB NVMe Storage", "10 TB Transfer", "Host 10 Domains", "cPanel"]
-      - name: "200 GB Shared"
-        price: "$59.00"
-        pid: 935
-        specs: ["200 GB NVMe Storage", "30 TB Transfer", "Unlimited Domains", "cPanel"]
-  - name: "Reseller Hosting"
+      - name: "35 GB shared"
+        pid: 977
+        price: "$9.49"
+        specs: ["35 GB SSD", "5 hosted domains", "5 TB monthly transfer"]
+      - name: "90 GB shared"
+        pid: 978
+        price: "$21.99"
+        specs: ["90 GB SSD", "Unlimited hosted domains", "15 TB monthly transfer"]
+      - name: "200 GB shared"
+        pid: 979
+        price: "$49.88"
+        specs: ["200 GB SSD", "Unlimited hosted domains", "40 TB monthly transfer"]
+  - name: "Reseller hosting"
+    period: year
+    description: "For hosting client sites under your own brand. Includes AdminBolt reseller controls, LiteSpeed, CloudLinux, daily backups and free account migrations."
     plans:
-      - name: "75 GB Reseller"
-        price: "$34.88"
-        pid: 936
-        specs: ["75 GB NVMe Storage", "2.5 TB Transfer", "3 cPanel Accounts", "cPanel/WHM"]
-      - name: "110 GB Reseller"
-        price: "$64.88"
-        pid: 937
-        specs: ["110 GB NVMe Storage", "5 TB Transfer", "7 cPanel Accounts", "cPanel/WHM"]
-      - name: "180 GB Reseller"
-        price: "$94.88"
-        pid: 938
-        specs: ["180 GB NVMe Storage", "9 TB Transfer", "12 cPanel Accounts", "cPanel/WHM"]
+      - name: "80 GB reseller"
+        pid: 980
+        price: "$29.88"
+        specs: ["80 GB SSD", "15 hosting accounts", "5 TB monthly transfer"]
+      - name: "115 GB reseller"
+        pid: 981
+        price: "$54.88"
+        specs: ["115 GB SSD", "25 hosting accounts", "20 TB monthly transfer"]
+      - name: "185 GB reseller"
+        pid: 982
+        price: "$84.88"
+        specs: ["185 GB SSD", "50 hosting accounts", "30 TB monthly transfer"]
+  - name: "Dedicated servers"
+    period: month
+    description: "Physical servers, billed monthly rather than annually. RackNerd asks buyers to allow two to three days for provisioning."
+    plans:
+      - name: "Intel Xeon E3-1230 V2"
+        pid: 973
+        price: "$64"
+        specs: ["16 GB RAM", "256 GB SSD", "30 TB at 1 Gbps", "First available US location"]
+      - name: "Dual Xeon L5520"
+        pid: 974
+        price: "$75"
+        specs: ["48 GB RAM", "1 TB SATA HDD", "30 TB at 1 Gbps", "Seattle"]
+      - name: "Dual Xeon E5-2660"
+        pid: 975
+        price: "$139"
+        specs: ["64 GB RAM", "1 TB SSD", "Unmetered 1 Gbps", "Seattle"]
+      - name: "Dual Xeon E5-2683 V4"
+        pid: 976
+        price: "$199"
+        specs: ["128 GB RAM", "2 TB SSD", "Unmetered 1 Gbps", "Seattle"]
