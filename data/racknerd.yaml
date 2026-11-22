@@ -3,6 +3,8 @@ campaign: "Black Friday 2026"
 source: "https://racknerd.com/BlackFriday/"
 categories:
   - name: "KVM VPS"
+    use: "Run your own Linux server."
+    columns: ["CPU", "Storage", "Transfer"]
     period: year
     description: "Self-managed Linux servers with root access. Use ctrl to reboot, reinstall, open a console or set network firewall rules. Its one-click apps include Ollama and LibreChat; check their memory requirements before picking a plan."
     plans:
@@ -28,6 +30,8 @@ categories:
         price: "$94.98"
         specs: ["6 vCPUs", "140 GB SSD", "20 TB monthly transfer"]
   - name: "Shared hosting"
+    use: "Host websites without managing a server."
+    columns: ["Storage", "Domains", "Transfer"]
     period: year
     description: "For websites without a server to maintain. Includes AdminBolt with its AI assistant for email, DNS and databases, LiteSpeed, CloudLinux, daily backups and free website migration."
     plans:
@@ -44,6 +48,8 @@ categories:
         price: "$49.88"
         specs: ["200 GB SSD", "Unlimited hosted domains", "40 TB monthly transfer"]
   - name: "Reseller hosting"
+    use: "Manage hosting for clients."
+    columns: ["Storage", "Accounts", "Transfer"]
     period: year
     description: "For hosting client sites under your own brand. Includes AdminBolt reseller controls, LiteSpeed, CloudLinux, daily backups and free account migrations."
     plans:
@@ -60,6 +66,8 @@ categories:
         price: "$84.88"
         specs: ["185 GB SSD", "50 hosting accounts", "30 TB monthly transfer"]
   - name: "Dedicated servers"
+    use: "Get a physical server to yourself."
+    columns: ["Memory", "Storage", "Bandwidth", "Location"]
     period: month
     description: "Physical servers, billed monthly rather than annually. RackNerd asks buyers to allow two to three days for provisioning."
     plans:

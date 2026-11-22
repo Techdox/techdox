@@ -1,34 +1,32 @@
 {{ define "main" }}
 {{ $rn := site.Data.racknerd }}
 <div class="deals-page">
-  <div class="list-hero">
-    <div class="kicker"><span class="dim">~/techdox</span> $ ls deals/</div>
-    <h1 class="hero list">RackNerd <em>{{ $rn.campaign }}</em></h1>
-    <p class="hero-sub">Compare hosting plans in USD. If you buy through a plan link, I earn a commission at no extra cost to you.</p>
-  </div>
-
-  <nav class="deal-index" aria-label="Jump to hosting plans">
+  <header class="deal-lead">
+    <p class="deal-eyebrow">RackNerd / {{ $rn.campaign }}</p>
+    <h1>Compare hosting plans</h1>
+    <p>Prices in USD. If you buy through a plan link, I earn a commission at no extra cost to you.</p>
+  </header>
+  <nav id="hosting-types" class="deal-index" aria-label="Choose a hosting type">
     {{ range $rn.categories }}
-      {{ $entry := index .plans 0 }}
-      <a href="#{{ .name | anchorize }}"><strong>{{ .name }}</strong><span>from {{ $entry.price }}/{{ .period }} ↓</span></a>
+      <a href="#{{ .name | anchorize }}"><strong>{{ .name }} <span aria-hidden="true">↓</span></strong><small>from {{ (index .plans 0).price }}/{{ .period }}</small></a>
     {{ end }}
   </nav>
   {{ range $rn.categories }}
-  {{ $category := . }}
-  <section aria-labelledby="{{ .name | anchorize }}">
-    <div class="sec-head"><h2 id="{{ .name | anchorize }}">{{ .name }}</h2><div class="line"></div></div>
-    <p class="deal-intro">{{ .description }}</p>
-    <div class="deal-grid">
-      {{ range .plans }}
-      <a class="deal-card" href="{{ $rn.aff }}&pid={{ .pid }}" target="_blank" rel="noopener sponsored">
-        <div class="deal-header"><span class="deal-name">{{ .name }}</span>{{ with .badge }} <span class="deal-badge">{{ . }}</span>{{ end }}</div>
-        <ul class="deal-specs">{{ range .specs }}<li>{{ . }}</li>{{ end }}</ul>
-        <div class="deal-footer"><span class="deal-price">{{ .price }}<span class="deal-per">/{{ $category.period }}</span></span><span class="deal-cta">View plan ↗</span></div>
-      </a>
-      {{ end }}
-    </div>
-  </section>
+    {{ $cat := . }}{{ $id := .name | anchorize }}
+    <section class="deal-group" aria-labelledby="{{ $id }}">
+      <div class="deal-heading"><div><h2 id="{{ $id }}" tabindex="-1">{{ .name }}</h2><p>{{ .use }}</p></div><span class="deal-cycle">{{ if eq .period "month" }}Monthly{{ else }}Annual{{ end }} billing</span></div>
+      <table class="deal-table" aria-labelledby="{{ $id }}" role="table">
+        <thead role="rowgroup"><tr role="row"><th scope="col" role="columnheader">Plan</th><th scope="col" role="columnheader">Price (USD)</th>{{ range .columns }}<th scope="col" role="columnheader">{{ . }}</th>{{ end }}<th scope="col" role="columnheader"><span class="deal-sr">Offer</span></th></tr></thead>
+        <tbody role="rowgroup">{{ range .plans }}
+          <tr role="row"><th scope="row" role="rowheader">{{ .name }}{{ with .badge }}<small class="deal-badge">{{ . }}</small>{{ end }}</th>
+            <td class="deal-price" role="cell">{{ .price }}<small>/{{ $cat.period }}</small></td>
+            {{ range $i, $spec := .specs }}<td class="deal-spec" role="cell"><small aria-hidden="true">{{ index $cat.columns $i }}</small>{{ $spec }}</td>{{ end }}
+            <td class="deal-action" role="cell"><a href="{{ $rn.aff }}&pid={{ .pid }}" rel="sponsored noopener" aria-label="View {{ .name }} plan at RackNerd">View plan <span aria-hidden="true">↗</span></a></td>
+          </tr>{{ end }}</tbody>
+      </table>
+      <div class="deal-notes"><details><summary>What’s included?</summary><p>{{ .description }}</p></details><a href="#hosting-types">Hosting types ↑</a></div>
+    </section>
   {{ end }}
-  <p class="deal-intro">RackNerd says these rates renew at the same price while you keep the service active, and an active plan includes a Clientexec licence. Check availability at checkout or <a href="{{ $rn.source }}">try the ctrl demo on RackNerd’s offer page</a>.</p>
+  <aside class="deal-terms"><strong>Renewals and availability</strong><p>RackNerd says these rates renew at the same price while you keep the service active, and an active plan includes a Clientexec licence. Check availability at checkout or <a href="{{ $rn.source }}">try the ctrl demo on RackNerd’s offer page</a>.</p></aside>
 </div>
 {{ end }}
